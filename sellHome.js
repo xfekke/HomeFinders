@@ -1,5 +1,13 @@
 function sellResidence() {
+  console.log('Klickade "Sälja Bostad"');
   var content = {
+    '#home': `
+      <div class="home-container">
+        <h2>Hem</h2>
+        <!-- Innehåll för startsidan -->
+      </div>
+    `,
+
     '#sell': `
     <div class="sell-container">
       
@@ -45,26 +53,31 @@ function sellResidence() {
 
 //submitResidence knapp
 
+function updateContent() {
+  var hash = location.hash;
+  var appContainer = document.getElementById('app');
+
+  if (hash in sellResidence()) {
+    appContainer.innerHTML = sellResidence()[hash];
+  } else {
+    console.log('Hashen matchar ingen giltig SPA-funktion.');
+  }
+}
+
 function submitResidence() {
   console.log('Formulär skickat!');
 }
 
-var hash = location.hash;
-
-if (hash === '#sell') {
-  // #visa sell sidan
-  var appContainer = document.getElementById('app');
-  appContainer.innerHTML = sellResidence()['#sell'];
-}
-
-function navigateTo(viewId) {
+function navigateTo(viewId, event) {
+  event.preventDefault();
   location.hash = viewId;
 }
 
+
+// uppdaterar sidan nör den laddas
+document.addEventListener('DOMContentLoaded', function () {
+  updateContent();
+});
+
 window.onhashchange = updateContent;
 
-document.addEventListener('DOMContentLoaded', updateContent);
-
-function updateContent() {
-  // 
-}
