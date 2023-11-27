@@ -71,12 +71,17 @@ function submitResidence() {
   var size = document.getElementById('size').value;
   var price = document.getElementById('price').value;
   var additionalInfo = document.getElementById('additional-info').value;
-  console.log('Adress:', address);
-  console.log('Bostadstyp:', type);
-  console.log('Antal rum:', rooms);
-  console.log('Storlek (kvm):', size);
-  console.log('Utgångspris:', price);
-  console.log('Ytterligare information:', additionalInfo);
+
+  var formData = {
+    address: address,
+    type: type,
+    rooms: rooms,
+    size: size,
+    price: price,
+    additionalInfo: additionalInfo
+  };
+
+  console.log(formData);
 }
 
 function navigateTo(viewId, event) {
