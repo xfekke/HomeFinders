@@ -1,0 +1,11 @@
+{
+  "name": "homefinders",
+  "version": "1.0.0",
+  "description": "Gruppuppgift att skapa en mäklarsida.",
+  "main": "startsida.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
