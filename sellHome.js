@@ -43,7 +43,7 @@ function sellResidence() {
                   <label for="additional-info">Ytterligare information:</label>
                   <textarea id="additional-info" name="additional-info"></textarea>
               </div>
-              <button type="submitResidence">Skicka in</button>
+              <button type="button" onclick="submitResidence()">Skicka in</button>
           </form>
       </div>
     `
@@ -65,7 +65,18 @@ function updateContent() {
 }
 
 function submitResidence() {
-  console.log('Formulär skickat!');
+  var address = document.getElementById('address').value;
+  var type = document.getElementById('type').value;
+  var rooms = document.getElementById('rooms').value;
+  var size = document.getElementById('size').value;
+  var price = document.getElementById('price').value;
+  var additionalInfo = document.getElementById('additional-info').value;
+  console.log('Adress:', address);
+  console.log('Bostadstyp:', type);
+  console.log('Antal rum:', rooms);
+  console.log('Storlek (kvm):', size);
+  console.log('Utgångspris:', price);
+  console.log('Ytterligare information:', additionalInfo);
 }
 
 function navigateTo(viewId, event) {
