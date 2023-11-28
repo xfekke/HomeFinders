@@ -91,10 +91,10 @@ function sellResidence() {
 
 function updateContent() {
   var hash = location.hash;
-  var appContainer = document.getElementById('app');
+  var appContainer = document.getElementById('index');
 
   if (hash in sellResidence()) {
-    appContainer.innerHTML = sellResidence()[sell];
+    appContainer.innerHTML = sellResidence()[hash];
   } else {
     console.log('Hashen matchar ingen giltig SPA-funktion.');
   }

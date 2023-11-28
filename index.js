@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-  var sellButton = document.getElementById('sellButton');
+  var sellButton = document.getElementById("sellButton");
   if (sellButton) {
     sellButton.addEventListener('click', function () {
       navigateTo('#sell');
