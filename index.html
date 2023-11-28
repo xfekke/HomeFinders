@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dhyr & Rumson - Din bostadspartner</title>
-  <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Homefinders - Din bostadspartner</title>
 </head>
-
 <body>
-  <header>
-
-    <h1>Dhyr & Rumson</h1>
-
-    <section>
-      <button onclick="navigateTo('hem')">Hem</button>
-      <button onclick="navigateTo('sälj')">Sälja Bostad</button>
-    </section>
-
-  </header>
-
-
-  <script src="index.js"></script>
-  <script src="sellHome.js"></script>
-
+    <div id="index">
+        <header>
+            <h1>Homefinders</h1>
+            <nav>
+                <button onclick="navigateTo('home')">Hem</button>
+                <button onclick="navigateTo('search')">Sök Bostad</button>
+                <button onclick="navigateTo('about')">Om Oss</button>
+                </nav>
+            </header>
+            
+                    <main id="main-content">
+            <h2>Välkommen till Homefinders!</h2>
+            <p>Din partner för att hitta drömboendet eller sälja din nuvarande bostad.</p>
+        </main>
+        </div>
+        
+            <script src="index.js"></script>
 </body>
-
 </html>
