@@ -1,6 +1,6 @@
-// Huvudfunktion för att uppdatera sidinnehållet baserat på hashen i URL:en
+// ladda SPA hash innehåll
 function updateContent() {
-  // Objekt som kartlägger hashvärdet till motsvarande sidinnehåll
+  // obj med hashvärde
   var content = {
     '': '<h2>Välkommen till Dhyr & Rumson</h2><p>Din partner för att hitta drömboendet eller sälja din nuvarande bostad.</p>',
     '#home': '<h2>Välkommen till Dhyr & Rumson</h2><p>Din partner för att hitta drömboendet eller sälja din nuvarande bostad.</p>',
@@ -9,23 +9,23 @@ function updateContent() {
     '#about': '<h2>Om Oss</h2><p>Läs mer om vår mäklarfirma och vårt team.</p>',
   };
 
-  // Hämta den aktuella hashen från URL:en
+  // hämta hash url
   var hash = location.hash;
 
-  // Använd hashen för att hämta och sätta rätt innehåll i main-elementet
+  // rätt hash innehåll i sidan
   var mainContent = document.getElementById('main-content');
   var loginContainer = document.getElementById('login-container');
 
-  // Rensa loginContainer och ta bort eventlyssnare om den finns
+  // rensa login container
   loginContainer.innerHTML = '';
   var existingLoginForm = document.getElementById('login-form');
   if (existingLoginForm) {
     existingLoginForm.removeEventListener('submit', handleLogin);
   }
 
-  // Visa innehållet baserat på hashen
+  // visa hash innehåll/egenskap
   if (hash === '#login') {
-    // Använd CSS för att visa och centrera login-formuläret
+    // css för centrera
     mainContent.style.display = 'none';
     loginContainer.style.display = 'flex';
     loginContainer.innerHTML = `
@@ -38,39 +38,37 @@ function updateContent() {
       `;
     document.getElementById('login-form').addEventListener('submit', handleLogin);
   } else {
-    // Visa huvudinnehållet och använd hashen för att bestämma vilket innehåll som ska visas
+    // prio för innehåll
     mainContent.style.display = 'block';
     loginContainer.style.display = 'none';
     mainContent.innerHTML = content[hash] || content[''];
   }
 }
 
-// Eventlyssnare som sätter URL:ens hash när användaren klickar på en navigeringsknapp
+// sätter url beroende på hash
 function navigateTo(viewId) {
   location.hash = viewId;
 }
 
-// Eventlyssnare som kallar på updateContent när det finns en hashändring i URL:en
+
 window.onhashchange = updateContent;
 
-// Kalla på updateContent när sidan har laddats
+
 document.addEventListener('DOMContentLoaded', updateContent);
 
-// Hantering av inloggning
+// logga in
 function handleLogin(event) {
   event.preventDefault();
   var username = document.getElementById('username').value;
   var password = document.getElementById('password').value;
-  // Här skulle du lägga till din logik för att verifiera användaren
+  // logik för inlog
   console.log('Mäklare försöker logga in med:', username, password);
-  // Implementera autentisering och hantering av inloggningsstatus här
 }
 
-// Lägg till klick-eventlyssnare för varje navigationsknapp
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('nav button').forEach(button => {
     button.addEventListener('click', function (event) {
-      // Uppdatera 'viewId' för att matcha den knapp som klickats på
+      // viewID ska matcha de man klickat
       var viewId = event.target.getAttribute('onclick').match(/'([^']+)'/)[1];
       navigateTo(viewId);
     });
