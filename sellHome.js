@@ -1,12 +1,6 @@
 function sellResidence() {
   console.log('Klickade "Sälja Bostad"');
   var content = {
-    '#home': `
-      <div class="home-container">
-        <h2>Hem</h2>
-        <!-- Innehåll för startsidan -->
-      </div>
-    `,
 
     '#sell': `
     <div class="sell-container">
@@ -38,6 +32,10 @@ function sellResidence() {
               <div>
                   <label for="price">Utgångspris:</label>
                   <input type="number" id="price" name="price" required>
+              </div>
+                  <div>
+                  <label for="image-url">Bild-URL:</label>
+                  <input type="url" id="image-url" name="image-url" placeholder="Ange URL för bilden på din bostad">
               </div>
               <div>
                   <label for="additional-info">Ytterligare information:</label>
