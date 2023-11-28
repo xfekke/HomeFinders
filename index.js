@@ -67,10 +67,19 @@ function handleLogin(event) {
 
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('nav button').forEach(button => {
-    button.addEventListener('click', function (event) {
-      // viewID ska matcha de man klickat
-      var viewId = event.target.getAttribute('onclick').match(/'([^']+)'/)[1];
+    // Använd data-attribut för att lagra viewId
+    var viewId = button.dataset.viewId;
+    button.addEventListener('click', function () {
       navigateTo(viewId);
     });
   });
+
+
+
+  var sellButton = document.getElementById('sellButton');
+  if (sellButton) {
+    sellButton.addEventListener('click', function () {
+      navigateTo('#sell');
+    });
+  }
 });

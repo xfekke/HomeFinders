@@ -94,7 +94,7 @@ function updateContent() {
   var appContainer = document.getElementById('app');
 
   if (hash in sellResidence()) {
-    appContainer.innerHTML = sellResidence()[hash];
+    appContainer.innerHTML = sellResidence()[sell];
   } else {
     console.log('Hashen matchar ingen giltig SPA-funktion.');
   }
