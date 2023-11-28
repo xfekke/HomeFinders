@@ -138,16 +138,4 @@ function submitResidence() {
   console.log(formData);
 }
 
-function navigateTo(viewId, event) {
-  event.preventDefault();
-  location.hash = viewId;
-}
-
-
-// uppdaterar sidan nör den laddas
-document.addEventListener('DOMContentLoaded', function () {
-  updateContent();
-});
-
-window.onhashchange = updateContent;
 
