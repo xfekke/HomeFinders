@@ -1,3 +1,5 @@
+import { submitResidence, sellResidence } from "./sellHome";
+
 // ladda SPA hash innehåll
 function updateContent() {
   // obj med hashvärde
@@ -7,6 +9,7 @@ function updateContent() {
     '#search': '<h2>Sök Bostad</h2><p>Använd vår sökfunktion för att hitta ditt nya hem.</p>',
     '#contact': '<h2>Kontakt</h2><p>Kontakta oss för mer information eller boka en visning.</p>',
     '#about': '<h2>Om Oss</h2><p>Läs mer om vår mäklarfirma och vårt team.</p>',
+    '#sell': sellResidence()
   };
 
   // hämta hash url

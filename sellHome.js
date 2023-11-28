@@ -1,4 +1,4 @@
-function sellResidence() {
+export function sellResidence() {
   console.log('Klickade "Sälja Bostad"');
   var content = {
 
@@ -89,18 +89,19 @@ function sellResidence() {
 
 //submitResidence knapp
 
-function updateContent() {
-  var hash = location.hash;
-  var appContainer = document.getElementById('app');
+// function updateContent() {
+//   var hash = location.hash;
+//   var appContainer = document.getElementById('app');
 
-  if (hash in sellResidence()) {
-    appContainer.innerHTML = sellResidence()[hash];
-  } else {
-    console.log('Hashen matchar ingen giltig SPA-funktion.');
-  }
-}
+//   if (hash === '#sell') {
+//     appContainer.innerHTML = sellResidence()[hash];
+//   } else {
+//     console.log('Hashen matchar ingen SPA');
+//   }
 
-function submitResidence() {
+// }
+
+export function submitResidence() {
   var address = document.getElementById('address').value;
   var type = document.getElementById('type').value;
   var floor = document.getElementById('floor').value;
