@@ -1,6 +1,5 @@
-// ladda SPA hash innehåll
 function updateContent() {
-  // obj med hashvärde
+
   var content = {
     '': '<h2>Välkommen till Homefinders</h2><p>Din partner för att hitta drömboendet eller sälja din nuvarande bostad.</p>',
     '#home': '<h2>Välkommen till Homefinders</h2><p>Din partner för att hitta drömboendet eller sälja din nuvarande bostad.</p>',
@@ -9,23 +8,23 @@ function updateContent() {
     '#about': '<h2>Om Oss</h2><p>Läs mer om vår mäklarfirma och vårt team.</p>',
   };
 
-  // hämta hash url
+
   var hash = location.hash;
 
-  // rätt hash innehåll i sidan
+
   var mainContent = document.getElementById('main-content');
   var loginContainer = document.getElementById('login-container');
 
-  // rensa login container
+
   loginContainer.innerHTML = '';
   var existingLoginForm = document.getElementById('login-form');
   if (existingLoginForm) {
     existingLoginForm.removeEventListener('submit', handleLogin);
   }
 
-  // visa hash innehåll/egenskap
+
   if (hash === '#login') {
-    // css för centrera
+
     mainContent.style.display = 'none';
     loginContainer.style.display = 'flex';
     loginContainer.innerHTML = `
@@ -37,39 +36,42 @@ function updateContent() {
           </form>
       `;
     document.getElementById('login-form').addEventListener('submit', handleLogin);
+  } else if (hash === '#sell') {
+
+    mainContent.style.display = 'block';
+    loginContainer.style.display = 'none';
+    mainContent.innerHTML = sellResidence()['#sell'];
   } else {
-    // prio för innehåll
+
     mainContent.style.display = 'block';
     loginContainer.style.display = 'none';
     mainContent.innerHTML = content[hash] || content[''];
   }
 }
 
-// sätter url beroende på hash
+
 function navigateTo(viewId) {
   location.hash = viewId;
 }
 
-
 window.onhashchange = updateContent;
-
 
 document.addEventListener('DOMContentLoaded', updateContent);
 
-// logga in
+
 function handleLogin(event) {
   event.preventDefault();
   var username = document.getElementById('username').value;
   var password = document.getElementById('password').value;
-  // logik för inlog
+
   console.log('Mäklare försöker logga in med:', username, password);
 }
 
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('nav button').forEach(button => {
-    button.addEventListener('click', function (event) {
-      // viewID ska matcha de man klickat
-      var viewId = event.target.getAttribute('onclick').match(/'([^']+)'/)[1];
+
+    var viewId = button.dataset.viewId;
+    button.addEventListener('click', function () {
       navigateTo(viewId);
     });
   });

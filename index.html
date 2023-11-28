@@ -13,12 +13,11 @@
     <header>
       <h1>Homefinders</h1>
       <nav>
-        <button onclick="navigateTo('home')">Hem</button>
-        <button onclick="navigateTo('search')">Sök Bostad</button>
-        <button onclick="navigateTo('sell')">Sälja Bostad</button>
-        <button onclick="navigateTo('about')">Om Oss</button>
-        <!-- kontakta oss sidan här -->
-        <button onclick="navigateTo('login')">Mäklarlogin</button>
+        <button data-view-id="home">Hem</button>
+        <button data-view-id="search">Sök Bostad</button>
+        <button data-view-id="sell">Sälja Bostad</button>
+        <button data-view-id="about">Om Oss</button>
+        <button data-view-id="login">Mäklarlogin</button>        
       </nav>
     </header>
 
@@ -35,9 +34,10 @@
       <p>&copy; 2023 Homefinders - Alla rättigheter förbehållna</p>
     </footer>
   </div>
-
-  <script src="index.js"></script>
+  
   <script src="sellHome.js"></script>
+  <script src="index.js"></script>
+  
 </body>
 
 </html>
