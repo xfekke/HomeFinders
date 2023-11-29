@@ -91,7 +91,7 @@ function sellResidence() {
 
 function updateContent() {
   var hash = location.hash;
-  var appContainer = document.getElementById('app');
+  var appContainer = document.getElementById('index');
 
   if (hash in sellResidence()) {
     appContainer.innerHTML = sellResidence()[hash];
