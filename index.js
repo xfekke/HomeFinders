@@ -1,3 +1,5 @@
+let loggedIn = false;
+
 function updateContent() {
 
   var content = {
@@ -6,11 +8,12 @@ function updateContent() {
     '#search': '<h2>Sök Bostad</h2><p>Använd vår sökfunktion för att hitta ditt nya hem.</p>',
     '#contact': '<h2>Kontakt</h2><p>Kontakta oss för mer information eller boka en visning.</p>',
     '#about': '<h2>Om Oss</h2><p>Läs mer om vår mäklarfirma och vårt team.</p>',
+    '#realtor': '<h2>Mäklarsidan</h2><p>Välkommen mäklare!</p>',
+    '#sell': sellResidence()['#sell']
   };
 
 
   var hash = location.hash;
-
 
   var mainContent = document.getElementById('main-content');
   var loginContainer = document.getElementById('login-container');
@@ -36,11 +39,9 @@ function updateContent() {
           </form>
       `;
     document.getElementById('login-form').addEventListener('submit', handleLogin);
-  } else if (hash === '#sell') {
-
-    mainContent.style.display = 'block';
-    loginContainer.style.display = 'none';
-    mainContent.innerHTML = sellResidence()['#sell'];
+  } else if (hash === '#realtor' && !loggedIn) {
+    alert ("Du måste vara inloggad för att se denna sida!");
+    location.hash ='login';
   } else {
 
     mainContent.style.display = 'block';
@@ -51,7 +52,12 @@ function updateContent() {
 
 
 function navigateTo(viewId) {
-  location.hash = viewId;
+  if (viewId === 'realtor' && !loggedIn) {
+    alert("Du måste logga in för att se denna sida.");
+    location.hash = 'login';
+  } else {
+    location.hash = viewId;
+  }
 }
 
 window.onhashchange = updateContent;
@@ -68,7 +74,8 @@ function handleLogin(event) {
 
   if (username === "homefinders" && password === "1234") {
     alert("Hej mäklare!");
-
+    loggedIn = true;
+    navigateTo('realtor');
   } else {
     alert("Fel användarnamn eller lösenord");
   }
@@ -82,4 +89,4 @@ document.addEventListener('DOMContentLoaded', function () {
       navigateTo(viewId);
     });
   });
-});
+}); 
