@@ -1,35 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dhyr & Rumson - Din bostadspartner</title>
   <link rel="stylesheet" href="index.css">
+  <title>Homefinders - Din bostadspartner</title>
 </head>
 
 <body>
-  <header>
+  <div id="index">
+    <header>
+      <h1>Homefinders</h1>
+      <nav>
+        <button data-view-id="home">Hem</button>
+        <button data-view-id="search">Sök Bostad</button>
+        <button data-view-id="sell">Sälja Bostad</button>
+        <button data-view-id="about">Om Oss</button>
+        <button data-view-id="login">Mäklarlogin</button>        
+      </nav>
+    </header>
 
-    <h1>Dhyr & Rumson</h1>
-
-    <section>
-      <button onclick="navigateTo('hem')">Hem</button>
-      <button onclick="navigateTo('sälj')">Sälja Bostad</button>
-      <button onclick="navigateTo('login')">Mäklarlogin</button>
-    </section>
+    <main id="main-content">
+      <h2>Välkommen till Homefinders</h2>
+      <p>Din partner för att hitta drömboendet eller sälja din nuvarande bostad.</p>
+    </main>
 
     <div class="login-container" id="login-container" style="display: none;">
-      
+      <!-- inloggningsgrej här -->
     </div>
 
-  </header>
-
-
-  <script src="index.js"></script>
+    <footer>
+      <p>&copy; 2023 Homefinders - Alla rättigheter förbehållna</p>
+    </footer>
+  </div>
+  
   <script src="sellHome.js"></script>
-  <script src="login.js"></script>
-
+  <script src="index.js"></script>
+  
 </body>
 
 </html>
