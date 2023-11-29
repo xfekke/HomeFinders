@@ -65,6 +65,13 @@ function handleLogin(event) {
   var password = document.getElementById('password').value;
 
   console.log('Mäklare försöker logga in med:', username, password);
+
+  if (username === "homefinders" && password === "1234") {
+    alert("Hej mäklare!");
+
+  } else {
+    alert("Fel användarnamn eller lösenord");
+  }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
