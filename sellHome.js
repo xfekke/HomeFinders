@@ -44,19 +44,44 @@ function sellResidence() {
                   <label for="price">Utgångspris:</label>
                   <input type="number" id="price" name="price" required>
               </div>
+                  <div>
+                  <label for="yearBuilt">Byggnadsår:</label>
+                  <input type="number" id="yearBuilt" name="yearBuilt" min="1" required>
+              </div>
                  <label for="balcony">Balkong:</label>
                   <select id="balcony" name="balcony">
                       <option value="Ja">Ja</option>
                       <option value="Nej">Nej</option>
                   </select>
                   <div>
+                <label for="storage">Förråd:</label>
+                  <select id="storage" name="storage">
+                      <option value="Ja">Ja</option>
+                      <option value="Nej">Nej</option>
+                  </select>
                   <div>
+                  <div>
+                <label for="parking">Parkering:</label>
+                  <select id="parking" name="parking">
+                      <option value="Ja">Ja</option>
+                      <option value="Nej">Nej</option>
+                  </select>
+                  </div>
+                  <div>
+                <label for="courtyard">Innergård:</label>
+                  <select id="courtyard" name="courtyard">
+                      <option value="Ja">Ja</option>
+                      <option value="Nej">Nej</option>
+                  </select>
+                  </div>
                   <label for="patio">Uteplats:</label>
                   <select id="patio" name="patio">
                       <option value="Ja">Ja</option>
                       <option value="Nej">Nej</option>
                   </select>
+                  
                   </div>
+                  
                   <label for="image-url">Bild-URL:</label>
                   <input type="url" id="image-url" name="image-url" placeholder="Ange URL för bilden på din bostad">
               </div>
@@ -65,6 +90,7 @@ function sellResidence() {
                   <label for="additional-info">Ytterligare information:</label>
                   <textarea id="additional-info" name="additional-info"></textarea>
               </div>
+              
               <button type="button" onclick="submitResidence()">Skicka in</button>
           </form>
       </div>
@@ -107,7 +133,11 @@ function submitResidence() {
   var rooms = document.getElementById('rooms').value;
   var size = document.getElementById('size').value;
   var price = document.getElementById('price').value;
+  var yearBuilt = document.getElementById('yearBuilt').value;
   var balcony = document.getElementById('balcony').value;
+  var storage = document.getElementById('storage').value;
+  var parking = document.getElementById('parking').value;
+  var courtyard = document.getElementById('courtyard').value;
   var patio = document.getElementById('patio').value;
   var imageURL = document.getElementById('image-url').value;
   var additionalInfo = document.getElementById('additional-info').value;
@@ -129,7 +159,11 @@ function submitResidence() {
     rooms: rooms,
     size: size,
     price: price,
+    yearBuilt: yearBuilt,
     balcony: balcony,
+    storage: storage,
+    parking: parking,
+    courtyard: courtyard,
     patio: patio,
     imageURL: imageURL,
     additionalInfo: additionalInfo
