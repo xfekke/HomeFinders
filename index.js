@@ -17,6 +17,7 @@ function updateContent() {
 
   var mainContent = document.getElementById('main-content');
   var loginContainer = document.getElementById('login-container');
+  var logoutButton = document.getElementById('logout-button');
 
 
   loginContainer.innerHTML = '';
@@ -48,6 +49,9 @@ function updateContent() {
     loginContainer.style.display = 'none';
     mainContent.innerHTML = content[hash] || content[''];
   }
+  
+  logoutButton.style.display = loggedIn ? 'block' : 'none';
+
 }
 
 
@@ -69,6 +73,7 @@ function handleLogin(event) {
   event.preventDefault();
   var username = document.getElementById('username').value;
   var password = document.getElementById('password').value;
+  var logoutButton = document.getElementById('logout-button');
 
   console.log('Mäklare försöker logga in med:', username, password);
 
@@ -79,7 +84,18 @@ function handleLogin(event) {
   } else {
     alert("Fel användarnamn eller lösenord");
   }
+
+  logoutButton.style.display = loggedIn ? 'block' : 'none';
+
 }
+
+function handleLogout() {
+  loggedIn = false;
+  var logoutButton = document.getElementById('logout-button');
+  logoutButton.style.display = 'none';
+  navigateTo('home');
+}
+
 
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('nav button').forEach(button => {
@@ -89,4 +105,6 @@ document.addEventListener('DOMContentLoaded', function () {
       navigateTo(viewId);
     });
   });
+
+  document.getElementById('logout-button').addEventListener('click', handleLogout);
 }); 
