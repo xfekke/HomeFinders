@@ -1,3 +1,7 @@
+import { getAllResidences, postResidence, getOneResidence } from "./server-request.js";
+await postResidence(5, "jaja väg 2", 2, 10);
+console.log(await getAllResidences())
+console.log(await getOneResidence(5))
 let loggedIn = false;
 
 function updateContent() {
