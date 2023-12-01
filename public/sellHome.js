@@ -1,8 +1,8 @@
-import { getAllResidences, postResidence, getOneResidence } from "./server-request.js";
-console.log(await getAllResidences())
+// import { getAllResidences, postResidence, getOneResidence } from "./server-request.js";
+// console.log(await getAllResidences())
 
 
-export function sellResidence() {
+function sellResidence() {
   console.log('Klickade "Sälja Bostad"');
   var content = {
 
@@ -176,9 +176,9 @@ async function submitResidence() {
   };
 
   console.log(formData);
-  const id = 4;
-  await postResidence(id, address, floor, size, price, yearBuilt, balcony, storage, parking, courtyard, patio, imageURL, additionalInfo);
-  console.log('Bostad inskickad!')
+  // const id = 4;
+  // await postResidence(id, address, floor, size, price, yearBuilt, balcony, storage, parking, courtyard, patio, imageURL, additionalInfo);
+  // console.log('Bostad inskickad!')
 
 }
 
