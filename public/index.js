@@ -1,8 +1,9 @@
 import { getAllResidences, postResidence, getOneResidence } from "./server-request.js";
-await postResidence(5, "jaja väg 2", 2, 10);
-console.log(await getAllResidences())
-console.log(await getOneResidence(5))
-let loggedIn = false;
+// // await postResidence(5, "jaja väg 2", 2, 10);
+// console.log(await getAllResidences())
+// console.log(await getOneResidence(5))
+// let loggedIn = false;
+import { sellResidence } from "./sellHome.js";
 
 function updateContent() {
 
@@ -45,15 +46,15 @@ function updateContent() {
       `;
     document.getElementById('login-form').addEventListener('submit', handleLogin);
   } else if (hash === '#realtor' && !loggedIn) {
-    alert ("Du måste vara inloggad för att se denna sida!");
-    location.hash ='login';
+    alert("Du måste vara inloggad för att se denna sida!");
+    location.hash = 'login';
   } else {
 
     mainContent.style.display = 'block';
     loginContainer.style.display = 'none';
     mainContent.innerHTML = content[hash] || content[''];
   }
-  
+
   logoutButton.style.display = loggedIn ? 'block' : 'none';
 
 }

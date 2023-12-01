@@ -12,15 +12,40 @@ export async function getOneResidence(residenceID) {
     return data;
 }
 
-export async function postResidence(id, adress, floor, type) {
+// export async function postResidence(id, adress, floor, type) {
+//     const response = await fetch("/residences", {
+//         method: "post",
+//         headers: {"Content-Type": "application/json"},
+//         body: JSON.stringify({
+//             "id": id,
+//             "adress": adress,
+//             "floor": floor,
+//             "type": type
+//         })
+//     })
+// }
+
+export async function postResidence(id, address, type, floor, rooms, size, price,
+    yearBuilt, balcony, storage, parking, courtyard, patio, imageURL, additionalInfo
+) {
     const response = await fetch("/residences", {
         method: "post",
-        headers: {"Content-Type": "application/json"},
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-            "id": id,
-            "adress": adress,
+            "address": address,
+            "type": type,
             "floor": floor,
-            "type": type
+            "rooms": rooms,
+            "size": size,
+            "price": price,
+            "yearBuilt": yearBuilt,
+            "balcony": balcony,
+            "storage": storage,
+            "parking": parking,
+            "courtyard": courtyard,
+            "patio": patio,
+            "imageURL": imageURL,
+            "additionalInfo": additionalInfo
         })
     })
 }

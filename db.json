@@ -2,33 +2,19 @@
   "residences": [
     {
       "id": 1,
-      "adress": "cool väg 2",
+      "address": "Pellevägen 2",
+      "type": "Lägenhet",
       "floor": 2,
-      "type": 0
-    },
-    {
-      "id": 2,
-      "adress": "tuff väg 2",
-      "floor": 3,
-      "type": 1
-    },
-    {
-      "id": 3,
-      "adress": "fräsig väg 2",
-      "floor": 5,
-      "type": 6
-    },
-    {
-      "id": 4,
-      "adress": "jaja väg 2",
-      "floor": 2,
-      "type": 5
-    },
-    {
-      "id": 5,
-      "adress": "jaja väg 2",
-      "floor": 2,
-      "type": 10
+      "size": 3333,
+      "price": 4444,
+      "yearBuilt": 1992,
+      "balcony": "Ja",
+      "storage": "Ja",
+      "parking": "Nej",
+      "courtyard": "Ja",
+      "patio": "Nej",
+      "imageURL": "https://husohem.se/wp-content/uploads/2021/07/YTo2OntzOjI6ImlkIjtpOjE3MjA4OTA7czoxOiJ3IjtpOjk4MDtzOjE6ImgiO2k6MzIwMDtzOjE6ImMiO2k6MDtzOjE6InMiO2k6MDtzOjE6ImsiO3M6NDA6ImY1NzE3ZmFkNTExZmU2YWI2NTQ0ZjQzN2U0NTVhY2YxY2RkMmIxYWQiO30.jpg",
+      "additionalInfo": "Nej tack!!!!"
     }
   ],
   "user": [

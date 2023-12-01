@@ -1,4 +1,8 @@
-function sellResidence() {
+import { getAllResidences, postResidence, getOneResidence } from "./server-request.js";
+console.log(await getAllResidences())
+
+
+export function sellResidence() {
   console.log('Klickade "Sälja Bostad"');
   var content = {
 
@@ -101,6 +105,7 @@ function sellResidence() {
   return content;
 }
 
+
 // function toggleFloorOptions() {
 //   document.getElementById('type').addEventListener('change', toggleFloorOptions);
 //   var type = document.getElementById('type').value;
@@ -126,7 +131,7 @@ function updateContent() {
   }
 }
 
-function submitResidence() {
+async function submitResidence() {
   var address = document.getElementById('address').value;
   var type = document.getElementById('type').value;
   var floor = document.getElementById('floor').value;
@@ -141,6 +146,7 @@ function submitResidence() {
   var patio = document.getElementById('patio').value;
   var imageURL = document.getElementById('image-url').value;
   var additionalInfo = document.getElementById('additional-info').value;
+
 
   if (
     address === '' ||
@@ -170,6 +176,12 @@ function submitResidence() {
   };
 
   console.log(formData);
+  const id = 4;
+  await postResidence(id, address, floor, size, price, yearBuilt, balcony, storage, parking, courtyard, patio, imageURL, additionalInfo);
+  console.log('Bostad inskickad!')
+
 }
 
+
+// await postResidence(4, address, floor, size, price, yearBuilt, balcony, storage, parking, courtyard, patio, imageURL, additionalInfo);
 
