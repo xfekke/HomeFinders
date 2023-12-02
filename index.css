@@ -67,16 +67,71 @@ nav button:hover {
   margin-bottom: 3px;
 }
 
-/* Sendformulär Om oss */
+/* Brokers -> Om oss */
+#brokers {
+  position: relative;
+  max-width: 600px;
+  margin: 3em auto 1em;
+}
 
-.ingress {
-  /* margin-top: 1em; */
+#dealers {
+  width: 100%;
+  font-size: 62.5%;
+}
+
+.dealer {
+  display: inline-block;
+  position: relative;
+  width: 168px;
+  padding: 1em;
+  margin: 0 0.5em 1em 0.5em;
+  border-radius: 1em;
+  background-color: #6c8e5753;
+}
+
+.dealer-img {
+  width: 100%;
+}
+
+.dealer-name {
+  font-size: 1.4em;
+  margin: 5px 0 2px 0;
+}
+
+p.ingress {
   font-weight: 300;
   font-size: 1.3em;
   text-align: center;
-  letter-spacing: 0;
+  margin: 0.5em;
   color: #444;
 }
+
+.dealer>p {
+  font-size: 1.3em;
+  line-height: 130%;
+  margin: 0;
+}
+
+p.role {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+}
+
+a:link {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6C8E57;
+}
+
+a:visited {
+  color: #333;
+}
+/* Sendformulär -> Om oss */
 
 .form-section {
   display: block;
@@ -99,6 +154,7 @@ input {
   width: 570px;
   border: #208137 solid 1px;
   font-family: "Ubuntu";
+  color: #444;
 }
 
 #message {
