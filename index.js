@@ -7,7 +7,7 @@ function updateContent() {
     '#home': '<h2>Välkommen till Homefinders</h2><p>Din partner för att hitta drömboendet eller sälja din nuvarande bostad.</p>',
     '#search': '<h2>Sök Bostad</h2><p>Använd vår sökfunktion för att hitta ditt nya hem.</p>',
     '#contact': '<h2>Kontakt</h2><p>Kontakta oss för mer information eller boka en visning.</p>',
-    '#about': '<h2>Om Oss</h2><p>Läs mer om vår mäklarfirma och vårt team.</p>',
+    '#about': contactHF() ['#about'],
     '#realtor': '<h2>Mäklarsidan</h2><p>Välkommen mäklare!</p>',
     '#sell': sellResidence()['#sell']
   };

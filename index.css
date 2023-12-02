@@ -66,3 +66,63 @@ nav button:hover {
 .sell-container button {
   margin-bottom: 3px;
 }
+
+/* Sendformulär Om oss */
+
+.ingress {
+  /* margin-top: 1em; */
+  font-weight: 300;
+  font-size: 1.3em;
+  text-align: center;
+  letter-spacing: 0;
+  color: #444;
+}
+
+.form-section {
+  display: block;
+  background-color: #6c8e5753;
+  height: 330px;
+  padding-top: 1em;
+}
+
+form {
+  position: relative;
+  margin: 0 auto;
+  padding-right: 1%;
+  max-width: 570px;
+}
+
+input {
+  display: block;
+  margin: 0.3em auto;
+  padding: 0.5em;
+  width: 570px;
+  border: #208137 solid 1px;
+  font-family: "Ubuntu";
+}
+
+#message {
+  padding-bottom: 7em;
+  border-bottom: #208137 solid 4px;
+}
+
+#form-btn {
+  position: absolute;
+  margin-left: 190px;
+  background-color: #fff;
+  color: #444;
+  border: #208137 2px solid;
+  border-radius: 5px;
+  padding: 0.6em 1em;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 1em;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+#form-btn:hover {
+  background-color: #208137;
+  color: #fff;
+  border-radius:5px;
+}
