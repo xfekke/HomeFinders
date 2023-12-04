@@ -1,9 +1,12 @@
 import "../components/counter.js";
-
+import { getAllResidences } from "./server-request.js";
 // import { getAllResidences, postResidence, getOneResidence } from "./server-request.js";
 // console.log(await getAllResidences())
 
 export function submitResidence() {
+
+  getAllResidences().then(console.log);
+
   var address = document.getElementById('address').value;
   var type = document.getElementById('type').value;
   var floor = document.getElementById('floor').value;
@@ -27,7 +30,7 @@ export function submitResidence() {
     price === ''
   ) {
     alert('Fyll i alla obligatoriska fält!');
-    return
+    return;
   }
 
   var formData = {
@@ -46,6 +49,8 @@ export function submitResidence() {
     imageURL: imageURL,
     additionalInfo: additionalInfo
   };
+
+
 
   console.log(formData);
   // const id = 4;

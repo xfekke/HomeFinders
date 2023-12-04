@@ -1,0 +1,38 @@
+{
+  "residences": [
+    {
+      "id": 1,
+      "address": "Cool Väg 2",
+      "type": "Lägenhet",
+      "floor": 1,
+      "rooms": 2,
+      "size": 22,
+      "price": 3243,
+      "yearBuilt": 1997,
+      "balcony": "Ja",
+      "storage": "Nej",
+      "parking": "Nej",
+      "courtyard": "Nej",
+      "patio": "Nej",
+      "imageURL": "https://images-ext-1.discordapp.net/external/zpURKuNhEL_J19AnLhYHY7ARb22lVSZ90B6b9m3K7Wo/https/www.eksjohus.se/wp-content/uploads/2021/03/Skanor-Fram-1920x1080.jpg?format=webp&width=1202&height=676",
+      "additionalInfo": "Fräsigt byggt"
+    },
+    {
+      "id": 2,
+      "address": "Frän Väg 2",
+      "type": "Lägenhet",
+      "floor": 1,
+      "rooms": 2,
+      "size": 22,
+      "price": 3243,
+      "yearBuilt": 1997,
+      "balcony": "Ja",
+      "storage": "Nej",
+      "parking": "Nej",
+      "courtyard": "Nej",
+      "patio": "Nej",
+      "imageURL": "https://images-ext-1.discordapp.net/external/zpURKuNhEL_J19AnLhYHY7ARb22lVSZ90B6b9m3K7Wo/https/www.eksjohus.se/wp-content/uploads/2021/03/Skanor-Fram-1920x1080.jpg?format=webp&width=1202&height=676",
+      "additionalInfo": "Fräsigt byggt"
+    }
+  ]
+}

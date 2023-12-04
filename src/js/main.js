@@ -1,3 +1,4 @@
+import { getAllResidences } from "./views/server-request.js";
 import sellHome from "./views/sellHome.js";
 import home from "./views/home.js";
 import search from "./views/search.js";
@@ -50,6 +51,7 @@ window.addEventListener("click", e => {
     e.preventDefault();
     history.pushState("", "", e.target.href);
     router();
+
   }
 });
 
