@@ -1,9 +1,9 @@
 import "../components/counter.js";
-import { getAllResidences } from "./server-request.js";
+import { getAllResidences, postResidence } from "./server-request.js";
 // import { getAllResidences, postResidence, getOneResidence } from "./server-request.js";
 // console.log(await getAllResidences())
 
-export function submitResidence() {
+export async function submitResidence() {
 
   getAllResidences().then(console.log);
 
@@ -57,7 +57,10 @@ export function submitResidence() {
   // await postResidence(id, address, floor, size, price, yearBuilt, balcony, storage, parking, courtyard, patio, imageURL, additionalInfo);
   // console.log('Bostad inskickad!')
 
+  var id = 10;
 
+  await postResidence(id, address, floor, size, price, yearBuilt, balcony, storage, parking, courtyard, patio, imageURL, additionalInfo);
+  console.log('Bostad inskickad!');
 
 }
 

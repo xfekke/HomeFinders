@@ -10,6 +10,29 @@ export async function getAllResidences() {
   return jsonData;
 };
 
+export async function postResidence() {
+  var response = await fetch('../db.json', {
+    method: "post",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      "address": address,
+      "type": type,
+      "floor": floor,
+      "rooms": rooms,
+      "size": size,
+      "price": price,
+      "yearBuilt": yearBuilt,
+      "balcony": balcony,
+      "storage": storage,
+      "parking": parking,
+      "courtyard": courtyard,
+      "patio": patio,
+      "imageURL": imageURL,
+      "additionalInfo": additionalInfo
+    })
+  });
+  return response;
+}
 
 
 // async function getJsonFile() {
