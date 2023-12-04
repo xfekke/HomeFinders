@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poiret+One&family=Spirax&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+/* bas font osv */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  background: #f4f4f4;
+  color: #272626;
+  line-height: 1.6;
+}
+
+/* header info */
+header {
+  background-color: #208137;
+  color: #edf6f9;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: xx-large;
+}
+
+nav button {
+  background: none;
+  border: 2px solid #edf6f9;
+  border-radius: 5px;
+  color: #edf6f9;
+  padding: 0.5rem 1rem;
+  margin: 0 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* button ändras vid hover */
+nav button:hover {
+  background-color: #edf6f9;
+  color: #005f73;
+}
+
+.sell-container h2 {
+  text-align: center;
+  margin-left: 0;
+}
+
+.sell-container form {
+  margin-left: 40%;
+}
+
+.sell-container p {
+  text-align: center;
+}
+
+/* sälj bostad justering */
+.sell-container {
+  padding: 20px;
+  text-align: left;
+}
+
+.sell-container h2,
+.sell-container p,
+.sell-container label,
+.sell-container input,
+.sell-container select,
+.sell-container textarea,
+.sell-container button {
+  margin-bottom: 3px;
+}
