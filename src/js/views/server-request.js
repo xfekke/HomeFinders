@@ -10,28 +10,64 @@ export async function getAllResidences() {
   return jsonData;
 };
 
+// export async function postResidence() {
+//   var response = await fetch('../db.json', {
+//     method: "post",
+//     headers: { "Content-Type": "application/json" },
+//     body: JSON.stringify({
+//       "address": address,
+//       "type": type,
+//       "floor": floor,
+//       "rooms": rooms,
+//       "size": size,
+//       "price": price,
+//       "yearBuilt": yearBuilt,
+//       "balcony": balcony,
+//       "storage": storage,
+//       "parking": parking,
+//       "courtyard": courtyard,
+//       "patio": patio,
+//       // "imageURL": imageURL,
+//       // "additionalInfo": additionalInfo
+//     })
+//   });
+//   return response;
+// }
+
 export async function postResidence() {
-  var response = await fetch('../db.json', {
-    method: "post",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      "address": address,
-      "type": type,
-      "floor": floor,
-      "rooms": rooms,
-      "size": size,
-      "price": price,
-      "yearBuilt": yearBuilt,
-      "balcony": balcony,
-      "storage": storage,
-      "parking": parking,
-      "courtyard": courtyard,
-      "patio": patio,
-      "imageURL": imageURL,
-      "additionalInfo": additionalInfo
-    })
-  });
-  return response;
+
+  const newResidence = {
+    "id": 10,
+    "address": address,
+    "type": type,
+    "floor": floor,
+    "rooms": rooms,
+    "size": size,
+    "price": price,
+    "yearBuilt": yearBuilt,
+    "balcony": balcony,
+    "storage": storage,
+    "parking": parking,
+    "courtyard": courtyard,
+    "patio": patio,
+    // "imageURL": imageURL,
+    // "additionalInfo": additionalInfo
+  }
+
+  try {
+    var response = await fetch('../db.json', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(newResidence),
+    });
+
+    const data = await response.json();
+    console.log('Bostad har sparats!', data);
+  } catch (error) {
+    console.log('Något gick fel', error);
+  }
 }
 
 

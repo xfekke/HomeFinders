@@ -59,7 +59,7 @@ export async function submitResidence() {
 
   var id = 10;
 
-  await postResidence(id, address, floor, size, price, yearBuilt, balcony, storage, parking, courtyard, patio, imageURL, additionalInfo);
+  await postResidence();
   console.log('Bostad inskickad!');
 
 }
