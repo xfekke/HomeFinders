@@ -34,6 +34,32 @@ export async function getAllResidences() {
 //   return response;
 // }
 
+var fs = require('fs');
+
+
+function updateDb(newData) {
+  const filePath = 'db.json'; // path to your JSON file
+  fs.readFile(filePath, 'utf8', (readErr, data) => {
+    if (readErr) {
+      console.error('Error reading file:', readErr);
+      return;
+    }
+
+    // Parse the existing data and update it
+    let db = JSON.parse(data);
+    db = { ...db, ...newData }; // This merges the old data with the new data
+
+    // Write the updated data back to the file
+    fs.writeFile(filePath, JSON.stringify(db, null, 2), 'utf8', writeErr => {
+      if (writeErr) {
+        console.error('Error writing file:', writeErr);
+      } else {
+        console.log('Database successfully updated!');
+      }
+    });
+  });
+}
+
 export async function postResidence() {
 
   const newResidence = {
@@ -55,15 +81,17 @@ export async function postResidence() {
   }
 
   try {
-    var response = await fetch('../db.json', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(newResidence),
-    });
+    console.log(JSON.stringify(newResidence))
+    updateDb({ residences: [newResidence] });
+    // var response = await fetch('../db.json', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify(newResidence),
+    // });
 
-    const data = await response.json();
+    // const data = await response.json();
     console.log('Bostad har sparats!', data);
   } catch (error) {
     console.log('Något gick fel', error);
