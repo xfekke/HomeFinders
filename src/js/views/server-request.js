@@ -1,84 +1,32 @@
-// server - request js filen
-
-// för att hämta data används
+// funktion för att hämta alla bostäder
 export async function getAllResidences() {
-  var response = await fetch('../db.json');
-  var responseJSON = await response.json();
-  var str = JSON.stringify(responseJSON);
-  var jsonData = JSON.parse(str);
-
-  return jsonData;
+  try {
+    var response = await fetch('http://localhost:3000/residences');
+    var responseJSON = await response.json();
+    return responseJSON;
+  } catch (error) {
+    console.error('Fel vid hämtning av bostäder:', error);
+  }
 };
 
-// export async function postResidence() {
-//   var response = await fetch('../db.json', {
-//     method: "post",
-//     headers: { "Content-Type": "application/json" },
-//     body: JSON.stringify({
-//       "address": address,
-//       "type": type,
-//       "floor": floor,
-//       "rooms": rooms,
-//       "size": size,
-//       "price": price,
-//       "yearBuilt": yearBuilt,
-//       "balcony": balcony,
-//       "storage": storage,
-//       "parking": parking,
-//       "courtyard": courtyard,
-//       "patio": patio,
-//       // "imageURL": imageURL,
-//       // "additionalInfo": additionalInfo
-//     })
-//   });
-//   return response;
-// }
-
-export async function postResidence() {
-
-  const newResidence = {
-    "id": 10,
-    "address": address,
-    "type": type,
-    "floor": floor,
-    "rooms": rooms,
-    "size": size,
-    "price": price,
-    "yearBuilt": yearBuilt,
-    "balcony": balcony,
-    "storage": storage,
-    "parking": parking,
-    "courtyard": courtyard,
-    "patio": patio,
-    // "imageURL": imageURL,
-    // "additionalInfo": additionalInfo
-  }
-
+// funktion för att skicka en ny bostad till servern
+export async function postResidence(formData) {
   try {
-    var response = await fetch('../db.json', {
+    var response = await fetch('http://localhost:3000/residences', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(newResidence),
+      body: JSON.stringify(formData),
     });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
 
     const data = await response.json();
     console.log('Bostad har sparats!', data);
   } catch (error) {
-    console.log('Något gick fel', error);
+    console.error('Något gick fel vid inlämning av bostad:', error);
   }
 }
-
-
-// async function getJsonFile() {
-//   let response = await fetch('example.json');
-//   let responsejson = await response.json();
-//   let str = JSON.stringify(responsejson);
-//   let jsonData = JSON.parse(str);
-
-//   return jsonData;
-// };
-
-// getJsonFile().then(console.log);  // I see my .json file in console, how can I use it ?
-// }
