@@ -46,6 +46,7 @@ export async function submitResidence() {
 
   await postResidence(formData);
   console.log('Bostad inskickad!');
+  return;
 }
 
 export default () => /*html*/`

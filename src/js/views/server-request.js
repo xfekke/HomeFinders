@@ -19,15 +19,14 @@ export async function postResidence(formData) {
       },
       body: JSON.stringify(formData),
     });
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
-    const data = await response.json();
-    console.log('Bostad har sparats!', data);
-    alert ('Bostad har sparats!')
+    return;
+    console.log('Response:', response.status);
+    window.location.replace("/");
+    // if (!response.ok) {
+    //   throw new Error(`HTTP error! status: ${response.status}`);
+    // }
+    // alert('Bostad har sparats!')
   } catch (error) {
-    console.error('Något gick fel vid inlämning av bostad:', error);
+    // console.error('Något gick fel vid inlämning av bostad:', error);
   }
 }
