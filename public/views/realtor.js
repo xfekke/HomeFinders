@@ -1,7 +1,7 @@
 import "../components/counter.js";
 
 export default () => {
-  const isAuthenticated = localStorage.getItem("loggedIn") === "true";
+  const isAuthenticated = localStorage.getItem("loggedIn") === "false";
 
   return isAuthenticated
     ? /*html*/`
