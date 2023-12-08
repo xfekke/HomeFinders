@@ -3,6 +3,7 @@ export async function getAllResidences() {
   try {
     var response = await fetch('/residences');
     var responseJSON = await response.json();
+    console.log("result = ", typeof responseJSON);
     return responseJSON;
   } catch (error) {
     console.error('Fel vid hämtning av bostäder:', error);

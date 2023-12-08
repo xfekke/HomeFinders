@@ -24,7 +24,11 @@ const routes = {
   "/logIn": { title: "LogIn", render: logIn }
 };
 
+<<<<<<< HEAD
 // uppdaterad routerfunktion
+=======
+// routern hämtar nuvarande sökväg och hittar en matchande vy att lägga till som sidtitel
+>>>>>>> 8636ca165fcd253e7eb3ca2e77b63c161b2e4e8d
 async function router() {
   let view = routes[location.pathname];
 
@@ -35,6 +39,7 @@ async function router() {
 
   if (view) {
     document.title = view.title;
+<<<<<<< HEAD
     if (view.render instanceof Function) {
       try {
         app.innerHTML = await view.render();
@@ -45,6 +50,9 @@ async function router() {
     } else {
       app.innerHTML = view.render;
     }
+=======
+    app.innerHTML = await view.render();
+>>>>>>> 8636ca165fcd253e7eb3ca2e77b63c161b2e4e8d
   } else {
     history.replaceState("", "", "/");
     router();

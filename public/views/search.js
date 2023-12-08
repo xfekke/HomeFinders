@@ -20,12 +20,20 @@ function renderResidenceDetails(residence) {
 }
 
 export default async () => {
+<<<<<<< HEAD
   try {
     const residencesData = await getAllResidences();
 
     const residencesList = residencesData.map(residence => 
       `<li onclick="showResidenceDetails(${residence.id})">${residence.address}</li>`
     ).join('');
+=======
+    try {
+        const residencesData = await getAllResidences();
+        console.log("residencesData:", typeof residencesData);
+
+        const residencesList = residencesData.map(residence => `<li>${residence.address}${residence.price}</li>`).join('');
+>>>>>>> 8636ca165fcd253e7eb3ca2e77b63c161b2e4e8d
 
     return `
       <h2>Alla Bostäder:</h2>
