@@ -1,44 +1,55 @@
 import "../components/counter.js";
-import { getAllResidences, printAllResidences } from "./server-request.js";
+import { getAllResidences } from "./server-request.js";
 
-// export default async () => {
-//     const residencesData = await getAllResidences();
-//     console.log(residencesData);
-
-//     const residencesList = residencesData.map(residence => `<li>${residence.adress}</li>`).join('');
-
-//     const searchContainer = `
-//       <h2>Alla Residences</h2>
-//       <ul>
-//         ${residencesList}
-//       </ul>
-//       <h2>Välkommen till Homefinders</h2>
-//       <p>Din partner för att hitta drömboendet eller sälja din nuvarande bostad.</p>
-//     `;
-//     console.log(searchContainer);
-//     return searchContainer;
-// };
+function renderResidenceDetails(residence) {
+  return `
+    <h3>${residence.address}</h3>
+    <p>Typ: ${residence.type}</p>
+    <p>Antal rum: ${residence.rooms}</p>
+    <p>Storlek: ${residence.size} kvm</p>
+    <p>Pris: ${residence.price} kr</p>
+    <p>Byggår: ${residence.yearBuilt}</p>
+    <p>Balkong: ${residence.balcony}</p>
+    <p>Förråd: ${residence.storage}</p>
+    <p>Parkering: ${residence.parking}</p>
+    <p>Innergård: ${residence.courtyard}</p>
+    <p>Uteplats: ${residence.patio}</p>
+    <img src="${residence.imageURL}" alt="Bild på bostaden">
+    <p>${residence.additionalInfo}</p>
+  `;
+}
 
 export default async () => {
-    try {
-        const residencesData = await getAllResidences();
-        console.log("residencesData:", residencesData);
+  try {
+    const residencesData = await getAllResidences();
 
-        const residencesList = residencesData.map(residence => `<li>${residence.address}</li>`).join('');
+    const residencesList = residencesData.map(residence => 
+      `<li onclick="showResidenceDetails(${residence.id})">${residence.address}</li>`
+    ).join('');
 
-        const searchContainer = `
-          <h2>Alla Bostäder:</h2>
-          <ul>
-            ${residencesList}
-          </ul>
-          <h2>Välkommen till Homefinders</h2>
-          <p>Din partner för att hitta drömboendet eller sälja din nuvarande bostad.</p>
-        `;
-        console.log(searchContainer);
-        return searchContainer;
-    } catch (error) {
-        console.error("Error fetching residences data:", error);
-        // hantering av fel här;
-        return "Det uppstod ett fel vid hämtning av bostadsdata.";
-    }
+    return `
+      <h2>Alla Bostäder:</h2>
+      <ul>
+        ${residencesList}
+      </ul>
+    `;
+  } catch (error) {
+    console.error("Error fetching residences data:", error);
+    return "Det uppstod ett fel vid hämtning av bostadsdata.";
+  }
 };
+
+window.showResidenceDetails = async (residenceId) => {
+  const residence = await getResidenceById(residenceId);
+  document.getElementById("app").innerHTML = renderResidenceDetails(residence);
+};
+
+async function getResidenceById(id) {
+  try {
+    const response = await fetch(`/residences/${id}`);
+    return await response.json();
+  } catch (error) {
+    console.error('Error fetching residence:', error);
+    return null;
+  }
+}

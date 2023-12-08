@@ -24,22 +24,28 @@ const routes = {
   "/logIn": { title: "LogIn", render: logIn }
 };
 
-// routern hämtar nuvarande sökväg och hittar en matchande vy att lägga till som sidtitel
-function router() {
+// uppdaterad routerfunktion
+async function router() {
   let view = routes[location.pathname];
 
-  // kontroll av inloggning
   if (view && view.title === "Realtor" && !isAuthenticated()) {
     history.replaceState("", "", "/");
-    view = routes["/"]; // tillbaka till startsida om man ej är inloggad
+    view = routes["/"];
   }
 
-  // om vyn finns så uppdaterar den till det
   if (view) {
     document.title = view.title;
-    app.innerHTML = view.render();
+    if (view.render instanceof Function) {
+      try {
+        app.innerHTML = await view.render();
+      } catch (error) {
+        console.error("Error rendering view:", error);
+        app.innerHTML = "Ett fel uppstod vid rendering av sidan.";
+      }
+    } else {
+      app.innerHTML = view.render;
+    }
   } else {
-    // om routern inte hittar något som matchar
     history.replaceState("", "", "/");
     router();
   }
@@ -51,7 +57,6 @@ window.addEventListener("click", e => {
     e.preventDefault();
     history.pushState("", "", e.target.href);
     router();
-
   }
 });
 
@@ -61,18 +66,10 @@ window.addEventListener("DOMContentLoaded", router);
 
 // sellHome funktioner ska laddas
 window.addEventListener("DOMContentLoaded", () => {
-  window.submitResidence = sellHome.submitResidence;
-});
-window.addEventListener("DOMContentLoaded", () => {
   window.submitResidence = submitResidence;
 });
 
-
 // logga in funktioner ska funka
-window.addEventListener("DOMContentLoaded", () => {
-  window.handleLogin = logIn.handleLogin;
-});
 window.addEventListener("DOMContentLoaded", () => {
   window.handleLogin = handleLogin;
 });
-
