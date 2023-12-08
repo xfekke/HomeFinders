@@ -9,18 +9,23 @@ import "../components/counter.js";
 // }
 
 export default () => /*html*/`
-    <h1>Kontakta oss</h1>
-    <p>Kontakta oss för mer information eller boka en visning.</p>'
+
 
    <h2>Kontaktformulär</h2>
 
   <section class="form-section">
        <p class="ingress">Du kan också skicka e-post till oss via formuläret</p>
-    <form action="">
+
+    <form action="" class="contact-form">
+
       <input type="email" id="email" placeholder="Ange e-postadress" name="email" required=true;>
+
       <input type="text" id="notation" placeholder="Ärende" name="notation" required=true;>
+
       <input type="text" id="message" placeholder="Skriv in ditt meddelande" name="message" required=true;>
-      <button id="form-btn">Skicka meddelandet</button>
+
+      <button id="form-contact-btn">Skicka meddelandet</button>
+
     </form>
   </section>
 `;

@@ -132,6 +132,7 @@ a:hover {
 a:visited {
   color: #333;
 }
+
 /* Sendformulär -> Om oss */
 
 .form-section {
@@ -141,14 +142,16 @@ a:visited {
   padding-top: 1em;
 }
 
-form {
+.contact-form {
   position: relative;
   margin: 0 auto;
   padding-right: 1%;
   max-width: 570px;
 }
 
-input {
+#email,
+#notation,
+#message {
   display: block;
   margin: 0.3em auto;
   padding: 0.5em;
@@ -163,7 +166,7 @@ input {
   border-bottom: #208137 solid 4px;
 }
 
-#form-btn {
+#form-contact-btn {
   position: absolute;
   margin-left: 190px;
   background-color: #fff;
@@ -178,10 +181,10 @@ input {
   cursor: pointer;
 }
 
-#form-btn:hover {
+#form-contact-btn:hover {
   background-color: #208137;
   color: #fff;
-  border-radius:5px;
+  border-radius: 5px;
 }
 
 /* Paralax */
@@ -211,7 +214,7 @@ input {
   transform: translateZ(-5px) scale(1.5);
 }
 
-.hero-image, 
+.hero-image,
 .title {
   position: absolute;
   height: 100%;
@@ -232,7 +235,7 @@ input {
 }
 
 #First-sec {
-  position:relative;
+  position: relative;
   z-index: 5;
   height: 100vh;
   font-size: 1.8rem;
