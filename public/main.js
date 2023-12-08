@@ -13,7 +13,7 @@ import { handleLogin } from "./views/logIn.js";
 function isAuthenticated() {
   return localStorage.getItem("loggedIn") === "true";
 }
-
+// spa
 const routes = {
   "/": { title: "Home", render: home },
   "/search": { title: "Search", render: search },
