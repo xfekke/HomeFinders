@@ -30,3 +30,13 @@ export async function postResidence(formData) {
     // console.error('Något gick fel vid inlämning av bostad:', error);
   }
 }
+
+export async function getUser() {
+  try {
+    var response = await fetch('/user');
+    var responseJSON = await response.json();
+    return responseJSON;
+  } catch (error) {
+    console.error('Fel vid hämtning av bostäder:', error);
+  }
+};

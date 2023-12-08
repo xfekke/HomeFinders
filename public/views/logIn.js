@@ -1,11 +1,21 @@
 import "../components/counter.js";
 
-export function handleLogin() {
+import { getUser } from "./server-request.js";
+
+export async function handleLogin() {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
 
-  // login hårdkodat
-  if (username === "homefinders" && password === "1234") {
+
+  const users = await getUser();
+
+
+  const user = users.find((user) => user.username === username && user.password === password);
+
+  if (user) {
+
+    localStorage.setItem("loggedIn", "true");
+
     alert("Inloggning lyckades!");
     console.log("Inloggning lyckades!");
     // lägg till omdiregering här
@@ -14,8 +24,7 @@ export function handleLogin() {
   }
 }
 
-
-export default () => /*html*/`
+export default () => `
   <form id="login-form">
     <label for="username">Användarnamn:</label>
     <input type="text" id="username" name="username" required>
