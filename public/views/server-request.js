@@ -1,7 +1,7 @@
 // funktion för att hämta alla bostäder
 export async function getAllResidences() {
   try {
-    var response = await fetch('http://localhost:3000/residences');
+    var response = await fetch('/residences');
     var responseJSON = await response.json();
     return responseJSON;
   } catch (error) {
@@ -12,7 +12,7 @@ export async function getAllResidences() {
 // funktion för att skicka en ny bostad till servern
 export async function postResidence(formData) {
   try {
-    var response = await fetch('http://localhost:3000/residences', {
+    var response = await fetch('/residences', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

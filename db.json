@@ -305,6 +305,23 @@
       "imageURL": "2",
       "additionalInfo": "2",
       "id": 18
+    },
+    {
+      "address": "eee2235655656",
+      "type": "lägenhet",
+      "floor": "2",
+      "rooms": "2",
+      "size": "2",
+      "price": "2",
+      "yearBuilt": "2",
+      "balcony": "Ja",
+      "storage": "Ja",
+      "parking": "Ja",
+      "courtyard": "Ja",
+      "patio": "Ja",
+      "imageURL": "2",
+      "additionalInfo": "2",
+      "id": 19
     }
   ]
 }
