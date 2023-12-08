@@ -25,7 +25,7 @@ const routes = {
 };
 
 // routern hämtar nuvarande sökväg och hittar en matchande vy att lägga till som sidtitel
-function router() {
+async function router() {
   let view = routes[location.pathname];
 
   // kontroll av inloggning
@@ -37,7 +37,7 @@ function router() {
   // om vyn finns så uppdaterar den till det
   if (view) {
     document.title = view.title;
-    app.innerHTML = view.render();
+    app.innerHTML = await view.render();
   } else {
     // om routern inte hittar något som matchar
     history.replaceState("", "", "/");

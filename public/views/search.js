@@ -22,9 +22,9 @@ import { getAllResidences, printAllResidences } from "./server-request.js";
 export default async () => {
     try {
         const residencesData = await getAllResidences();
-        console.log("residencesData:", residencesData);
+        console.log("residencesData:", typeof residencesData);
 
-        const residencesList = residencesData.map(residence => `<li>${residence.address}</li>`).join('');
+        const residencesList = residencesData.map(residence => `<li>${residence.address}${residence.price}</li>`).join('');
 
         const searchContainer = `
           <h2>Alla Bostäder:</h2>
