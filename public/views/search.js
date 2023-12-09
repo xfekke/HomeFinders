@@ -14,7 +14,7 @@ function renderResidenceDetails(residence) {
     <p>Parkering: ${residence.parking}</p>
     <p>Innergård: ${residence.courtyard}</p>
     <p>Uteplats: ${residence.patio}</p>
-    <img src="${residence.imageURL}" alt="Bild på bostaden">
+    <img src="${residence.imageURL}" alt="Bild på bostaden" class="residence-image">
     <p>${residence.additionalInfo}</p>
   `;
 }
