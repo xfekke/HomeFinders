@@ -28,9 +28,13 @@ const routes = {
 async function router() {
   let view = routes[location.pathname];
 
-  if (view && view.title === "Realtor" && !isAuthenticated()) {
-    history.replaceState("", "", "/");
-    view = routes["/"];
+  if (view && view.title === "Realtor") {
+    if (!isAuthenticated()) {
+      // User is not authenticated, show the message
+      document.title = "Realtor";
+      app.innerHTML = realtor();
+      return;
+    }
   }
 
   if (view) {
