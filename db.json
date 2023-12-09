@@ -358,5 +358,11 @@
       "id": 21
     }
   ],
-  "users": []
-}
+    "user": [
+      {
+        "id": 1337,
+        "username": "hfadmin",
+        "password": "homefinderaccesx9bot"
+      }
+    ]
+  }

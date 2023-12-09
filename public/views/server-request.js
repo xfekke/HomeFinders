@@ -28,4 +28,14 @@ export async function postResidence(formData) {
 
 export async function printAllResidences() {
 
-}
+};
+
+export async function getUser() {
+  try {
+    var response = await fetch('/user');
+    var responseJSON = await response.json();
+    return responseJSON;
+  } catch (error) {
+    console.error('Fel vid hämtning av bostäder:', error);
+  }
+};
