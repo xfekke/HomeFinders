@@ -21,6 +21,27 @@ header {
   font-size: xx-large;
 }
 
+.mainTitle {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #6C8E57;
+}
+
 nav button {
   background: none;
   border: 2px solid #edf6f9;
@@ -130,7 +151,7 @@ a:hover {
 }
 
 a:visited {
-  color: #333;
+  color: #ffffff;
 }
 
 /* Sendformulär -> Om oss */
