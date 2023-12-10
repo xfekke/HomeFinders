@@ -13,6 +13,7 @@ export async function handleLogin() {
     document.getElementById("logoutButton").style.display = 'block';
     alert("Inloggning lyckades!");
     console.log("Inloggning lyckades!");
+    window.location.href = '/';
   } else {
     alert("Fel användarnamn eller lösenord. Försök igen.");
   }
@@ -21,6 +22,7 @@ export async function handleLogin() {
 export function handleLogout() {
   localStorage.removeItem("loggedIn");
   document.getElementById("logoutButton").style.display = 'none';
+  window.location.href = '/';
 }
 
 window.addEventListener("DOMContentLoaded", () => {
