@@ -11,6 +11,8 @@ function updatePriceRange() {
 
 function renderResidenceDetails(residence) {
   let imagesHtml = '';
+  let thumbnailsHtml = '';
+
   if (Array.isArray(residence.imageURL) && residence.imageURL.length > 1) {
 
     imagesHtml = `
@@ -20,6 +22,11 @@ function renderResidenceDetails(residence) {
         <button class="right-arrow" onclick="moveSlide(1)">&#10095;</button>
       </div>
     `;
+    thumbnailsHtml = `
+    <div class="thumbnails">
+      ${residence.imageURL.map((url, index) => `<img src="${url}" alt="Thumbnail" class="thumbnail" onclick="changeSlide(${index})">`).join('')}
+    </div>
+  `;
   } else {
 
     imagesHtml = residence.imageURL ? `<img src="${residence.imageURL}" alt="Bild på bostaden" class="residence-image">` : '';
@@ -38,6 +45,7 @@ function renderResidenceDetails(residence) {
     <p>Innergård: ${residence.courtyard}</p>
     <p>Uteplats: ${residence.patio}</p>
     <p>Bilder:${imagesHtml}</p>
+    ${thumbnailsHtml}
     <p>${residence.additionalInfo}</p>
   `;
 }
@@ -107,6 +115,11 @@ window.moveSlide = function (direction) {
   showSlide(currentSlide + direction, slides);
 };
 let currentSlide = 0;
+
+window.changeSlide = function (index) {
+  const slides = document.querySelectorAll('.residence-image');
+  showSlide(index, slides);
+};
 
 function showSlide(index, slides) {
   if (index >= slides.length) {
