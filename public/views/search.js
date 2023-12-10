@@ -51,21 +51,32 @@ export default async () => {
     ).join('');
 
     return `
-      <h2>Alla Bostäder:</h2>
-        <div class="filterResidence">
-          <label for="sortOrder">Sortera efter:</label>
-          <select id="sortOrder">
-          <option value="priceAsc">Pris (Lägst överst)</option>
-          <option value="priceDesc">Pris (Högst överst)</option>
-          <option value="sizeAsc">Storlek (Minst överst)</option>
-          <option value="sizeDesc">Storlek (Störst överst)</option>
-        </select>
-          <button onclick="filterResidences()">Filtrera</button>
-        </div>
+<h2>Alla Bostäder:</h2>
+<div class="filterResidence">
+  <label for="sortOrder">Sortera efter:</label>
+  <select id="sortOrder">
+    <option value="priceAsc">Pris (Lägst överst)</option>
+    <option value="priceDesc">Pris (Högst överst)</option>
+    <option value="sizeAsc">Storlek (Minst överst)</option>
+    <option value="sizeDesc">Storlek (Störst överst)</option>
+  </select>
 
-      <ul>
-        ${residencesList}
-      </ul>
+  <label for="residenceType">Bostadstyp:</label>
+  <select id="residenceType">
+    <option value="all">Alla</option>
+    <option value="Villa">Villa</option>
+    <option value="Fritidshus">Fritidshus</option>
+    <option value="Lägenhet">Lägenhet</option>
+    <option value="Radhus">Radhus</option>
+  </select>
+
+  <button onclick="filterResidences()">Filtrera</button>
+</div>
+
+<ul>
+  ${residencesList}
+</ul>
+
     `;
 
 
@@ -120,7 +131,13 @@ function initCarousel() {
 window.filterResidences = async function () {
   try {
     const sortOrder = document.getElementById('sortOrder').value;
+    const residenceType = document.getElementById('residenceType').value;
     let residencesData = await getAllResidences();
+
+    // filtrera bostad om något valt
+    if (residenceType !== 'all') {
+      residencesData = residencesData.filter(residence => residence.type === residenceType);
+    }
 
     switch (sortOrder) {
       case 'priceAsc':
@@ -144,7 +161,7 @@ window.filterResidences = async function () {
       `<li onclick="showResidenceDetails(${residence.id})">${residence.address}</li>`
     ).join('');
 
-    // uppdaterar med sortering
+    // uppdatera med filtrerade bostäder
     const residencesContainer = document.querySelector('ul');
     residencesContainer.innerHTML = residencesList;
 
