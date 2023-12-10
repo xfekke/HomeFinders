@@ -51,7 +51,7 @@ export default async () => {
     ).join('');
 
     return `
-<h2>Alla Bostäder:</h2>
+<h2 class="searchTitle">Alla Bostäder:</h2>
 <div class="filterResidence">
   <label for="sortOrder">Sortera efter:</label>
   <select id="sortOrder">
@@ -73,9 +73,12 @@ export default async () => {
   <button onclick="filterResidences()">Filtrera</button>
 </div>
 
-<ul>
-  ${residencesList}
+<ul class="residencesList">
+  ${residencesData.map(residence =>
+      `<li class="residenceItem" onclick="showResidenceDetails(${residence.id})">${residence.address}</li>`
+    ).join('')}
 </ul>
+
 
     `;
 
