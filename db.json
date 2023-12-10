@@ -31,7 +31,10 @@
       "parking": "Ja",
       "courtyard": "Ja",
       "patio": "Ja",
-      "imageURL": "https://si.sfcdn.se/Resurs/Image/386611/Large/638362689270000000/MDIyNnwwMDAxNzE5MDgzOHw5Ng...jpg",
+      "imageURL": [
+        "https://roimakleri.se/wp-content/uploads/2023/07/CBILD5DLHU7GOUVNVK3PN.jpg",
+        "https://bilder.hemnet.se/images/itemgallery_cut/4e/95/4e95fa4825d19d5b4afbd47c48d2c79d.jpg"
+      ],
       "additionalInfo": "Ett modernt treplans radhus som präglas av ett fantastiskt ljusinsläpp via sina härliga och stora fönsterpartier, vilket ger en inbjudande atmosfär av rymd och ljus, hög standard och välgenomtänkt planlösning!"
     },
     {
@@ -345,7 +348,7 @@
     {
       "id": 1337,
       "username": "hfadmin",
-      "password": "homefinderaccesx9bot"
+      "password": "homefinderaccessx9bot"
     }
   ]
 }
