@@ -21,6 +21,27 @@ header {
   font-size: xx-large;
 }
 
+.mainTitle {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #6C8E57;
+}
+
 nav button {
   background: none;
   border: 2px solid #edf6f9;
@@ -68,76 +89,152 @@ nav button:hover {
   margin-bottom: 3px;
 }
 
-#logoutButton {
-  background: #208137;
-  color: #edf6f9;
-  border: none;
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
-  margin: 0.5rem 0;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-#logoutButton:hover {
-  background-color: #165a2c;
-}
-
-.residence-image {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.carousel {
+/* Brokers -> Om oss */
+#brokers {
   position: relative;
+  max-width: 600px;
+  margin: 3em auto 1em;
 }
 
-.residence-image {
+#dealers {
   width: 100%;
-  height: auto;
+  font-size: 62.5%;
 }
 
-.left-arrow,
-.right-arrow {
+.dealer {
+  display: inline-block;
+  position: relative;
+  width: 168px;
+  padding: 1em;
+  margin: 0 0.5em 1em 0.5em;
+  border-radius: 1em;
+  background-color: #6c8e5753;
+}
+
+.dealer-img {
+  width: 100%;
+}
+
+.dealer-name {
+  font-size: 1.4em;
+  margin: 5px 0 2px 0;
+}
+
+p.ingress {
+  font-weight: 300;
+  font-size: 1.3em;
+  text-align: center;
+  margin: 0.5em;
+  color: #444;
+}
+
+.dealer>p {
+  font-size: 1.3em;
+  line-height: 130%;
+  margin: 0;
+}
+
+p.role {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+}
+
+a:link {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6C8E57;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+/* Sendformulär -> Om oss */
+
+.form-section {
+  display: block;
+  background-color: #6c8e5753;
+  height: 330px;
+  padding-top: 1em;
+}
+
+form {
+  position: relative;
+  margin: 0 auto;
+  padding-right: 1%;
+  max-width: 570px;
+}
+
+#email,
+#messageBox,
+#notation {
+  display: block;
+  margin: 0.3em auto;
+  padding-top: 0.5em;
+  width: 570px;
+  border: #208137 solid 1px;
+  font-family: "Ubuntu";
+  color: #444;
+}
+
+#message {
+  padding-bottom: 7em;
+  border-bottom: #208137 solid 4px;
+  width: 570px;
+}
+
+#form-btn {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-left: 190px;
+  background-color: #fff;
+  color: #444;
+  border: #208137 2px solid;
+  border-radius: 5px;
+  margin-top: 0.5em;
+  padding: 0.6em 1em;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 1em;
+  transition-duration: 300ms;
   cursor: pointer;
-  font-size: 24px;
-  background-color: transparent;
-  border: none;
 }
 
-.left-arrow {
-  left: 10px;
+#form-btn:hover {
+  background-color: #208137;
+  color: #fff;
+  border-radius: 5px;
 }
 
-.right-arrow {
-  right: 10px;
+.container {
+  margin: 20px;
 }
 
-.thumbnails {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 15px;
+.residencesList .searchTitle,
+.residencesList {
+  text-align: left;
+  margin-left: 2vh;
 }
 
-.thumbnail {
-  width: 100px;
-  height: auto;
-  margin: 5px;
-  cursor: pointer;
-  border: 2px solid transparent;
-  transition: border-color 0.3s ease-in-out;
+.filterResidence {
+  text-align: left;
+  margin-left: 2vh;
 }
 
-.thumbnail:hover {
-  border-color: #208137;
+.container {
+  margin: 20px;
+}
 
+.residenceItem {
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #045008;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
 }
