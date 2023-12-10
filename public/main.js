@@ -30,8 +30,6 @@ async function router() {
 
   if (view && view.title === "Realtor") {
     if (!isAuthenticated()) {
-      // User is not authenticated, show the message
-      document.title = "Realtor";
       app.innerHTML = realtor();
       return;
     }
