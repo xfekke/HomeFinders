@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,27 @@
   <title>Home</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
   <section>
-    <header>Homefinders</header>
+    <header>
+      <h1 class="mainTitle">Homefinders</h1>
+      <nav>
+        <a href="/" data-link>Home</a>
+        <a href="/search" data-link>Söka Bostad</a>
+        <a href="/sellHome" data-link>Sälja Bostad</a>
+        <a href="/contact" data-link>Kontakt</a>
+        <a href="/about" data-link>Om Oss</a>
+        <a href="/realtor" data-link>Mäklarsidan</a>
+        <a href="/logIn" data-link>Logga In</a>
+        <button id="logoutButton" style="display: none;" onclick="handleLogout()">Logga ut</button>
+      </nav>
+    </header>
   </section>
-  <nav>
-    <a href="/" data-link>Home</a>
-    <a href="/search" data-link>Söka Bostad</a>
-    <a href="/contact" data-link>Kontakt</a>
-    <a href="/about" data-link>Om Oss</a>
-    <a href="/realtor" data-link>Mäklarsidan</a>
-    <a href="/sellHome" data-link>Sälja Bostad</a>
-    <a href="/logIn" data-link>Logga In</a>
-    <button id="logoutButton" style="display: none;">Logga ut</button>
-  </nav>
 
   <main id="app"></main>
 
   <script type="module" src="./main.js"></script>
 </body>
+
 </html>
