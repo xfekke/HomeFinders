@@ -119,3 +119,24 @@ nav button:hover {
 .right-arrow {
   right: 10px;
 }
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.thumbnail {
+  width: 100px;
+  height: auto;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.thumbnail:hover {
+  border-color: #208137;
+}
