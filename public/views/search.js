@@ -53,19 +53,22 @@ export default async () => {
     return `
       <h2>Alla Bostäder:</h2>
         <div class="filterResidence">
-        <label for="minPrice">Min Pris:</label>
-        <input type="number" id="minPrice" />
-        <label for="maxPrice">Max Pris:</label>
-        <input type="number" id="maxPrice" />
-        <button onclick="filterResidencesByPrice()">Filtrera</button>
-      </div>
+          <label for="sortOrder">Sortera efter:</label>
+          <select id="sortOrder">
+          <option value="priceAsc">Pris (Lägst överst)</option>
+          <option value="priceDesc">Pris (Högst överst)</option>
+          <option value="sizeAsc">Storlek (Minst överst)</option>
+          <option value="sizeDesc">Storlek (Störst överst)</option>
+        </select>
+          <button onclick="filterResidences()">Filtrera</button>
+        </div>
 
       <ul>
         ${residencesList}
       </ul>
     `;
 
-    
+
   } catch (error) {
     console.error("Error fetching residences data:", error);
     return "Det uppstod ett fel vid hämtning av bostadsdata.";
@@ -103,13 +106,9 @@ function showSlide(index, slides) {
     currentSlide = index;
   }
 
-
   slides.forEach(slide => slide.style.display = "none");
-
-
   slides[currentSlide].style.display = "block";
 }
-
 
 function initCarousel() {
   const slides = document.querySelectorAll('.residence-image');
@@ -118,8 +117,39 @@ function initCarousel() {
   }
 }
 
-function filterResidencesByPrice() {
-  if (minPrice > residence.price)
-    console.log('minPrice > ', residence.price)
-    
+window.filterResidences = async function () {
+  try {
+    const sortOrder = document.getElementById('sortOrder').value;
+    let residencesData = await getAllResidences();
+
+    switch (sortOrder) {
+      case 'priceAsc':
+        residencesData.sort((a, b) => a.price - b.price);
+        break;
+      case 'priceDesc':
+        residencesData.sort((a, b) => b.price - a.price);
+        break;
+      case 'sizeAsc':
+        residencesData.sort((a, b) => a.size - b.size);
+        break;
+      case 'sizeDesc':
+        residencesData.sort((a, b) => b.size - a.size);
+        break;
+      default:
+        // inget valt, gör inget
+        break;
+    }
+
+    const residencesList = residencesData.map(residence =>
+      `<li onclick="showResidenceDetails(${residence.id})">${residence.address}</li>`
+    ).join('');
+
+    // uppdaterar med sortering
+    const residencesContainer = document.querySelector('ul');
+    residencesContainer.innerHTML = residencesList;
+
+  } catch (error) {
+    console.error("Error fetching residences data:", error);
+    return "Det uppstod ett fel vid hämtning av bostadsdata.";
+  }
 }
