@@ -1,10 +1,18 @@
 import "../components/counter.js";
 import { getAllResidences } from "./server-request.js";
 
+let minPrice = null;
+let maxPrice = null;
+
+function updatePriceRange() {
+  minPrice = document.getElementById('minPrice').value;
+  maxPrice = document.getElementById('maxPrice').value;
+}
+
 function renderResidenceDetails(residence) {
   let imagesHtml = '';
   if (Array.isArray(residence.imageURL) && residence.imageURL.length > 1) {
-    
+
     imagesHtml = `
       <div class="carousel">
         ${residence.imageURL.map(url => `<img src="${url}" alt="Bild på bostaden" class="residence-image" style="display: none;">`).join('')}
@@ -13,7 +21,7 @@ function renderResidenceDetails(residence) {
       </div>
     `;
   } else {
-    
+
     imagesHtml = residence.imageURL ? `<img src="${residence.imageURL}" alt="Bild på bostaden" class="residence-image">` : '';
   }
 
@@ -44,10 +52,20 @@ export default async () => {
 
     return `
       <h2>Alla Bostäder:</h2>
+        <div class="filterResidence">
+        <label for="minPrice">Min Pris:</label>
+        <input type="number" id="minPrice" />
+        <label for="maxPrice">Max Pris:</label>
+        <input type="number" id="maxPrice" />
+        <button onclick="filterResidencesByPrice()">Filtrera</button>
+      </div>
+
       <ul>
         ${residencesList}
       </ul>
     `;
+
+    
   } catch (error) {
     console.error("Error fetching residences data:", error);
     return "Det uppstod ett fel vid hämtning av bostadsdata.";
@@ -85,10 +103,10 @@ function showSlide(index, slides) {
     currentSlide = index;
   }
 
-  
+
   slides.forEach(slide => slide.style.display = "none");
 
-  
+
   slides[currentSlide].style.display = "block";
 }
 
@@ -96,6 +114,12 @@ function showSlide(index, slides) {
 function initCarousel() {
   const slides = document.querySelectorAll('.residence-image');
   if (slides.length > 0) {
-    showSlide(0, slides); 
+    showSlide(0, slides);
   }
+}
+
+function filterResidencesByPrice() {
+  if (minPrice > residence.price)
+    console.log('minPrice > ', residence.price)
+    
 }
