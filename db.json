@@ -31,7 +31,10 @@
       "parking": "Ja",
       "courtyard": "Ja",
       "patio": "Ja",
-      "imageURL": "https://si.sfcdn.se/Resurs/Image/386611/Large/638362689270000000/MDIyNnwwMDAxNzE5MDgzOHw5Ng...jpg",
+      "imageURL": [
+        "https://roimakleri.se/wp-content/uploads/2023/07/CBILD5DLHU7GOUVNVK3PN.jpg",
+        "https://bilder.hemnet.se/images/itemgallery_cut/4e/95/4e95fa4825d19d5b4afbd47c48d2c79d.jpg"
+      ],
       "additionalInfo": "Ett modernt treplans radhus som präglas av ett fantastiskt ljusinsläpp via sina härliga och stora fönsterpartier, vilket ger en inbjudande atmosfär av rymd och ljus, hög standard och välgenomtänkt planlösning!"
     },
     {
@@ -339,30 +342,13 @@
       "patio": "Ja",
       "imageURL": "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUU3Mk41T01CS0k0RDc2OS9jYmlsZDVla3RrZGZiMzh1bWJudmguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=d60af83a0c4d51f9b028e5a5c3a19c74a9e5cb77898273b8a4699fef2b4f09eb",
       "additionalInfo": "Nu har ni tillfället att förvärva ett nyproducerat Älvsbyhus 2023 i natursköna Boviksbadet! Här bor du endast 15 min från Skellefteå centrum men med natur, båt -och badliv i direkt närhet."
-    },
-    {
-      "address": "eee2",
-      "type": "lägenhet",
-      "floor": "2",
-      "rooms": "2",
-      "size": "2",
-      "price": "2",
-      "yearBuilt": "2",
-      "balcony": "Ja",
-      "storage": "Ja",
-      "parking": "Ja",
-      "courtyard": "Ja",
-      "patio": "Ja",
-      "imageURL": "2",
-      "additionalInfo": "2",
-      "id": 21
     }
   ],
-    "user": [
-      {
-        "id": 1337,
-        "username": "hfadmin",
-        "password": "homefinderaccesx9bot"
-      }
-    ]
-  }
+  "user": [
+    {
+      "id": 1337,
+      "username": "hfadmin",
+      "password": "homefinderaccessx9bot"
+    }
+  ]
+}
