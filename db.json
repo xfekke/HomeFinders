@@ -14,7 +14,15 @@
       "parking": "Ja",
       "courtyard": "Ja",
       "patio": "Ja",
-      "imageURL": "https://roimakleri.se/wp-content/uploads/2023/07/CBILD5DLHU7GOUVNVK3PN.jpg",
+      "imageURL": [
+        "https://roimakleri.se/wp-content/uploads/2023/07/CBILD5DLHU7ENUVNVK3AN-768x512.jpg",
+        "https://roimakleri.se/wp-content/uploads/2023/07/CBILD5DLHU7ENUVNVK3B0-768x512.jpg",
+        "https://roimakleri.se/wp-content/uploads/2023/07/CBILD5DLHU7EC8VNVK34U.jpg",
+        "https://roimakleri.se/wp-content/uploads/2023/07/CBILD5DLHU7DP4VNVK2KR-768x512.jpg",
+        "https://roimakleri.se/wp-content/uploads/2023/07/CBILD5DLHU7EPSVNVK3BI-768x512.jpg",
+        "https://roimakleri.se/wp-content/uploads/2023/07/CBILD5DLHU7HHAVNVK41V-768x512.jpg",
+        "https://roimakleri.se/wp-content/uploads/2023/07/CBILD5DLHU7GI2VNVK3OE-768x512.jpg"
+      ],
       "additionalInfo": "Bredband via Telia Triple Play 250/250 Mbit/s, parkeringsplats för 880 kr/mån. "
     },
     {
@@ -32,8 +40,16 @@
       "courtyard": "Ja",
       "patio": "Ja",
       "imageURL": [
-        "https://roimakleri.se/wp-content/uploads/2023/07/CBILD5DLHU7GOUVNVK3PN.jpg",
-        "https://bilder.hemnet.se/images/itemgallery_cut/4e/95/4e95fa4825d19d5b4afbd47c48d2c79d.jpg"
+        "https://si.sfcdn.se/Resurs/Image/386611/Large/638362689270000000/MDIyNnwwMDAxNzE5MDgzOHw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/386611/Large/638371096300000000/MDIyNnwwMDAxNzE5MDgzM3w5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/386611/Large/638371109500000000/MDIyNnwwMDAxNzE5MDgzMXw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/386611/Large/638371109500000000/MDIyNnwwMDAxNzI0MzY1M3w5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/386611/Large/638371110170000000/MDIyNnwwMDAxNzI0MzYzOXw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/386611/Large/638371120980000000/MDIyNnwwMDAxNzI0MzY2Nnw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/386611/Large/638371122280000000/MDIyNnwwMDAxNzI0MzY2MHw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/386611/Large/638371125330000000/MDIyNnwwMDAxNzI0MzY2N3w5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/386611/Large/638371126280000000/MDIyNnwwMDAxNzI0MzY2OXw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/386611/Large/638371119440000000/MDIyNnwwMDAxNzE5MDgwMXw5Ng...jpg"
       ],
       "additionalInfo": "Ett modernt treplans radhus som präglas av ett fantastiskt ljusinsläpp via sina härliga och stora fönsterpartier, vilket ger en inbjudande atmosfär av rymd och ljus, hög standard och välgenomtänkt planlösning!"
     },
@@ -51,7 +67,16 @@
       "parking": "Nej",
       "courtyard": "Ja",
       "patio": "Ja",
-      "imageURL": "https://widerlov.se/wp-content/uploads/2023/10/CBILD5DMG2PF3STC93S3D-2048x1365.jpg",
+      "imageURL": [
+        "https://widerlov.se/wp-content/uploads/2023/10/CBILD5DMG2PC6ITC93RE3-scaled.jpg",
+        "https://widerlov.se/wp-content/uploads/2023/10/CBILD5DMG2PAU0TC93QJ6-2048x1365.jpg",
+        "https://widerlov.se/wp-content/uploads/2023/10/CBILD5DMG2PBKGTC93R80-2048x1365.jpg",
+        "https://widerlov.se/wp-content/uploads/2023/10/CBILD5DMG2PAL8TC93Q6V-2048x1365.jpg",
+        "https://widerlov.se/wp-content/uploads/2023/10/CBILD5DMG2PBBMTC93R1P-scaled.jpg",
+        "https://widerlov.se/wp-content/uploads/2023/10/CBILD5DMG2PB00TC93QKI-2048x1365.jpg",
+        "https://widerlov.se/wp-content/uploads/2023/10/CBILD5DMG2PAS2TC93QE5-scaled.jpg",
+        "https://widerlov.se/wp-content/uploads/2023/10/CBILD5DMG2PFBMTC93S62-2048x1365.jpg"
+      ],
       "additionalInfo": "Här bor du i attraktiva kvarter med gångavstånd till Uppsala centrum och endast några minuters promenad till stationen."
     },
     {
@@ -68,7 +93,22 @@
       "parking": "Ja",
       "courtyard": "Nej",
       "patio": "Ja",
-      "imageURL": "https://widerlov.se/wp-content/uploads/2023/10/CBILD5EL1U5HOF09I410P-scaled.jpg",
+      "imageURL": [
+        "https://widerlov.se/wp-content/uploads/2023/10/CBILD5EL1U5HOF09I410P-scaled.jpg",
+        "https://widerlov.se/wp-content/uploads/2023/10/CBILD5ENTM449KGMJC7HO-2048x1366.jpg",
+        "https://widerlov.se/wp-content/uploads/2023/10/CBILD5ENTM4A2QGMJC9RB-2048x1363.jpg",
+        "https://widerlov.se/wp-content/uploads/2023/10/CBILD5ENTM461QGMJC8G4-2048x1366.jpg",
+        "https://widerlov.se/wp-content/uploads/2023/10/CBILD5ENTM439SGMJC6TE-2048x1365.jpg",
+        "https://widerlov.se/wp-content/uploads/2023/11/CBILD5ENTM4A3OGMJC9RQ-2048x1365.jpg",
+        "https://widerlov.se/wp-content/uploads/2023/11/CBILD5ENTM427MGMJC6F4-2048x1365.jpg",
+        "https://widerlov.se/wp-content/uploads/2023/11/CBILD5ENTM4A3OGMJC9S7-2048x1365.jpg",
+        "https://widerlov.se/wp-content/uploads/2023/11/CBILD5ENTM4A1QGMJC9Q9-2048x1365.jpg",
+        "https://widerlov.se/wp-content/uploads/2023/10/CBILD5ENTM4340GMJC6QR-2048x1366.jpg",
+        "https://widerlov.se/wp-content/uploads/2023/11/CBILD5ENTM46IEGMJC91B-2048x1366.jpg",
+        "https://widerlov.se/wp-content/uploads/2023/11/CBILD5ENTM4B02GMJCAJQ-2048x1366.jpg",
+        "https://widerlov.se/wp-content/uploads/2023/11/CBILD5ENTM4AEGGMJCA7R-2048x1363.jpg",
+        "https://widerlov.se/wp-content/uploads/2023/10/CBILD5EL1U5J7T09I42C5-2048x1365.jpg"
+      ],
       "additionalInfo": "Här erbjuds ett hus i lugnt och barnvänligt område beläget med nära anslutning till grönområden."
     },
     {
@@ -85,7 +125,19 @@
       "parking": "Ja",
       "courtyard": "Ja",
       "patio": "Ja",
-      "imageURL": "https://www.riksmaklaren.se/estates/CMVILLA5EJAK1GTMS7E90O3/images/600/CBILD5ELS6ID6L3G8JGQL.jpg",
+      "imageURL": [
+        "https://www.riksmaklaren.se/estates/CMVILLA5EJAK1GTMS7E90O3/images/CBILD5ELS6ID6L3G8JGQL.jpg",
+        "https://www.riksmaklaren.se/estates/CMVILLA5EJAK1GTMS7E90O3/images/CBILD5ELS6J5T53G8JLOM.jpg",
+        "https://www.riksmaklaren.se/estates/CMVILLA5EJAK1GTMS7E90O3/images/CBILD5ELS6J0C93G8JK50.jpg",
+        "https://www.riksmaklaren.se/estates/CMVILLA5EJAK1GTMS7E90O3/images/CBILD5ELS6J74N3G8JM7P.jpg",
+        "https://www.riksmaklaren.se/estates/CMVILLA5EJAK1GTMS7E90O3/images/CBILD5ELS6ITDH3G8JJLQ.jpg",
+        "https://www.riksmaklaren.se/estates/CMVILLA5EJAK1GTMS7E90O3/images/CBILD5ELS6INGD3G8JIP3.jpg",
+        "https://www.riksmaklaren.se/estates/CMVILLA5EJAK1GTMS7E90O3/images/CBILD5ELS6I57L3G8JG0T.jpg",
+        "https://www.riksmaklaren.se/estates/CMVILLA5EJAK1GTMS7E90O3/images/CBILD5ELS6J4OV3G8JLE5.jpg",
+        "https://www.riksmaklaren.se/estates/CMVILLA5EJAK1GTMS7E90O3/images/CBILD5ELS6J5T53G8JLP0.jpg",
+        "https://www.riksmaklaren.se/estates/CMVILLA5EJAK1GTMS7E90O3/images/CBILD5ELS6INCH3G8JIO8.jpg",
+        "https://www.riksmaklaren.se/estates/CMVILLA5EJAK1GTMS7E90O3/images/CBILD5ELS6IDU33G8JH40.jpg"
+      ],
       "additionalInfo": "Välkommen till ett trevligt hus beläget på en lugn och barnvänlig gata."
     },
     {
@@ -102,7 +154,15 @@
       "parking": "Ja",
       "courtyard": "Ja",
       "patio": "Nej",
-      "imageURL": "https://media.husmanhagberg.se/images/M30479/MEDE66E33471BF04EB1A0A9016D9B9DC443-2820x1880.jpg",
+      "imageURL": [
+        "https://media.husmanhagberg.se/images/M30479/MED8AB0B40DD480423DB4039DFACC2F1BA0-2820x1880.jpg",
+        "https://media.husmanhagberg.se/images/M30479/MEDE66E33471BF04EB1A0A9016D9B9DC443-2820x1880.jpg",
+        "https://media.husmanhagberg.se/images/M30479/MED5CAFA814B9424D2C87D2D21B2C6D692C-2820x1880.jpg",
+        "https://media.husmanhagberg.se/images/M30479/MED5C1E7CA0DDA24372955D8EDEAF524B22-2820x1880.jpg",
+        "https://media.husmanhagberg.se/images/M30479/MEDAC8B5D6752C64F8AA7C3AD906E2D29C0-2820x1880.jpg",
+        "https://media.husmanhagberg.se/images/M30479/MED924B65AC63D049839D2FAFDAAF89FC56-2820x1880.jpg",
+        "https://media.husmanhagberg.se/images/M30479/MED8D7576D2D2DA4AA5A82F0BC73070B6FD-2820x1880.jpg"
+      ],
       "additionalInfo": "Här bor du mitt i hjärtat av Södermalm! Läget är optimalt med ett stort utbud av spännande butiker, mysiga caféer och populära restauranger i området. Parkering för 1100kr/mån eller 75 kr/dag.  "
     },
     {
@@ -112,14 +172,23 @@
       "floor": 4,
       "rooms": 3,
       "size": 90,
-      "price": 3243,
+      "price": 4895000,
       "yearBuilt": 1997,
       "balcony": "Ja",
       "storage": "Ja",
       "parking": "Ja",
       "courtyard": "Nej",
       "patio": "Ja",
-      "imageURL": "https://si.sfcdn.se/Resurs/Image/386357/Large/638366911360000000/MDIyNnwwMDAxNzIxNTUwOHw5Ng...jpg",
+      "imageURL": [
+        "https://si.sfcdn.se/Resurs/Image/352491/Large/637989248940000000/MDIyNnwwMDAxNDYyMTEzOXw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/352491/Large/637989249060000000/MDIyNnwwMDAxNDYyMTE0M3w5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/352491/Large/637989249040000000/MDIyNnwwMDAxNDYyMTE0NXw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/352491/Large/637989249600000000/MDIyNnwwMDAxNDYyMTE2NXw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/352491/Large/637989249600000000/MDIyNnwwMDAxNDYyMTE0N3w5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/352491/Large/637989249630000000/MDIyNnwwMDAxNDYyMTE1MHw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/352491/Large/637989249630000000/MDIyNnwwMDAxNDYyMTEyOXw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/352491/Large/637989249630000000/MDIyNnwwMDAxNDYyMTEzMXw5Ng...jpg"
+      ],
       "additionalInfo": "Välkommen till en extraordinär lägenhet med stor inglasad balkong, parkeringsplats för 1000 kr/mån. "
     },
     {
@@ -136,7 +205,16 @@
       "parking": "Ja",
       "courtyard": "Nej",
       "patio": "Ja",
-      "imageURL": "https://mp1.skm.quedro.com/eaimages/74/3fda7-da0d8-7bfd8-0c46a-52f85-b8f7a-14c93-ff2c5/45d3b-33335-f54a5-675ac-a7e66-77fd6-55b33-f4922.jpg",
+      "imageURL": [
+        "https://mp1.skm.quedro.com/eaimages/74/3fda7-da0d8-7bfd8-0c46a-52f85-b8f7a-14c93-ff2c5/73897-d0093-feb6f-068ca-d632e-909b4-29583-9320c.jpg",
+        "https://mp1.skm.quedro.com/eaimages/74/3fda7-da0d8-7bfd8-0c46a-52f85-b8f7a-14c93-ff2c5/81870-d3d64-58cbc-9364b-e1318-baa62-32696-a4a7f.jpg",
+        "https://mp1.skm.quedro.com/eaimages/74/3fda7-da0d8-7bfd8-0c46a-52f85-b8f7a-14c93-ff2c5/f11a0-0e228-3b2c4-c440f-a92ea-4514a-b847f-fabba.jpg",
+        "https://mp1.skm.quedro.com/eaimages/74/3fda7-da0d8-7bfd8-0c46a-52f85-b8f7a-14c93-ff2c5/1b82a-108a9-299c2-4e7e9-633a1-a58c6-21f8d-c501b.jpg",
+        "https://mp1.skm.quedro.com/eaimages/74/3fda7-da0d8-7bfd8-0c46a-52f85-b8f7a-14c93-ff2c5/89918-79ef5-82993-e45e4-db857-e6ae6-eacfd-b48b9.jpg",
+        "https://mp1.skm.quedro.com/eaimages/74/3fda7-da0d8-7bfd8-0c46a-52f85-b8f7a-14c93-ff2c5/18066-2d161-8b5db-afa97-fb577-f47fd-1b2d4-a4fb2.jpg",
+        "https://mp1.skm.quedro.com/eaimages/74/3fda7-da0d8-7bfd8-0c46a-52f85-b8f7a-14c93-ff2c5/a5a52-02421-e057a-0d032-7b7f7-5822c-5acc0-c22cf.jpg",
+        "https://mp1.skm.quedro.com/eaimages/74/3fda7-da0d8-7bfd8-0c46a-52f85-b8f7a-14c93-ff2c5/45d3b-33335-f54a5-675ac-a7e66-77fd6-55b33-f4922.jpg"
+      ],
       "additionalInfo": "Lägenheten är belägen i Grimsta med endast 5 min gångväg till t-bana på bilfri väg och sen fantastiska Grimsta naturreservat och Mälaren runt hörnet. "
     },
     {
@@ -153,7 +231,19 @@
       "parking": "Ja",
       "courtyard": "Ja",
       "patio": "Ja",
-      "imageURL": "https://vitec.ready-cdn.se/M19096/Images/1920x1080/MED8ACDBB6B9DEE44A997A7DC5DDC2E40CC-fae0b2d9e518003a3dd5542396eeef7f.jpg",
+      "imageURL": [
+        "https://vitec.ready-cdn.se/M19096/Images/1920x1080/MEDA941FE1DDEC84F9AB6F9AB45B26F6F45-07e49beb79e7b6478a9a13cfd8d2f74d.jpg",
+        "https://vitec.ready-cdn.se/M19096/Images/1920x1080/MED4B9258EC95F4473B846085792DF90905-696931a119910bf8f2e0deb6d41be5fd.jpg",
+        "https://vitec.ready-cdn.se/M19096/Images/1920x1080/MEDBDC9803FB3EB4EC98C9452B25F5B9C2A-1bc5e62dda8d7d1c8adbe0ab315c869c.jpg",
+        "https://vitec.ready-cdn.se/M19096/Images/1920x1080/MED4B8BA0DE39D64D85A05CDAB9E477BC84-93368858eed10caa84749d3985317543.jpg",
+        "https://vitec.ready-cdn.se/M19096/Images/1920x1080/MEDBFD720FBBCD84E3F9D1FB3FA3E784BD0-e0c2475a8546c865fb93ea7cd2a9661d.jpg",
+        "https://vitec.ready-cdn.se/M19096/Images/1920x1080/MED2BCD391E27534DE38E56077F11B9F3AD-b6f3bdc315f7c96efc71a8162d982b08.jpg",
+        "https://vitec.ready-cdn.se/M19096/Images/1920x1080/MEDD3B7FBA113104595811E949196A88E3E-0c9e9b244f7f461b9930f1b3e46fb262.jpg",
+        "https://vitec.ready-cdn.se/M19096/Images/1920x1080/MED8EB7A5445356497DB6BF19858B6CCBA8-3eaadf29018bd49a03098b6123372487.jpg",
+        "https://vitec.ready-cdn.se/M19096/Images/1920x1080/MEDBB189931E8C04853B19DDDDBA6A51EF9-83e90195f4a16e51e0e7af1308688bba.jpg",
+        "https://vitec.ready-cdn.se/M19096/Images/1920x1080/MEDFFD17B54F9BB429A9E9DCF1BA3EF7DEB-91f12a513c966028c1ca21c994ef9915.jpg",
+        "https://vitec.ready-cdn.se/M19096/Images/1920x1080/MEDB31ADF6E944A4D558B041E00C0BF68F8-c3f7a3f0d0d8cf038c56a38a33ab83e3.jpg"
+      ],
       "additionalInfo": "Charmigt hus med en oemotståndlig gårdskänsla, byggt med kärlek och omsorg"
     },
     {
@@ -170,7 +260,17 @@
       "parking": "Ja",
       "courtyard": "Ja",
       "patio": "Ja",
-      "imageURL": "https://media.fastighetsbyran.se/40581977.jpg?Bredd=1680",
+      "imageURL": [
+        "https://media.fastighetsbyran.se/40722855.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40722842.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40748456.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40722846.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40722856.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40722858.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40722861.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40722863.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40722844.jpg?Bredd=1680"
+      ],
       "additionalInfo": "Lägenheten erbjuder en attraktiv och social planlösning med högkvalitativa materialval som infällda spotlights i tak och nylagt ekparkettgolv, Garageplats finns för 600kr/mån."
     },
     {
@@ -187,7 +287,16 @@
       "parking": "Ja",
       "courtyard": "Nej",
       "patio": "Ja",
-      "imageURL": "https://vitec.ready-cdn.se/M10500/Images/1920x1080/MED271C66B9F54849249A266E29CEA3EE01-a098b8c0bf5f159ffa8bf98ed05e9859.jpg",
+      "imageURL": [
+        "https://vitec.ready-cdn.se/M10500/Images/1920x1080/MED920A3083EAE04A4892059D5CFB6FF1F7-e3da872c1fc531c4d8cbe883ce1af3c1.jpg",
+        "https://vitec.ready-cdn.se/M10500/Images/1920x1080/MED7A4E7FB1C3744006A32CC430F86673C8-411e397cb735ab8afb93f2b87b8d5d04.jpg",
+        "https://vitec.ready-cdn.se/M10500/Images/1920x1080/MEDBAE0BCF3914B454B92E2CFF51B2E6051-74c0e2af4fc39a350275733548ea718d.jpg",
+        "https://vitec.ready-cdn.se/M10500/Images/1920x1080/MED10307680B2484B5BB06238F92FF17DF4-da65224a626a44512a9b52d012ddf52e.jpg",
+        "https://vitec.ready-cdn.se/M10500/Images/1920x1080/MED49D19F9170954A2992A5500A274A538D-6e902825b56989868ec1ef4cbf00018b.jpg",
+        "https://vitec.ready-cdn.se/M10500/Images/1920x1080/MED32A537CDF5FD4C9EA8F796FF75AAE5CB-dd7e4b21ffbcf75296a489400a662ce3.jpg",
+        "https://vitec.ready-cdn.se/M10500/Images/1920x1080/MEDF3C0762DD3284901AF1847509906A204-b21f26a3ce5798e24fec3c57ea26cdcb.jpg",
+        "https://vitec.ready-cdn.se/M10500/Images/1920x1080/MED271C66B9F54849249A266E29CEA3EE01-a098b8c0bf5f159ffa8bf98ed05e9859.jpg"
+      ],
       "additionalInfo": "Upptäck denna moderna 2:a från 2021 med enhetlig ekparkett och ljusa väggar med stora fönster som sprider ljus. Parkering finns från 500kr/mån. "
     },
     {
@@ -204,7 +313,16 @@
       "parking": "Ja",
       "courtyard": "Ja",
       "patio": "Nej",
-      "imageURL": "https://croisette.se/wp-content/uploads/2023/12/MEDC7F35F30F5474643AD316EC22936B71D.jpg",
+      "imageURL": [
+        "https://croisette.se/wp-content/uploads/2023/12/MED6EA01E02113F4F689E850E1EDA462062-scaled.jpg",
+        "https://croisette.se/wp-content/uploads/2023/12/MED8CA0A094FB8440BFA0FFFEF595A69E57.jpg",
+        "https://croisette.se/wp-content/uploads/2023/12/MED9B63A34A9F01437EB1DFB8DA320E7CF4-scaled.jpg",
+        "https://croisette.se/wp-content/uploads/2023/12/MED0695EE021C884268A594994FAFDED3F1-scaled.jpg",
+        "https://croisette.se/wp-content/uploads/2023/12/MED8544D3E8BD0C4577A19FEDE8250C0C22.jpg",
+        "https://croisette.se/wp-content/uploads/2023/12/MEDEB2050BEEAA34A5EADC4B0867F3BA0A9.jpg",
+        "https://croisette.se/wp-content/uploads/2023/12/MED69DBBD59FB8C4A1F95196A375255E75C-scaled.jpg",
+        "https://croisette.se/wp-content/uploads/2023/12/MED5BB447FBE38D4C9D893337C40B706682-scaled.jpg"
+      ],
       "additionalInfo": "Välkommen hem till denna helt nya lägenhet på Västra Älvgatan 8 i nya Citadellskajen. Garageplats går för 1375kr/mån."
     },
     {
@@ -221,7 +339,23 @@
       "parking": "Ja",
       "courtyard": "Ja",
       "patio": "Ja",
-      "imageURL": "https://media.fastighetsbyran.se/40812684.jpg?Bredd=1680",
+      "imageURL": [
+        "https://media.fastighetsbyran.se/40812684.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40812680.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40812682.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40812679.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40812681.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40812659.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40812658.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40812660.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40812661.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40812663.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40812664.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40812667.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40812672.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40812675.jpg?Bredd=1680",
+        "https://media.fastighetsbyran.se/40812656.jpg?Bredd=1680"
+      ],
       "additionalInfo": "Huset ligger på en hörntomt och här finns en mysig trädgård och trevligt uterum."
     },
     {
@@ -238,7 +372,13 @@
       "parking": "Ja",
       "courtyard": "Ja",
       "patio": "Ja",
-      "imageURL": "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUVDM1BUNDBFNkNIOEFTOC9jYmlsZDVlaWIwOWQ0MjdzNGs2MGsuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=b65f583f53050f57eb76d7e013fea66f53016107e7fbea4c30fa2aede4e7489b",
+      "imageURL": [
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUVDM1BUNDBFNkNIOEFTOC9jYmlsZDVlaWIwOWQ0MjdzNGs2MGsuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=b65f583f53050f57eb76d7e013fea66f53016107e7fbea4c30fa2aede4e7489b",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUVDM1BUNDBFNkNIOEFTOC9jYmlsZDVlaWIwOWFqZTdzNGswajkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=1629ef523832102d1793d976a84febeaec521deb8949d7a5835aaca08a15776f",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUVDM1BUNDBFNkNIOEFTOC9jYmlsZDVlaWIwOWJtazdzNGsycTUuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=2d1efde9c9b6d966d2ff85582f9befc5b377671619c3ff69a9215cb617252da0",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUVDM1BUNDBFNkNIOEFTOC9jYmlsZDVlaWIwOTdyZzdzNGp0M3UuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=7d7f0a1e134f07db56cef7574bc11b919a5e7b6ffb143bca7954489d98f2c677",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUVDM1BUNDBFNkNIOEFTOC9jYmlsZDVlaWIwOWM1cTdzNGszb2cuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=ed77e15335c7a579db7fab7553e02a13e3a7b93d397e6cc409ec099ce8fd0a3a"
+      ],
       "additionalInfo": "Välkommen till ett fantastiskt 60tals hus i vilket man bevarat de karaktäristiska dragen från byggtiden och kombinerat dem med dagens modernism. Här finner du 94 kvm boyta och en generös källare på ytterligare 94 kvm, vilket ger gott om plats för hela familjen att trivas."
     },
     {
@@ -255,7 +395,24 @@
       "parking": "Ja",
       "courtyard": "Ja",
       "patio": "Ja",
-      "imageURL": "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUQ5M01FRjhTQTMzSlYzTS9jYmlsZDVlaXFwY3AwZmVsY2RuN2UuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=6c7e4508ea2e65bf1d2b80e017cdaf95bed3532301a3e04e430e48ff96ce357b",
+      "imageURL": [
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUQ5M01FRjhTQTMzSlYzTS9jYmlsZDVlaXFvdWJsYmVsYmhoYzQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=851345729a4a49dda4202b5a1ab94728f1bdf0ba52d27358740cae55db3843c8",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUQ5M01FRjhTQTMzSlYzTS9jYmlsZDVlbmJxNTVwMzJoNm5vamIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=5edc3bc06d31cdceba0825bd5ee634742ec89290e0a91e901520ec837257f862",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUQ5M01FRjhTQTMzSlYzTS9jYmlsZDVlaXFwY3AwZmVsY2RuN2UuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=6c7e4508ea2e65bf1d2b80e017cdaf95bed3532301a3e04e430e48ff96ce357b",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUQ5M01FRjhTQTMzSlYzTS9jYmlsZDVlaXFvdWw0cGVsYmhwazMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=b551f22defc8d70b3cd2def462fe7800ca81f3702a86add5dcc3a23a2d77d986",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUQ5M01FRjhTQTMzSlYzTS9jYmlsZDVlaXFvdW9yMWVsYmkxOGkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=0c67d83419eea2a9c87da4f87a8e2af74c17bb815e78c267192ed34a599c2514",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUQ5M01FRjhTQTMzSlYzTS9jYmlsZDVlaXFvdWw1bmVsYmhwbHUuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=51f34a55da9ee7848c7e41aa8c58e8fd38f49416d5efc67282e0f43254b6f12e",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUQ5M01FRjhTQTMzSlYzTS9jYmlsZDVlaXFvdTdpZmVsYmhiNGMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=9457f21c5c44bf726ff917675283f874b113308e80e12fb17ab132eb83ffc3c4",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUQ5M01FRjhTQTMzSlYzTS9jYmlsZDVlaXFvdTJyMWVsYmg3MGcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=2d8b2dd088c042571a4b8d53b4232bcd53c4a23b70809eeadbbf75990fb75f48",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUQ5M01FRjhTQTMzSlYzTS9jYmlsZDVlaXFvdHYzcmVsYmd2cm0uanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=c0b97bd86850e72a79ec9f4a884dea749d3e35916b610c49d8833ac9637a3d5f",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUQ5M01FRjhTQTMzSlYzTS9jYmlsZDVlaXFvdHZsZGVsYmgybWguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=92571aa61037e8358e390b2611b46ca0d9e2dea731e6393be57ae7a2e0b40a74",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUQ5M01FRjhTQTMzSlYzTS9jYmlsZDVlaXFvdTA0amVsYmgzM3IuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=c00f43797ebd2403553d14d23490dc87bec6ded641f3a9a6fe7fea7eaef4203c",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUQ5M01FRjhTQTMzSlYzTS9jYmlsZDVlaXFvdTFiamVsYmg1MnUuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=7798b69d7709eaf5ae81196ba08ff151d0c38287273805f218cb4405897b3e1a",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUQ5M01FRjhTQTMzSlYzTS9jYmlsZDVlaXFvdHUwbGVsYmd2NHYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=b9516f62bc918681d8db1e0087797e02b98fcb5c402f8ed3c330042c9a12cda6",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUQ5M01FRjhTQTMzSlYzTS9jYmlsZDVlaXFvdWZnZmVsYmhrOWsuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=f03f9603b817efc9476493bc9dd49f7c4de6bc1950af8f3f0bc9f238a8dd5d5c",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUQ5M01FRjhTQTMzSlYzTS9jYmlsZDVlbmJxNTVwMzJoNm5vamUuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=2f31dcaa722886d32c9e0beb353ae504386ca6ddef381e8e673090837b70a5c2",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUQ5M01FRjhTQTMzSlYzTS9jYmlsZDVlbmJxNTRtdDJoNm5uaTQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=b50c852444564dc40e28e91edf4f0b46810b15d5339b11fb7b99816112cde574"
+      ],
       "additionalInfo": "Välkommen till det mysiga huset på Gullviksgatan 9, beläget på lugn bakgata på populära Gullvik! Detta hus har allt man kan önska sig och är belägen i en omgivning som har alla förutsättningar för att du ska trivas."
     },
     {
@@ -272,7 +429,24 @@
       "parking": "Ja",
       "courtyard": "Ja",
       "patio": "Ja",
-      "imageURL": "https://media.husmanhagberg.se/images/M28536/MEDE3080C0EBF8249D0BDAEBEAEC2CCC279-2820x1880.jpg",
+      "imageURL": [
+        "https://media.husmanhagberg.se/images/M28536/MEDE3080C0EBF8249D0BDAEBEAEC2CCC279-2820x1880.jpg",
+        "https://media.husmanhagberg.se/images/M28536/MEDC494266D4B0A4124922635C789109E73-2820x1880.jpg",
+        "https://media.husmanhagberg.se/images/M28536/MEDC8A729D87B2948AC920ABC4C751326AB-2820x1880.jpg",
+        "https://media.husmanhagberg.se/images/M28536/MEDD4E761AD6D7F46C0B4B2B221FF86FDC3-2820x1880.jpg",
+        "https://media.husmanhagberg.se/images/M28536/MED76F81C6B57CD479AA4B529A820E1264A-2820x1880.jpg",
+        "https://media.husmanhagberg.se/images/M28536/MED575CEF5D97774B55BE95566ED446EAED-1880x2820.jpg",
+        "https://media.husmanhagberg.se/images/M28536/MED9D38C15BCDD0438794A4CC4ADCAA9512-2820x1880.jpg",
+        "https://media.husmanhagberg.se/images/M28536/MED504941DD2EC149F3B1FB860AFE7B88E8-2820x1880.jpg",
+        "https://media.husmanhagberg.se/images/M28536/MED70C7C110CB5A468683F08D6979DC6D7D-2820x1880.jpg",
+        "https://media.husmanhagberg.se/images/M28536/MED054602FCA6A4492B8A85DAEBBB78A1BA-2820x1880.jpg",
+        "https://media.husmanhagberg.se/images/M28536/MEDF9FB6FF5B6604077BA5D3994690D4842-2820x1880.jpg",
+        "https://media.husmanhagberg.se/images/M28536/MEDF3217E472C4B45EB8C75C8DED70EEBC5-2820x1880.jpg",
+        "https://media.husmanhagberg.se/images/M28536/MEDC7090FF12AC44D0B88040EBAD6CF95B6-2820x1880.jpg",
+        "https://media.husmanhagberg.se/images/M28536/MED3764B29C922747C18DDA040E7F02BC6D-2820x1880.jpg",
+        "https://media.husmanhagberg.se/images/M28536/MED9FF7933293214EA3AD8965FF67AE69EF-2820x1880.jpg",
+        "https://media.husmanhagberg.se/images/M28536/MED12B6157691CE4FDB8E8D8CBA68598706-2820x1880.jpg"
+      ],
       "additionalInfo": "Nu ges tillfälle att förvärva ett modernt arkitektritat hem med ett högt läge i Kurravaara! För dig som drömmer om ett hem som präglas av ljus från stora fönsterpartier och rymd i kombination av öppna sällskapsytor och en generös takhöjd."
     },
     {
@@ -289,7 +463,13 @@
       "parking": "Ja",
       "courtyard": "Nej",
       "patio": "Ja",
-      "imageURL": "https://vitec.ready-cdn.se/S13627/Images/1920x1080/CBILD5E6R74TATNOTIA9L-12fd25c62019cef08090a1bb630fe35d.jpg",
+      "imageURL": [
+        "https://vitec.ready-cdn.se/S13627/Images/1920x1080/CBILD5E6R74TATNOTIA9L-12fd25c62019cef08090a1bb630fe35d.jpg",
+        "https://vitec.ready-cdn.se/S13627/Images/1920x1080/CBILD5E6R74TTFNOTIAGG-29ed556976b429d35625de0500da4df7.jpg",
+        "https://vitec.ready-cdn.se/S13627/Images/1920x1080/CBILD5E6R74T6VNOTIA7P-8aebaf1a3a68ee7c7bea8b4076c35c87.jpg",
+        "https://vitec.ready-cdn.se/S13627/Images/1920x1080/CBILD5E6R74T7VNOTIA8H-2dc6e52024b449877655030bc5692ddd.jpg",
+        "https://vitec.ready-cdn.se/S13627/Images/1920x1080/CBILD5E6R74TQHNOTIAF9-30a6bc2ee97fcb17725a265b97c6fb37.jpg"
+      ],
       "additionalInfo": "ör den natur- och sportfiskeintresserade finns nu möjlighet att förvärva en charmig stuga vid Torne älv. Området är att betrakta som ett av de bästa ställena i Europa inom sportfiske."
     },
     {
@@ -306,7 +486,24 @@
       "parking": "Ja",
       "courtyard": "Nej",
       "patio": "Ja",
-      "imageURL": "https://si.sfcdn.se/Resurs/Image/387099/Large/638373737300000000/MDIyNnwwMDAxNzI1MjEzMnw5Ng...jpg",
+      "imageURL": [
+        "https://si.sfcdn.se/Resurs/Image/387099/Large/638373737300000000/MDIyNnwwMDAxNzI1MjEzMnw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/387099/Large/638373789060000000/MDIyNnwwMDAxNzI1MjA0N3w5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/387099/Large/638373789080000000/MDIyNnwwMDAxNzI1MjA1MHw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/387099/Large/638373738370000000/MDIyNnwwMDAxNzI1MjA1NHw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/387099/Large/638373739210000000/MDIyNnwwMDAxNzI1MjA1OXw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/387099/Large/638373739100000000/MDIyNnwwMDAxNzI1MjA2M3w5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/387099/Large/638373739860000000/MDIyNnwwMDAxNzI1MjA3Mnw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/387099/Large/638373740090000000/MDIyNnwwMDAxNzI1MjA2NXw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/387099/Large/638373740510000000/MDIyNnwwMDAxNzI1MjA3OHw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/387099/Large/638373740630000000/MDIyNnwwMDAxNzI1MjA4Mnw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/387099/Large/638373740800000000/MDIyNnwwMDAxNzI1MjE1MHw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/387099/Large/638373740800000000/MDIyNnwwMDAxNzI1MjA5Mnw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/387099/Large/638373741060000000/MDIyNnwwMDAxNzI1MjExOXw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/387099/Large/638373741060000000/MDIyNnwwMDAxNzI1MjEwNnw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/387099/Large/638373741060000000/MDIyNnwwMDAxNzI1MjEyOHw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/387099/Large/638373741060000000/MDIyNnwwMDAxNzI1MjEyM3w5Ng...jpg"
+      ],
       "additionalInfo": "Detta fantastiska renoverade timmerhus är det perfekta drömhemmet för den som älskar den rustika charm som endast ett äkta timmerhus kan erbjuda."
     },
     {
@@ -323,7 +520,27 @@
       "parking": "Ja",
       "courtyard": "Nej",
       "patio": "Ja",
-      "imageURL": "https://si.sfcdn.se/Resurs/Image/375771/Large/638290774420000000/MDIyNnwwMDAxNjU5NTg1MHw5Ng...jpg",
+      "imageURL": [
+        "https://si.sfcdn.se/Resurs/Image/375771/Large/638290774420000000/MDIyNnwwMDAxNjU5NTg1MHw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/375771/Large/638290774480000000/MDIyNnwwMDAxNjU5NTg1NHw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/375771/Large/638290779170000000/MDIyNnwwMDAxNjU5NTc4OHw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/375771/Large/638290779170000000/MDIyNnwwMDAxNjU5NTc5MHw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/375771/Large/638290779170000000/MDIyNnwwMDAxNjU5NTg0NHw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/375771/Large/638290779170000000/MDIyNnwwMDAxNjU5NTgwNHw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/375771/Large/638290779170000000/MDIyNnwwMDAxNjU5NTc5OHw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/375771/Large/638290779170000000/MDIyNnwwMDAxNjU5NTgwNHw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/375771/Large/638290779170000000/MDIyNnwwMDAxNjU5NTgwMnw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/375771/Large/638290779170000000/MDIyNnwwMDAxNjU5NTg0Mnw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/375771/Large/638290779170000000/MDIyNnwwMDAxNjU5NTgzOHw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/375771/Large/638290779170000000/MDIyNnwwMDAxNjU5NTgyOXw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/375771/Large/638290779170000000/MDIyNnwwMDAxNjU5NTgzMXw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/375771/Large/638290779170000000/MDIyNnwwMDAxNjU5NTgxMnw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/375771/Large/638290779170000000/MDIyNnwwMDAxNjU5NTgxMHw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/375771/Large/638293606550000000/MDIyNnwwMDAxNjY1OTc3NHw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/375771/Large/638293606610000000/MDIyNnwwMDAxNjY1OTc2Mnw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/375771/Large/638293606650000000/MDIyNnwwMDAxNjY1OTc2Nnw5Ng...jpg",
+        "https://si.sfcdn.se/Resurs/Image/375771/Large/638293607000000000/MDIyNnwwMDAxNjY1OTc3MHw5Ng...jpg"
+      ],
       "additionalInfo": "Här har du chansen att förvärva ett av Bureås mest stilfulla och unikt designade hus. Huset är konstruerat på fyra nivåer med halvtrappor mellan våningarna."
     },
     {
@@ -340,7 +557,20 @@
       "parking": "Ja",
       "courtyard": "Nej",
       "patio": "Ja",
-      "imageURL": "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUU3Mk41T01CS0k0RDc2OS9jYmlsZDVla3RrZGZiMzh1bWJudmguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=d60af83a0c4d51f9b028e5a5c3a19c74a9e5cb77898273b8a4699fef2b4f09eb",
+      "imageURL": [
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUU3Mk41T01CS0k0RDc2OS9jYmlsZDVla3RrZGZiMzh1bWJudmguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=d60af83a0c4d51f9b028e5a5c3a19c74a9e5cb77898273b8a4699fef2b4f09eb",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUU3Mk41T01CS0k0RDc2OS9jYmlsZDVlcHBvNnRvNmRoYjM1cDcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=5a6a97bdda1ae41c8c77a4f4f9f4549705f2d128919644bf5218893f337b34bc",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUU3Mk41T01CS0k0RDc2OS9jYmlsZDVlcHBvNnJoYWRoYjM1bHEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=844a94eed073d13948cdea12583e3968d57d129f96a8125b0eba02cb61c9f884",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUU3Mk41T01CS0k0RDc2OS9jYmlsZDVlcHBvNzc2cWRoYjM2aDIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=0879efa6a139b16b2615072a2ba4958ac2a2a8a40d36eb948a84fbf7070ae5a9",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUU3Mk41T01CS0k0RDc2OS9jYmlsZDVlcHBvNW9oa2RoYjMyMmwuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=d0a58ee4b7c3c60237d76e3521df939124c39d45df4372d7b3602ad37299b6da",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUU3Mk41T01CS0k0RDc2OS9jYmlsZDVlcHBvNXRsb2RoYjMybzMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=06c9b1f862b931fc99dd63051d55c00ecd4c118b690e51534130381043fcca8b",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUU3Mk41T01CS0k0RDc2OS9jYmlsZDVlcHBvNjI1c2RoYjMzODguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=394b13cbf17328c0ad767aeb6cc513e99f7a7249b55de1300fcc5f3051c2be0d",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUU3Mk41T01CS0k0RDc2OS9jYmlsZDVlcHBvNjZ1YWRoYjMzZjIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=1dfdb2b98e53d4d8a2b329f634c5fc1fed5430b39946946079a33d78657620ce",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUU3Mk41T01CS0k0RDc2OS9jYmlsZDVlcHBvNzRxNGRoYjM2M2UuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=10c88cc52d7dd7b7cf3eae3a9ea142653e71cab6099a4e004b3be8d6134c6f87",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUU3Mk41T01CS0k0RDc2OS9jYmlsZDVlcHBvNmtzcWRoYjM0cXAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=498e8cf27e7b5fd9dfa4885eee7a90ce393db944d81bad921cbf6bb56206ff57",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUU3Mk41T01CS0k0RDc2OS9jYmlsZDVlcHBvNnA4aWRoYjM1aWQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=0ab4fe49a186d642eaa324a7fcf0bef698bf808c448afabda16edfe869950a9c",
+        "https://cdn.lansfast-cdn.se/api/image/eyJpbWFnZVVybCI6Imh0dHBzOi8vc3RsYW5zZmFzdG1laWxpc2RldjAwMS5ibG9iLmNvcmUud2luZG93cy5uZXQvZm9yc2FsZWltYWdlcy9DTVZJTExBNUU3Mk41T01CS0k0RDc2OS9jYmlsZDVla3RrZGE1MTh1bWJuMGIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUiLCJoZWlnaHQiOjkwMCwid2lkdGgiOjE0NDB9fX0=?signature=1be244b05d8b9e367375035cd38b6a515e7458cc9b4128de481d19ea69f805f1"
+      ],
       "additionalInfo": "Nu har ni tillfället att förvärva ett nyproducerat Älvsbyhus 2023 i natursköna Boviksbadet! Här bor du endast 15 min från Skellefteå centrum men med natur, båt -och badliv i direkt närhet."
     }
   ],
