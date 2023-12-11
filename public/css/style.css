@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poiret+One&family=Spirax&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+/* ------ Universalt ------ */
 :root {
   --primary-clr: #208137;
   --secondary-clr: #208137;
   --background-clr: #f4f4f4;
   --text-clr: #333;
 }
-
 /* bas font osv */
 body,
 html {
@@ -19,10 +19,10 @@ html {
   line-height: 1.6;
 }
 
-/* header info */
+/* ------- header info -------*/
 #header-section {
   top: 0;
-  position: absolute;
+  position: fixed;
   background-color: var(--primary-clr);
   text-align: center;
   height: 6.5em;
@@ -67,13 +67,17 @@ nav>a:hover {
   border-radius: 10px;
   padding-bottom: 3px;
 }
+nav>a:visited {
+  color:#fff;
+}
 .pointer{
-  position: absolute;
+  position: fixed;
   top:6.6em;
   width: 100%;
   z-index: 500;
 }
 #top-arrow {
+  position: relative;
   margin: 0 auto;
   width: 2em;
   height: 2em;
@@ -103,7 +107,7 @@ main {
   margin: 10em 0 0 0;
 }
 
-/* ------ Home ------*/
+/* ------- Home -------*/
 /* Paralax */
 .wrapper {
   margin-top: -6.5em;
@@ -123,17 +127,9 @@ main {
   z-index: -1;
 }
 
-.hero-image {
-  transform: translateZ(-15px) scale(2.5);
-}
-
-.titel {
-  transform: translateZ(-5px) scale(1.5);
-}
-
-.p-hero {
-  transform: translateZ(-5px) scale(1.5);
-}
+.hero-image {transform: translateZ(-15px) scale(2.5);}
+.titel {transform: translateZ(-5px) scale(1.5);}
+.p-hero {transform: translateZ(-5px) scale(1.5);}
 
 .hero-image,
 .title .p-hero {
@@ -182,9 +178,11 @@ main {
   margin: auto;
 }
 
+/* --------- Söka bostad -------- */
 
 
-/* Sälja bostad */
+
+/* --------- Sälja bostad -------- */
 .sell-container h2 {
   text-align: center;
   margin-left: 0;
@@ -197,7 +195,6 @@ main {
 .sell-container p {
   text-align: center;
 }
-
 
 /* sälj bostad justering */
 .sell-container {
@@ -215,7 +212,7 @@ main {
   margin-bottom: 3px;
 }
 
-/* Brokers -> Om oss */
+/* ------- Kontakt ------- */
 #brokers {
   position: relative;
   max-width: 600px;
@@ -244,6 +241,10 @@ main {
 .dealer-name {
   font-size: 1.4em;
   margin: 5px 0 2px 0;
+}
+
+.connect {
+  color: #444;
 }
 
 p.ingress {
@@ -282,7 +283,7 @@ a:visited {
   color: #333;
 }
 
-/* Sendformulär -> Om oss */
+/* Send-formulär -> Om oss */
 .form-section {
   display: block;
   background-color: #6c8e5753;
@@ -335,7 +336,10 @@ a:visited {
   border-radius: 5px;
 }
 
-/* login form */
+/* ------- Mäklarsidan -> (realtor) ------ */
+
+
+/* ------- Logga in -> (logIn) ------- */
 #login-form {
   margin: 0 auto;
   max-width: 600px;
@@ -345,9 +349,11 @@ a:visited {
   margin:1em 1em 3em 0;
 }
 
-
+/* ------- Sidfot ------- */
 footer {
   margin-top: 0;
   height: 100vw;
   background-color: var(--text-clr);
 }
+
+
