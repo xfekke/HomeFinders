@@ -75,3 +75,22 @@ window.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("DOMContentLoaded", () => {
   window.handleLogin = handleLogin;
 });
+
+// eventlistener för knapparna
+window.addEventListener('click', (event) => {
+  if (event.target.classList.contains('interestButton')) {
+    const residenceId = event.target.dataset.residenceId;
+    showInterestForm(residenceId);
+  }
+});
+
+// funktion för intresseanmälnings formuläret
+function showInterestForm(residenceId) {
+  const interestForm = document.querySelector(`#interestForm-${residenceId}`);
+  if (interestForm) {
+    interestForm.style.display = 'block';
+  }
+}
+
+// inskick av formuläret
+window.submitInterest = submitInterest;

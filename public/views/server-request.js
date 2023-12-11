@@ -20,22 +20,35 @@ export async function postResidence(formData) {
       },
       body: JSON.stringify(formData),
     });
-    return;
+    return response;
   } catch (error) {
-
+    console.error('Fel vid skickande av ny bostad:', error);
   }
 }
 
-export async function printAllResidences() {
+// funktion för att skicka intresseanmälan till servern
+export async function postInterest(interestData) {
+  try {
+    var response = await fetch('/submit-interest', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(interestData),
+    });
+    return await response.json(); 
+  } catch (error) {
+    console.error('Fel vid skickande av intresseanmälan', error);
+  }
+}
 
-};
-
+// funktion för att hämta användarinformation
 export async function getUser() {
   try {
     var response = await fetch('/user');
     var responseJSON = await response.json();
     return responseJSON;
   } catch (error) {
-    console.error('Fel vid hämtning av bostäder:', error);
+    console.error('Fel vid hämtning av användarinformation', error);
   }
 };

@@ -1,12 +1,19 @@
 import "../components/counter.js";
 import { getAllResidences } from "./server-request.js";
 
+let minPrice = null;
+let maxPrice = null;
+
+function updatePriceRange() {
+  minPrice = document.getElementById('minPrice').value;
+  maxPrice = document.getElementById('maxPrice').value;
+}
+
 function renderResidenceDetails(residence) {
   let imagesHtml = '';
   let thumbnailsHtml = '';
 
   if (Array.isArray(residence.imageURL) && residence.imageURL.length > 1) {
-
     imagesHtml = `
       <div class="carousel">
         ${residence.imageURL.map(url => `<img src="${url}" alt="Bild på bostaden" class="residence-image" style="display: none;">`).join('')}
@@ -15,12 +22,11 @@ function renderResidenceDetails(residence) {
       </div>
     `;
     thumbnailsHtml = `
-    <div class="thumbnails">
-      ${residence.imageURL.map((url, index) => `<img src="${url}" alt="Thumbnail" class="thumbnail" onclick="changeSlide(${index})">`).join('')}
-    </div>
-  `;
+      <div class="thumbnails">
+        ${residence.imageURL.map((url, index) => `<img src="${url}" alt="Thumbnail" class="thumbnail" onclick="changeSlide(${index})">`).join('')}
+      </div>
+    `;
   } else {
-
     imagesHtml = residence.imageURL ? `<img src="${residence.imageURL}" alt="Bild på bostaden" class="residence-image">` : '';
   }
 
@@ -39,10 +45,17 @@ function renderResidenceDetails(residence) {
     <p>Bilder:${imagesHtml}</p>
     ${thumbnailsHtml}
     <p>${residence.additionalInfo}</p>
+    <button onclick="toggleInterestForm(${residence.id})">Intresseanmälan</button>
+    <div id="interestForm-${residence.id}" class="interest-form" style="display:none;">
+        <input type="text" id="nameInterest-${residence.id}" placeholder="Ditt namn">
+        <input type="text" id="phoneInterest-${residence.id}" placeholder="Ditt telefonnummer">
+        <input type="email" id="emailInterest-${residence.id}" placeholder="Din e-postadress">
+        <button onclick="submitInterest(${residence.id})">Skicka</button>
+    </div>
   `;
 }
 
-export default async () => {
+export default async function () {
   try {
     const residencesData = await getAllResidences();
 
@@ -51,43 +64,37 @@ export default async () => {
     ).join('');
 
     return `
-<h2 class="searchTitle">Alla Bostäder:</h2>
-<div class="filterResidence">
-  <label for="sortOrder">Sortera efter:</label>
-  <select id="sortOrder">
-    <option value="priceAsc">Pris (Lägst överst)</option>
-    <option value="priceDesc">Pris (Högst överst)</option>
-    <option value="sizeAsc">Storlek (Minst överst)</option>
-    <option value="sizeDesc">Storlek (Störst överst)</option>
-  </select>
+      <h2 class="searchTitle">Alla Bostäder:</h2>
+      <div class="filterResidence">
+        <label for="sortOrder">Sortera efter:</label>
+        <select id="sortOrder">
+          <option value="priceAsc">Pris (Lägst överst)</option>
+          <option value="priceDesc">Pris (Högst överst)</option>
+          <option value="sizeAsc">Storlek (Minst överst)</option>
+          <option value="sizeDesc">Storlek (Störst överst)</option>
+        </select>
 
-  <label for="residenceType">Bostadstyp:</label>
-  <select id="residenceType">
-    <option value="all">Alla</option>
-    <option value="Villa">Villa</option>
-    <option value="Fritidshus">Fritidshus</option>
-    <option value="Lägenhet">Lägenhet</option>
-    <option value="Radhus">Radhus</option>
-  </select>
+        <label for="residenceType">Bostadstyp:</label>
+        <select id="residenceType">
+          <option value="all">Alla</option>
+          <option value="Villa">Villa</option>
+          <option value="Fritidshus">Fritidshus</option>
+          <option value="Lägenhet">Lägenhet</option>
+          <option value="Radhus">Radhus</option>
+        </select>
 
-  <button onclick="filterResidences()">Filtrera</button>
-</div>
+        <button onclick="filterResidences()">Filtrera</button>
+      </div>
 
-<ul class="residencesList">
-  ${residencesData.map(residence =>
-      `<li class="residenceItem" onclick="showResidenceDetails(${residence.id})">${residence.address}</li>`
-    ).join('')}
-</ul>
-
-
+      <ul class="residencesList">
+        ${residencesList}
+      </ul>
     `;
-
-
   } catch (error) {
     console.error("Error fetching residences data:", error);
     return "Det uppstod ett fel vid hämtning av bostadsdata.";
   }
-};
+}
 
 window.showResidenceDetails = async (residenceId) => {
   const residence = await getResidenceById(residenceId);
@@ -142,7 +149,6 @@ window.filterResidences = async function () {
     const residenceType = document.getElementById('residenceType').value;
     let residencesData = await getAllResidences();
 
-    // filtrera bostad om något valt
     if (residenceType !== 'all') {
       residencesData = residencesData.filter(residence => residence.type === residenceType);
     }
@@ -160,17 +166,13 @@ window.filterResidences = async function () {
       case 'sizeDesc':
         residencesData.sort((a, b) => b.size - a.size);
         break;
-      default:
-        // inget valt, gör inget
-        break;
     }
 
     const residencesList = residencesData.map(residence =>
       `<li onclick="showResidenceDetails(${residence.id})">${residence.address}</li>`
     ).join('');
 
-    // uppdatera med filtrerade bostäder
-    const residencesContainer = document.querySelector('ul');
+    const residencesContainer = document.querySelector('.residencesList');
     residencesContainer.innerHTML = residencesList;
 
   } catch (error) {
@@ -178,3 +180,33 @@ window.filterResidences = async function () {
     return "Det uppstod ett fel vid hämtning av bostadsdata.";
   }
 }
+
+window.toggleInterestForm = function(residenceId) {
+  const form = document.getElementById(`interestForm-${residenceId}`);
+  form.style.display = form.style.display === 'none' ? 'block' : 'none';
+};
+
+window.submitInterest = async function(residenceId) {
+  const nameInterest = document.getElementById(`nameInterest-${residenceId}`).value;
+  const phoneInterest = document.getElementById(`phoneInterest-${residenceId}`).value;
+  const emailInterest = document.getElementById(`emailInterest-${residenceId}`).value;
+
+  try {
+    const response = await fetch('http://localhost:3000/interests', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ residenceId, nameInterest, phoneInterest, emailInterest }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    console.log('Intresseanmälan skickad', data, nameInterest, phoneInterest, emailInterest );
+  } catch (error) {
+    console.error('Ett fel uppstod vid skickning av intresseanmälan:', error);
+  }
+};
