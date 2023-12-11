@@ -52,3 +52,16 @@ export async function getUser() {
     console.error('Fel vid hämtning av användarinformation', error);
   }
 };
+
+export async function getInterests() {
+  try {
+    let response = await fetch('/interests');
+    if (!response.ok) {
+      throw new Error('Nätverksrespons var inte ok');
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Fel vid hämtning av intresseanmälningar:', error);
+    return [];
+  }
+}
