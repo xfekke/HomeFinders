@@ -47,9 +47,9 @@ function renderResidenceDetails(residence) {
     <p>${residence.additionalInfo}</p>
     <button onclick="toggleInterestForm(${residence.id})">Intresseanmälan</button>
     <div id="interestForm-${residence.id}" class="interest-form" style="display:none;">
-        <input type="text" id="name-${residence.id}" placeholder="Ditt namn">
-        <input type="text" id="phone-${residence.id}" placeholder="Ditt telefonnummer">
-        <input type="email" id="email-${residence.id}" placeholder="Din e-postadress">
+        <input type="text" id="nameInterest-${residence.id}" placeholder="Ditt namn">
+        <input type="text" id="phoneInterest-${residence.id}" placeholder="Ditt telefonnummer">
+        <input type="email" id="emailInterest-${residence.id}" placeholder="Din e-postadress">
         <button onclick="submitInterest(${residence.id})">Skicka</button>
     </div>
   `;
@@ -187,9 +187,9 @@ window.toggleInterestForm = function(residenceId) {
 };
 
 window.submitInterest = async function(residenceId) {
-  const name = document.getElementById(`name-${residenceId}`).value;
-  const phone = document.getElementById(`phone-${residenceId}`).value;
-  const email = document.getElementById(`email-${residenceId}`).value;
+  const nameInterest = document.getElementById(`nameInterest-${residenceId}`).value;
+  const phoneInterest = document.getElementById(`phoneInterest-${residenceId}`).value;
+  const emailInterest = document.getElementById(`emailInterest-${residenceId}`).value;
 
   try {
     const response = await fetch('http://localhost:3000/interests', {
@@ -197,7 +197,7 @@ window.submitInterest = async function(residenceId) {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ residenceId, name, phone, email }),
+      body: JSON.stringify({ residenceId, nameInterest, phoneInterest, emailInterest }),
     });
 
     if (!response.ok) {
@@ -205,7 +205,7 @@ window.submitInterest = async function(residenceId) {
     }
 
     const data = await response.json();
-    console.log('Intresseanmälan skickad', data);
+    console.log('Intresseanmälan skickad', data, nameInterest, phoneInterest, emailInterest );
   } catch (error) {
     console.error('Ett fel uppstod vid skickning av intresseanmälan:', error);
   }

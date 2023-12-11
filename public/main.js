@@ -8,7 +8,6 @@ import realtor from "./views/realtor.js";
 import logIn from "./views/logIn.js";
 import { submitResidence } from "./views/sellHome.js";
 import { handleLogin } from "./views/logIn.js";
-import { submitInterest } from "./views/submitInterest.js";
 
 // funktion för att se inloggning
 function isAuthenticated() {
