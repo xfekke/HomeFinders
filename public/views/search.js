@@ -53,6 +53,8 @@ export default async () => {
     <option value="sizeDesc">Storlek (Störst överst)</option>
   </select>
 
+  <br />
+
   <label for="residenceType">Bostadstyp:</label>
   <select id="residenceType">
     <option value="all">Alla</option>
