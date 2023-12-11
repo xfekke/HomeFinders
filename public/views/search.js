@@ -181,12 +181,14 @@ window.filterResidences = async function () {
   }
 }
 
-window.toggleInterestForm = function(residenceId) {
+window.toggleInterestForm = function (residenceId, residence) {
   const form = document.getElementById(`interestForm-${residenceId}`);
   form.style.display = form.style.display === 'none' ? 'block' : 'none';
+
+  console.log('Bostadens namn: ', residence.address);
 };
 
-window.submitInterest = async function(residenceId) {
+window.submitInterest = async function (residenceId) {
   const nameInterest = document.getElementById(`nameInterest-${residenceId}`).value;
   const phoneInterest = document.getElementById(`phoneInterest-${residenceId}`).value;
   const emailInterest = document.getElementById(`emailInterest-${residenceId}`).value;
@@ -205,7 +207,7 @@ window.submitInterest = async function(residenceId) {
     }
 
     const data = await response.json();
-    console.log('Intresseanmälan skickad', data, nameInterest, phoneInterest, emailInterest );
+    console.log('Intresseanmälan skickad', data, nameInterest, phoneInterest, emailInterest);
   } catch (error) {
     console.error('Ett fel uppstod vid skickning av intresseanmälan:', error);
   }

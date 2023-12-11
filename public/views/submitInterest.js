@@ -9,7 +9,7 @@ window.submitInterest = async function(residenceId) {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ residenceId, name, phone, email }),
+      body: JSON.stringify({ residenceId, nameInterest, phoneInterest, emailInterest }),
     });
 
     if (!response.ok) {

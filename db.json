@@ -581,5 +581,28 @@
       "password": "homefinderaccessx9bot"
     }
   ],
-  "interests": []
+  "interests": [
+    {
+      "residenceId": 1,
+      "nameInterest": "Seb",
+      "phoneInterest": "eeee",
+      "emailInterest": "222",
+      "residenceAdress": "Per",
+      "id": 1
+    },
+    {
+      "residenceId": 5,
+      "nameInterest": "per",
+      "phoneInterest": "wewe",
+      "emailInterest": "222",
+      "id": 2
+    },
+    {
+      "residenceId": 3,
+      "nameInterest": "tor",
+      "phoneInterest": "reerre",
+      "emailInterest": "reerre",
+      "id": 3
+    }
+  ]
 }
