@@ -188,6 +188,7 @@ main {
   width: 100%;
 }
 
+
 .residencesList .searchTitle,
 .residencesList {
   text-align: left;
@@ -203,6 +204,8 @@ h2.searchTitle {
 
 .filterResidence {
   margin-left: 2vh;
+
+  font-size: large;
 }
 
 
