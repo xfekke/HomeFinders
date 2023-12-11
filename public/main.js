@@ -8,6 +8,7 @@ import realtor from "./views/realtor.js";
 import logIn from "./views/logIn.js";
 import { submitResidence } from "./views/sellHome.js";
 import { handleLogin } from "./views/logIn.js";
+import { submitInterest } from "./views/submitInterest.js";
 
 // funktion för att se inloggning
 function isAuthenticated() {
@@ -75,3 +76,22 @@ window.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("DOMContentLoaded", () => {
   window.handleLogin = handleLogin;
 });
+
+// eventlistener för knapparna
+window.addEventListener('click', (event) => {
+  if (event.target.classList.contains('interestButton')) {
+    const residenceId = event.target.dataset.residenceId;
+    showInterestForm(residenceId);
+  }
+});
+
+// funktion för intresseanmälnings formuläret
+function showInterestForm(residenceId) {
+  const interestForm = document.querySelector(`#interestForm-${residenceId}`);
+  if (interestForm) {
+    interestForm.style.display = 'block';
+  }
+}
+
+// inskick av formuläret
+window.submitInterest = submitInterest;

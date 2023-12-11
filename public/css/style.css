@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poiret+One&family=Spirax&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-
 /* bas font osv */
-body,
-html {
+body, html {
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu', sans-serif;
@@ -155,7 +153,6 @@ a:visited {
 }
 
 /* Sendformulär -> Om oss */
-
 .form-section {
   display: block;
   background-color: #6c8e5753;
@@ -237,4 +234,74 @@ form {
   border-radius: 5px;
   max-width: 400px;
   width: 100%;
+}
+
+.interestButton {
+  background-color: #208137;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.interestButton:hover {
+  background-color: #165a2c;
+}
+
+.interestForm {
+  display: none; 
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.interestForm input[type=text],
+.interestForm input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.interestForm input[type=submit] {
+  width: 100%;
+  background-color: #208137;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.interestForm input[type=submit]:hover {
+  background-color: #165a2c;
+}
+
+.thumbnail {
+  max-width: 100px;
+  height: auto;
+  margin: 5px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.thumbnail:hover {
+  opacity: 1;
+}
+
+#thumbnails {
+  text-align: center;
+  padding: 10px;
 }
