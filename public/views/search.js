@@ -126,6 +126,7 @@ function initCarousel() {
 }
 
 window.filterResidences = async function () {
+  event.preventDefault();
   try {
     const sortOrder = document.getElementById('sortOrder').value;
     const residenceType = document.getElementById('residenceType').value;
@@ -159,8 +160,24 @@ window.filterResidences = async function () {
     ).join('');
 
     // uppdatera med filtrerade bostäder
-    const residencesContainer = document.querySelector('ul');
-    residencesContainer.innerHTML = residencesList;
+    const residencesContainer = document.querySelector('ul.residencesList');
+    residencesContainer.innerHTML = ''; // Rensa befintligt innehåll
+    residencesData.forEach(residence => {
+
+      // nytt listelement
+      const li = document.createElement('li');
+
+      //lägga till css till nya
+      li.className = 'residenceItem';
+
+      //text till li
+      li.textContent = residence.address;
+      li.addEventListener('click', () => showResidenceDetails(residence.id));
+
+      //lägg till li listan
+      residencesContainer.appendChild(li);
+    });
+
 
   } catch (error) {
     console.error("Error fetching residences data:", error);
