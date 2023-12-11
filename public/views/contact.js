@@ -8,7 +8,7 @@ import "../components/counter.js";
 //   console.log(`${emailAddress}\n${notation}\n${message}`);
 // }
 
-export default () => /*html*/`  
+export default () => /*html*/`
 <section id="brokers">
     <p class="ingress">Vill du komma i kontakt med våra vassa mäklare?</p>
 
@@ -41,8 +41,6 @@ export default () => /*html*/`
     </div>
 
 </section>
-
-   <h2>Kontaktformulär</h2>
 
   <section class="form-section">
        <p class="ingress">Du kan också skicka e-post till oss via formuläret</p>

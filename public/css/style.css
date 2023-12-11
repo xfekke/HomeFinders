@@ -1,25 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poiret+One&family=Spirax&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+:root {
+  --primary-clr: #208137;
+  --secondary-clr: #208137;
+  --background-clr: #f4f4f4;
+  --text-clr: #333;
+}
 
 /* bas font osv */
 body,
 html {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Ubuntu', sans-serif;
-  background: #f4f4f4;
-  color: #272626;
+  background: var(--background-clr);
+  color: var(--text-clr);
   line-height: 1.6;
 }
 
 /* header info */
 #header-section {
-  background-color: #208137;
+  top: 0;
+  position: absolute;
+  background-color: var(--primary-clr);
   text-align: center;
+  height: 6.5em;
+  width: 100%;
+  z-index: 2000;
 }
 
 header {
-  color: #edf6f9;
   padding-top: 1rem;
   /* text-align: center; */
   /* font-size: xx-large; */
@@ -31,7 +42,44 @@ header {
 }
 
 #logo:hover {
- width: 220px;
+ width: 240px;
+}
+
+#nav-pos {
+  position: absolute;
+  top:6.2em;
+  width: 100%;
+}
+nav {
+  padding-bottom: 5px;
+  text-align: center;
+  background-color: var(--primary-clr);
+  align-items: center;
+  z-index: 2000;
+}
+nav>a {
+  color: #ffffffa6;
+  z-index: 2000;
+ transition: 700ms;
+}
+nav>a:hover {
+  border-bottom: #fff solid 2px;
+  border-radius: 10px;
+  padding-bottom: 3px;
+}
+.pointer{
+  position: absolute;
+  top:6.6em;
+  width: 100%;
+  z-index: 500;
+}
+#top-arrow {
+  margin: 0 auto;
+  width: 2em;
+  height: 2em;
+  rotate: 45deg;
+  border-radius: 5px;
+  background-color: var(--primary-clr);
 }
 
 /* nav button {
@@ -51,7 +99,92 @@ header {
   background-color: #edf6f9;
   color: #005f73;
 } */
+main {
+  margin: 10em 0 0 0;
+}
 
+/* ------ Home ------*/
+/* Paralax */
+.wrapper {
+  margin-top: -6.5em;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+#hero {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  height: 80%;
+  width: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.hero-image {
+  transform: translateZ(-15px) scale(2.5);
+}
+
+.titel {
+  transform: translateZ(-5px) scale(1.5);
+}
+
+.p-hero {
+  transform: translateZ(-5px) scale(1.5);
+}
+
+.hero-image,
+.title .p-hero {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.titel {
+  font-family: "Dancing Script";
+  font-size: 6rem;
+  color: var(--background-clr);
+  letter-spacing: -0.06rem;
+  line-height: 5.5rem;
+  text-align: center;
+  padding-top: 1.3em;
+  padding-bottom: 0.3em;
+  text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.7), 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.p-hero {
+  margin: 0 auto;
+  font-size: 1.3rem;
+  color: #fff;
+  letter-spacing: -0.01rem;
+  text-align: center;
+  max-width: 600px;
+  text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.7), 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+#First-sec {
+  position: relative;
+  z-index: 5;
+  height: 100vh;
+  font-size: 1.1rem;
+  line-height: 140%;
+  padding: 2rem;
+  background-color: var(--background-clr);
+  color: #333;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.7), 0px -15px 20px rgba(0, 0, 0, 0.4);
+}
+
+.content {
+  max-width: 600px;
+  margin: auto;
+}
+
+
+
+/* Sälja bostad */
 .sell-container h2 {
   text-align: center;
   margin-left: 0;
@@ -64,6 +197,7 @@ header {
 .sell-container p {
   text-align: center;
 }
+
 
 /* sälj bostad justering */
 .sell-container {
@@ -201,86 +335,19 @@ a:visited {
   border-radius: 5px;
 }
 
-/* ------ Home ------*/
-/* Paralax */
-.wrapper {
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  perspective: 10px;
-}
-
-#hero {
-  position: relative;
-  display: block;
+/* login form */
+#login-form {
   margin: 0 auto;
-  /* justify-content: center;
-  align-items: center; */
-  height: 75%;
-  width: 100%;
-  transform-style: preserve-3d;
-  z-index: -1;
+  max-width: 600px;
 }
 
-.hero-image {
-  transform: translateZ(-15px) scale(2.5);
+#login-form>input {
+  margin:1em 1em 3em 0;
 }
 
-.titel 
- {
-  transform: translateZ(-5px) scale(1.5);
-}
 
-.p-hero 
- {
-  transform: translateZ(-5px) scale(1.5);
-}
-
-.hero-image,
-.title 
-.p-hero {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.titel {
-  font-family: "Dancing Script";
-  font-size: 6rem;
-  color: #fff;
-  letter-spacing: -0.06rem;
-  line-height: 5.5rem;
-  text-align: center;
-  padding-top: 1.3em;
-  padding-bottom: 0.3em;
-  /* width: 90%; */
-  text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.7), 0px 10px 30px rgba(0, 0, 0, 0.5);
-}
-
-.p-hero {
-  margin: 0 auto;
-  font-size: 1.3rem;
-  color: #fff;
-  letter-spacing: -0.01rem;
-  text-align: center;
-  max-width: 550px;
-  text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.7), 0px 10px 30px rgba(0, 0, 0, 0.5);
-}
-
-#First-sec {
-  position: relative;
-  z-index: 5;
-  height: 100vh;
-  font-size: 1.1rem;
-  line-height: 140%;
-  padding: 2rem;
-  background-color: #fff;
-  color: #333;
-  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.7), 0px -15px 20px rgba(0, 0, 0, 0.4);
-}
-
-.content {
-  max-width: 550px;
-  margin: auto;
+footer {
+  margin-top: 0;
+  height: 100vw;
+  background-color: var(--text-clr);
 }
