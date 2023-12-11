@@ -48,7 +48,7 @@ function renderResidenceDetails(residence) {
     <button onclick="toggleInterestForm(${residence.id})">Intresseanmälan</button>
     <div id="interestForm-${residence.id}" class="interest-form" style="display:none;">
         <input type="text" id="nameInterest-${residence.id}" placeholder="Ditt namn">
-        <input type="text" id="phoneInterest-${residence.id}" placeholder="Ditt telefonnummer">
+        <input type="tel" id="phoneInterest-${residence.id}" placeholder="Ditt telefonnummer" pattern="[0-9]+" title="Endast siffror är tillåtna">
         <input type="email" id="emailInterest-${residence.id}" placeholder="Din e-postadress">
         <button onclick="submitInterest(${residence.id})">Skicka</button>
     </div>
@@ -186,10 +186,30 @@ window.toggleInterestForm = function(residenceId) {
   form.style.display = form.style.display === 'none' ? 'block' : 'none';
 };
 
+function validatePhone(phone) {
+  const re = /^[0-9]+$/;
+  return re.test(phone);
+}
+
+function validateEmail(email) {
+  const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  return re.test(email);
+}
+
 window.submitInterest = async function(residenceId) {
   const nameInterest = document.getElementById(`nameInterest-${residenceId}`).value;
   const phoneInterest = document.getElementById(`phoneInterest-${residenceId}`).value;
   const emailInterest = document.getElementById(`emailInterest-${residenceId}`).value;
+
+  if (!validatePhone(phoneInterest)) {
+    alert("Ange ett giltigt telefonnummer (endast siffror).");
+    return;
+  }
+
+  if (!validateEmail(emailInterest)) {
+    alert("Ange en giltig e-postadress.");
+    return;
+  }
 
   try {
     const response = await fetch('http://localhost:3000/interests', {
@@ -205,8 +225,10 @@ window.submitInterest = async function(residenceId) {
     }
 
     const data = await response.json();
-    console.log('Intresseanmälan skickad', data, nameInterest, phoneInterest, emailInterest );
+    console.log('Intresseanmälan skickad', data);
+    alert("Din intresseanmälan har skickats!");
   } catch (error) {
     console.error('Ett fel uppstod vid skickning av intresseanmälan:', error);
+    alert("Ett fel uppstod vid skickning av din intresseanmälan.");
   }
 };
