@@ -22,7 +22,7 @@ export default async () => {
     const residencesHtml = residencesWithInterests.map(residence => {
       const residenceInterests = interestsByResidence[residence.id];
       const interestsHtml = residenceInterests.map(interest => `
-      <li><strong>Namn:</strong> ${interest.nameInterest}, <strong>Telefon:</strong> ${interest.phoneInterest}, <strong>Epost:</strong> ${interest.emailInterest}</li>
+      <li><strong>Namn:</strong> ${interest.nameInterest} <strong>Telefon:</strong> ${interest.phoneInterest} <strong>Epost:</strong> ${interest.emailInterest}</li>
       `).join('');
 
       return `

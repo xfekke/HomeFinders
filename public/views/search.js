@@ -3,6 +3,9 @@ import { getAllResidences } from "./server-request.js";
 
 let minPrice = null;
 let maxPrice = null;
+let lastFilteredResidences = null;
+let lastSortOrder = 'priceAsc';
+let lastResidenceType = 'all';
 
 function updatePriceRange() {
   minPrice = document.getElementById('minPrice').value;
@@ -31,6 +34,8 @@ function renderResidenceDetails(residence) {
   }
 
   return `
+    <button onclick="backToFilteredResidences()">Tillbaka till Filtrerade</button>
+    <button onclick="backToAllResidences()">Tillbaka till Alla Bostäder</button>
     <h3>${residence.address}</h3>
     <p>Typ: ${residence.type}</p>
     <p>Antal rum: ${residence.rooms}</p>
@@ -55,9 +60,10 @@ function renderResidenceDetails(residence) {
   `;
 }
 
-export default async function () {
+export default async function renderResidencesList() {
   try {
     const residencesData = await getAllResidences();
+    lastFilteredResidences = residencesData;
 
     const residencesList = residencesData.map(residence =>
       `<li onclick="showResidenceDetails(${residence.id})">${residence.address}</li>`
@@ -112,10 +118,49 @@ async function getResidenceById(id) {
   }
 }
 
+window.backToFilteredResidences = async () => {
+  if (lastFilteredResidences) {
+    const residencesList = lastFilteredResidences.map(residence =>
+      `<li onclick="showResidenceDetails(${residence.id})">${residence.address}</li>`
+    ).join('');
+
+    document.getElementById("app").innerHTML = `
+      <h2 class="searchTitle">Filtrerade Bostäder:</h2>
+      <div class="filterResidence">
+        <label for="sortOrder">Sortera efter:</label>
+        <select id="sortOrder" value="${lastSortOrder}">
+          <option value="priceAsc">Pris (Lägst överst)</option>
+          <option value="priceDesc">Pris (Högst överst)</option>
+          <option value="sizeAsc">Storlek (Minst överst)</option>
+          <option value="sizeDesc">Storlek (Störst överst)</option>
+        </select>
+
+        <label for="residenceType">Bostadstyp:</label>
+        <select id="residenceType" value="${lastResidenceType}">
+          <option value="all">Alla</option>
+          <option value="Villa">Villa</option>
+          <option value="Fritidshus">Fritidshus</option>
+          <option value="Lägenhet">Lägenhet</option>
+          <option value="Radhus">Radhus</option>
+        </select>
+
+        <button onclick="filterResidences()">Filtrera</button>
+      </div>
+      <ul class="residencesList">${residencesList}</ul>
+    `;
+  } else {
+    backToAllResidences();
+  }
+};
+window.backToAllResidences = async () => {
+  document.getElementById("app").innerHTML = await renderResidencesList();
+};
+
 window.moveSlide = function (direction) {
   const slides = document.querySelectorAll('.residence-image');
   showSlide(currentSlide + direction, slides);
 };
+
 let currentSlide = 0;
 
 window.changeSlide = function (index) {
@@ -168,6 +213,8 @@ window.filterResidences = async function () {
         break;
     }
 
+    lastFilteredResidences = residencesData;
+
     const residencesList = residencesData.map(residence =>
       `<li onclick="showResidenceDetails(${residence.id})">${residence.address}</li>`
     ).join('');
@@ -181,7 +228,7 @@ window.filterResidences = async function () {
   }
 }
 
-window.toggleInterestForm = function(residenceId) {
+window.toggleInterestForm = function (residenceId) {
   const form = document.getElementById(`interestForm-${residenceId}`);
   form.style.display = form.style.display === 'none' ? 'block' : 'none';
 };
@@ -196,7 +243,7 @@ function validateEmail(email) {
   return re.test(email);
 }
 
-window.submitInterest = async function(residenceId) {
+window.submitInterest = async function (residenceId) {
   const nameInterest = document.getElementById(`nameInterest-${residenceId}`).value;
   const phoneInterest = document.getElementById(`phoneInterest-${residenceId}`).value;
   const emailInterest = document.getElementById(`emailInterest-${residenceId}`).value;

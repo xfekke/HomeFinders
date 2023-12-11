@@ -305,3 +305,31 @@ form {
   text-align: center;
   padding: 10px;
 }
+
+ .carousel {
+   position: relative;
+ }
+
+ .residence-image {
+   width: 100%;
+   height: auto;
+ }
+
+ .left-arrow,
+ .right-arrow {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   cursor: pointer;
+   font-size: 44px;
+   background-color: transparent;
+   border: none;
+ }
+
+ .left-arrow {
+   left: 10px;
+ }
+
+ .right-arrow {
+   right: 10px;
+ }
