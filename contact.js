@@ -1,6 +1,6 @@
 function contactHF() {
-  
-  var content = {
+
+  let content = {
 
     '#about': `
  <section id="brokers">
