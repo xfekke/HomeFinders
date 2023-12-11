@@ -1,211 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poiret+One&family=Spirax&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-/* ------ Universalt ------ */
-:root {
-  --primary-clr: #208137;
-  --secondary-clr: #208137;
-  --background-clr: #f4f4f4;
-  --text-clr: #333;
-}
-
 /* bas font osv */
-body,
-html {
+body, html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: 'Ubuntu', sans-serif;
-  background: var(--background-clr);
-  color: var(--text-clr);
+  background: #f4f4f4;
+  color: #272626;
   line-height: 1.6;
 }
 
-/* ------- header info -------*/
-#header-section {
-  top: 0;
-  position: fixed;
-  background-color: var(--primary-clr);
-  text-align: center;
-  height: 6.5em;
-  width: 100%;
-  z-index: 2000;
-}
-
+/* header info */
 header {
-  padding-top: 1rem;
-  /* text-align: center; */
-  /* font-size: xx-large; */
+  background-color: #208137;
+  color: #edf6f9;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: xx-large;
 }
 
-#logo {
-  width: 230px;
-  transition-duration: 300ms;
-}
-
-#logo:hover {
-  width: 240px;
-}
-
-#nav-pos {
-  position: absolute;
-  top: 6.2em;
-  width: 100%;
+.mainTitle {
+  margin: 0;
+  padding: 0;
 }
 
 nav {
-  padding-bottom: 5px;
   text-align: center;
-  background-color: var(--primary-clr);
-  align-items: center;
-  z-index: 2000;
 }
 
-nav>a {
-  color: #ffffffa6;
-  z-index: 2000;
-  transition: 700ms;
-}
-
-nav>a:hover {
-  border-bottom: #fff solid 2px;
-  border-radius: 10px;
-  padding-bottom: 3px;
-}
-
-nav>a:visited {
+nav a {
   color: #fff;
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 18px;
 }
 
-.pointer {
-  position: fixed;
-  top: 6.6em;
-  width: 100%;
-  z-index: 500;
+nav a:hover {
+  color: #6C8E57;
 }
 
-#top-arrow {
-  position: relative;
-  margin: 0 auto;
-  width: 2em;
-  height: 2em;
-  rotate: 45deg;
+nav button {
+  background: none;
+  border: 2px solid #edf6f9;
   border-radius: 5px;
-  background-color: var(--primary-clr);
+  color: #edf6f9;
+  padding: 0.5rem 1rem;
+  margin: 0 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-main {
-  margin: 10em 0 0 0;
+/* button ändras vid hover */
+nav button:hover {
+  background-color: #edf6f9;
+  color: #005f73;
 }
 
-/* ------- Home -------*/
-/* Paralax */
-.wrapper {
-  margin-top: -6.5em;
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  perspective: 10px;
-}
-
-#hero {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  height: 80%;
-  width: 100%;
-  transform-style: preserve-3d;
-  z-index: -1;
-}
-
-.hero-image {
-  transform: translateZ(-15px) scale(2.5);
-}
-
-.titel {
-  transform: translateZ(-5px) scale(1.5);
-}
-
-.p-hero {
-  transform: translateZ(-5px) scale(1.5);
-}
-
-.hero-image,
-.title .p-hero {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.titel {
-  font-family: "Dancing Script";
-  font-size: 6rem;
-  color: var(--background-clr);
-  letter-spacing: -0.06rem;
-  line-height: 5.5rem;
-  text-align: center;
-  padding-top: 1.3em;
-  padding-bottom: 0.3em;
-  text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.7), 0px 10px 30px rgba(0, 0, 0, 0.5);
-}
-
-.p-hero {
-  margin: 0 auto;
-  font-size: 1.3rem;
-  color: #fff;
-  letter-spacing: -0.01rem;
-  text-align: center;
-  max-width: 600px;
-  text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.7), 0px 10px 30px rgba(0, 0, 0, 0.5);
-}
-
-#First-sec {
-  position: relative;
-  z-index: 5;
-  height: 100vh;
-  font-size: 1.1rem;
-  line-height: 140%;
-  padding: 2rem;
-  background-color: var(--background-clr);
-  color: #333;
-  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.7), 0px -15px 20px rgba(0, 0, 0, 0.4);
-}
-
-.content {
-  max-width: 600px;
-  margin: auto;
-}
-
-/* --------- Söka bostad -------- */
-.residenceItem {
-  list-style: none;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #045008;
-  border-radius: 5px;
-  max-width: 32vh;
-  width: 100%;
-}
-
-.residencesList .searchTitle,
-.residencesList {
-  text-align: left;
-}
-
-.container {
-  margin: 20px;
-}
-
-h2.searchTitle {
-  margin-left: 2vh;
-}
-
-.filterResidence {
-  margin-left: 2vh;
-}
-
-
-/* --------- Sälja bostad -------- */
 .sell-container h2 {
   text-align: center;
   margin-left: 0;
@@ -235,7 +87,7 @@ h2.searchTitle {
   margin-bottom: 3px;
 }
 
-/* ------- Kontakt ------- */
+/* Brokers -> Om oss */
 #brokers {
   position: relative;
   max-width: 600px;
@@ -266,10 +118,6 @@ h2.searchTitle {
   margin: 5px 0 2px 0;
 }
 
-.connect {
-  color: #444;
-}
-
 p.ingress {
   font-weight: 300;
   font-size: 1.3em;
@@ -292,21 +140,19 @@ p.role {
 }
 
 a:link {
-  color: #ffffff90;
-  padding: 0.4em;
-  font-weight: 300;
+  color: #333;
   text-decoration: none;
 }
 
 a:hover {
-  color: #fff;
+  color: #6C8E57;
 }
 
 a:visited {
-  color: #333;
+  color: #ffffff;
 }
 
-/* Send-formulär -> Om oss */
+/* Sendformulär -> Om oss */
 .form-section {
   display: block;
   background-color: #6c8e5753;
@@ -314,7 +160,7 @@ a:visited {
   padding-top: 1em;
 }
 
-.contact-form {
+form {
   position: relative;
   margin: 0 auto;
   padding-right: 1%;
@@ -322,11 +168,11 @@ a:visited {
 }
 
 #email,
-#notation,
-#message {
+#messageBox,
+#notation {
   display: block;
   margin: 0.3em auto;
-  padding: 0.5em;
+  padding-top: 0.5em;
   width: 570px;
   border: #208137 solid 1px;
   font-family: "Ubuntu";
@@ -336,15 +182,17 @@ a:visited {
 #message {
   padding-bottom: 7em;
   border-bottom: #208137 solid 4px;
+  width: 570px;
 }
 
-#form-contact-btn {
+#form-btn {
   position: absolute;
   margin-left: 190px;
   background-color: #fff;
   color: #444;
   border: #208137 2px solid;
   border-radius: 5px;
+  margin-top: 0.5em;
   padding: 0.6em 1em;
   font-family: "Ubuntu";
   font-weight: 400;
@@ -353,28 +201,107 @@ a:visited {
   cursor: pointer;
 }
 
-#form-contact-btn:hover {
+#form-btn:hover {
   background-color: #208137;
   color: #fff;
   border-radius: 5px;
 }
 
-/* ------- Mäklarsidan -> (realtor) ------ */
-
-
-/* ------- Logga in -> (logIn) ------- */
-#login-form {
-  margin: 0 auto;
-  max-width: 600px;
+.container {
+  margin: 20px;
 }
 
-#login-form>input {
-  margin: 1em 1em 3em 0;
+.residencesList .searchTitle,
+.residencesList {
+  text-align: left;
+  margin-left: 2vh;
 }
 
-/* ------- Sidfot ------- */
-footer {
-  margin-top: 0;
-  height: 100vw;
-  background-color: var(--text-clr);
+.filterResidence {
+  text-align: left;
+  margin-left: 2vh;
+}
+
+.container {
+  margin: 20px;
+}
+
+.residenceItem {
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #045008;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.interestButton {
+  background-color: #208137;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.interestButton:hover {
+  background-color: #165a2c;
+}
+
+.interestForm {
+  display: none; 
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.interestForm input[type=text],
+.interestForm input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.interestForm input[type=submit] {
+  width: 100%;
+  background-color: #208137;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.interestForm input[type=submit]:hover {
+  background-color: #165a2c;
+}
+
+.thumbnail {
+  max-width: 100px;
+  height: auto;
+  margin: 5px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.thumbnail:hover {
+  opacity: 1;
+}
+
+#thumbnails {
+  text-align: center;
+  padding: 10px;
 }
