@@ -1,14 +1,6 @@
 import "../components/counter.js";
 import { getAllResidences } from "./server-request.js";
 
-let minPrice = null;
-let maxPrice = null;
-
-function updatePriceRange() {
-  minPrice = document.getElementById('minPrice').value;
-  maxPrice = document.getElementById('maxPrice').value;
-}
-
 function renderResidenceDetails(residence) {
   let imagesHtml = '';
   if (Array.isArray(residence.imageURL) && residence.imageURL.length > 1) {

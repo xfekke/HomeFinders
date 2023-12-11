@@ -7,6 +7,7 @@
   --background-clr: #f4f4f4;
   --text-clr: #333;
 }
+
 /* bas font osv */
 body,
 html {
@@ -42,14 +43,15 @@ header {
 }
 
 #logo:hover {
- width: 240px;
+  width: 240px;
 }
 
 #nav-pos {
   position: absolute;
-  top:6.2em;
+  top: 6.2em;
   width: 100%;
 }
+
 nav {
   padding-bottom: 5px;
   text-align: center;
@@ -57,25 +59,30 @@ nav {
   align-items: center;
   z-index: 2000;
 }
+
 nav>a {
   color: #ffffffa6;
   z-index: 2000;
- transition: 700ms;
+  transition: 700ms;
 }
+
 nav>a:hover {
   border-bottom: #fff solid 2px;
   border-radius: 10px;
   padding-bottom: 3px;
 }
+
 nav>a:visited {
-  color:#fff;
+  color: #fff;
 }
-.pointer{
+
+.pointer {
   position: fixed;
-  top:6.6em;
+  top: 6.6em;
   width: 100%;
   z-index: 500;
 }
+
 #top-arrow {
   position: relative;
   margin: 0 auto;
@@ -86,23 +93,6 @@ nav>a:visited {
   background-color: var(--primary-clr);
 }
 
-/* nav button {
-  background: none;
-  border: 2px solid #edf6f9;
-  border-radius: 5px;
-  color: #edf6f9;
-  padding: 0.5rem 1rem;
-  margin: 0 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-} */
-
-/* button ändras vid hover */
-/* nav button:hover {
-  background-color: #edf6f9;
-  color: #005f73;
-} */
 main {
   margin: 10em 0 0 0;
 }
@@ -127,9 +117,17 @@ main {
   z-index: -1;
 }
 
-.hero-image {transform: translateZ(-15px) scale(2.5);}
-.titel {transform: translateZ(-5px) scale(1.5);}
-.p-hero {transform: translateZ(-5px) scale(1.5);}
+.hero-image {
+  transform: translateZ(-15px) scale(2.5);
+}
+
+.titel {
+  transform: translateZ(-5px) scale(1.5);
+}
+
+.p-hero {
+  transform: translateZ(-5px) scale(1.5);
+}
 
 .hero-image,
 .title .p-hero {
@@ -179,7 +177,32 @@ main {
 }
 
 /* --------- Söka bostad -------- */
+.residenceItem {
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #045008;
+  border-radius: 5px;
+  max-width: 32vh;
+  width: 100%;
+}
 
+.residencesList .searchTitle,
+.residencesList {
+  text-align: left;
+}
+
+.container {
+  margin: 20px;
+}
+
+h2.searchTitle {
+  margin-left: 2vh;
+}
+
+.filterResidence {
+  margin-left: 2vh;
+}
 
 
 /* --------- Sälja bostad -------- */
@@ -346,7 +369,7 @@ a:visited {
 }
 
 #login-form>input {
-  margin:1em 1em 3em 0;
+  margin: 1em 1em 3em 0;
 }
 
 /* ------- Sidfot ------- */
@@ -355,5 +378,3 @@ footer {
   height: 100vw;
   background-color: var(--text-clr);
 }
-
-
