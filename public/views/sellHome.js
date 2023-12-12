@@ -2,20 +2,20 @@ import "../components/counter.js";
 import { postResidence } from "./server-request.js";
 
 export async function submitResidence() {
-  var address = document.getElementById('address').value;
-  var type = document.getElementById('type').value;
-  var floor = document.getElementById('floor').value;
-  var rooms = document.getElementById('rooms').value;
-  var size = document.getElementById('size').value;
-  var price = document.getElementById('price').value;
-  var yearBuilt = document.getElementById('yearBuilt').value;
-  var balcony = document.getElementById('balcony').value;
-  var storage = document.getElementById('storage').value;
-  var parking = document.getElementById('parking').value;
-  var courtyard = document.getElementById('courtyard').value;
-  var patio = document.getElementById('patio').value;
-  var imageURL = document.getElementById('image-url').value;
-  var additionalInfo = document.getElementById('additional-info').value;
+  let address = document.getElementById('address').value;
+  let type = document.getElementById('type').value;
+  let floor = document.getElementById('floor').value;
+  let rooms = document.getElementById('rooms').value;
+  let size = document.getElementById('size').value;
+  let price = document.getElementById('price').value;
+  let yearBuilt = document.getElementById('yearBuilt').value;
+  let balcony = document.getElementById('balcony').value;
+  let storage = document.getElementById('storage').value;
+  let parking = document.getElementById('parking').value;
+  let courtyard = document.getElementById('courtyard').value;
+  let patio = document.getElementById('patio').value;
+  let imageURL = document.getElementById('image-url').value;
+  let additionalInfo = document.getElementById('additional-info').value;
 
   if (
     address === '' ||
@@ -27,7 +27,7 @@ export async function submitResidence() {
     return;
   }
 
-  var formData = {
+  let formData = {
     address: address,
     type: type,
     floor: floor,
@@ -46,6 +46,7 @@ export async function submitResidence() {
 
   await postResidence(formData);
   console.log('Bostad inskickad!');
+  alert("Din bostad har skickats in!");
   return;
 }
 
