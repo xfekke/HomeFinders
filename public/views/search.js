@@ -66,10 +66,14 @@ export default async function renderResidencesList() {
     lastFilteredResidences = residencesData;
 
     const residencesList = residencesData.map(residence =>
-      `<li onclick="showResidenceDetails(${residence.id})">
-        <img src="${residence.imageURL[0]}" alt="Preview of ${residence.address}" class="residence-preview-image">
-        ${residence.address}
-      </li>`
+      `<li class="residence-item" onclick="showResidenceDetails(${residence.id})">
+    <img src="${residence.imageURL[0]}" alt="Preview of ${residence.address}" class="residence-preview-image">
+    <div class="residence-details">
+    <h3>${residence.address}</h3>
+    <p>Pris: ${residence.price} kr</p>
+    <p>Storlek: ${residence.size} kvm</p>
+    </div>
+  </li>`
     ).join('');
 
     return `
@@ -124,10 +128,14 @@ async function getResidenceById(id) {
 window.backToFilteredResidences = async () => {
   if (lastFilteredResidences) {
     const residencesList = lastFilteredResidences.map(residence =>
-      `<li onclick="showResidenceDetails(${residence.id})">
-        <img src="${residence.imageURL[0]}" alt="Preview of ${residence.address}" class="residence-preview-image">
-        ${residence.address}
-      </li>`
+      `<li class="residence-item" onclick="showResidenceDetails(${residence.id})">
+    <img src="${residence.imageURL[0]}" alt="Preview of ${residence.address}" class="residence-preview-image">
+    <div class="residence-details">
+    <h3>${residence.address}</h3>
+    <p>Pris: ${residence.price} kr</p>
+    <p>Storlek: ${residence.size} kvm</p>
+    </div>
+  </li>`
     ).join('');
 
     document.getElementById("app").innerHTML = `
@@ -222,10 +230,14 @@ window.filterResidences = async function () {
     lastFilteredResidences = residencesData;
 
     const residencesList = residencesData.map(residence =>
-      `<li onclick="showResidenceDetails(${residence.id})">
-        <img src="${residence.imageURL[0]}" alt="Preview of ${residence.address}" class="residence-preview-image">
-        ${residence.address}
-      </li>`
+      `<li class="residence-item" onclick="showResidenceDetails(${residence.id})">
+    <img src="${residence.imageURL[0]}" alt="Preview of ${residence.address}" class="residence-preview-image">
+    <div class="residence-details">
+    <h3>${residence.address}</h3>
+    <p>Pris: ${residence.price} kr</p>
+    <p>Storlek: ${residence.size} kvm</p>
+    </div>
+  </li>`
 
     ).join('');
 

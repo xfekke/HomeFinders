@@ -21,6 +21,10 @@ html {
   line-height: 1.6;
 }
 
+p {
+  margin: 1px;
+}
+
 /* ------- header info -------*/
 #header-section {
   top: 0;
@@ -34,8 +38,6 @@ html {
 
 header {
   padding-top: 1rem;
-  /* text-align: center; */
-  /* font-size: xx-large; */
 }
 
 #logo {
@@ -109,6 +111,17 @@ main {
   width: 100%;
 }
 
+.residence-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  /* Adjust as needed */
+}
+
+.residence-details {
+  display: flex;
+  flex-direction: column;
+}
 
 .searchTitle,
 .residencesList {
@@ -142,16 +155,11 @@ h2.searchTitle {
 }
 
 .residence-preview-image {
-  width: 100px;
-  /* or any other size */
-  height: 66px;
+  width: 123px;
+  height: 93px;
   margin-right: 10px;
   border-radius: 4px;
 }
-
-/* styles.css */
-
-
 
 /* ------- Home -------*/
 /* Paralax */
@@ -162,8 +170,6 @@ h2.searchTitle {
   overflow-x: hidden;
   perspective: 10px;
 }
-
-/* styles.css */
 
 .residence-image {
   height: 100%;
@@ -351,7 +357,7 @@ a:visited {
   height: 100px;
 }
 
-/* Send-formulär -> Om oss */
+/* Send-formulär */
 .form-section {
   display: block;
   background-color: #6c8e5753;
@@ -564,10 +570,7 @@ footer {
 }
 
 .logout-button {
-
-  /* eller 'absolute' beroende på ditt behov */
   top: 0;
   right: 0;
   margin: 10px;
-  /* Lägg till lite marginal om det behövs */
 }
