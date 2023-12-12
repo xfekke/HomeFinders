@@ -141,6 +141,14 @@ h2.searchTitle {
   font-size: 16px;
 }
 
+.residence-preview-image {
+  width: 100px;
+  /* or any other size */
+  height: 66px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
 /* styles.css */
 
 
@@ -252,8 +260,8 @@ h2.searchTitle {
 
 /* sälj bostad justering */
 .sell-container {
-  padding: 20px;
   text-align: left;
+  margin-bottom: 5vh
 }
 
 .sell-container h2,
@@ -406,8 +414,16 @@ a:visited {
 /* ------- Sidfot ------- */
 footer {
   margin-top: 0;
-  height: 100vw;
-  background-color: var(--text-clr);
+  width: 100vw;
+  height: 10vw;
+  background-image: url(../image/footer.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
 }
 
 .residenceItem {
@@ -516,12 +532,4 @@ footer {
 
 .right-arrow {
   right: 10px;
-}
-
-.residence-preview-image {
-  width: 100px;
-  /* or any other size */
-  height: auto;
-  margin-right: 10px;
-  border-radius: 4px;
 }
