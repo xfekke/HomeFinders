@@ -129,6 +129,7 @@ export default () => /*html*/`
       </div>
       <div>
         <label for="additional-info">Ytterligare information:</label>
+        </br>
         <textarea id="additional-info" name="additional-info"></textarea>
       </div>
       <button type="button" onclick="submitResidence()">Skicka in</button>

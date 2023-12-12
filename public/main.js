@@ -3,7 +3,6 @@ import sellHome from "./views/sellHome.js";
 import home from "./views/home.js";
 import search from "./views/search.js";
 import contact from "./views/contact.js";
-import about from "./views/about.js";
 import realtor from "./views/realtor.js";
 import logIn from "./views/logIn.js";
 import { submitResidence } from "./views/sellHome.js";
@@ -18,7 +17,6 @@ const routes = {
   "/": { title: "Home", render: home },
   "/search": { title: "Search", render: search },
   "/contact": { title: "Contact", render: contact },
-  "/about": { title: "About", render: about },
   "/realtor": { title: "Realtor", render: realtor, authenticated: true },
   "/sellHome": { title: "SellHome", render: sellHome },
   "/logIn": { title: "LogIn", render: logIn }

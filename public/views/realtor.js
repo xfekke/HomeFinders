@@ -36,6 +36,7 @@ export default async () => {
     return `
       <h2>Mäklarsidan</h2>
       <p>Välkommen mäklare!</p>
+      <p><strong>Här är aktiva intresseanmälningar:</strong></p>
       ${residencesHtml}
     `;
   } catch (error) {

@@ -246,16 +246,17 @@ h2.searchTitle {
 
 /* --------- Sälja bostad -------- */
 .sell-container h2 {
-  text-align: center;
-  margin-left: 0;
+  text-align: left;
+  margin-left: 1%;
 }
 
 .sell-container form {
-  margin-left: 40%;
+  margin-left: 1%;
 }
 
 .sell-container p {
-  text-align: center;
+  text-align: left;
+  margin-left: 1%;
 }
 
 /* sälj bostad justering */
@@ -345,6 +346,11 @@ a:visited {
   color: #333;
 }
 
+#additional-info {
+  width: 300px;
+  height: 100px;
+}
+
 /* Send-formulär -> Om oss */
 .form-section {
   display: block;
@@ -399,6 +405,9 @@ a:visited {
 }
 
 /* ------- Mäklarsidan -> (realtor) ------ */
+#app {
+  margin-left: 1vh;
+}
 
 
 /* ------- Logga in -> (logIn) ------- */
@@ -413,9 +422,9 @@ a:visited {
 
 /* ------- Sidfot ------- */
 footer {
-  margin-top: 0;
+  margin-top: auto;
   width: 100vw;
-  height: 10vw;
+  min-height: 10vw;
   background-image: url(../image/footer.png);
   background-size: contain;
   background-position: center;
@@ -532,4 +541,33 @@ footer {
 
 .right-arrow {
   right: 10px;
+}
+
+#logoutButton {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  background: #208137;
+  color: #edf6f9;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#logoutButton:hover {
+  background-color: #165a2c;
+}
+
+.logout-button {
+
+  /* eller 'absolute' beroende på ditt behov */
+  top: 0;
+  right: 0;
+  margin: 10px;
+  /* Lägg till lite marginal om det behövs */
 }
