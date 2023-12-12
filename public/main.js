@@ -88,3 +88,6 @@ function showInterestForm(residenceId) {
 
 // inskick av formuläret
 window.submitInterest = submitInterest;
+
+window.router = router;
+window.addEventListener("DOMContentLoaded", router);

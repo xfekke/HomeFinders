@@ -13,7 +13,11 @@ export async function handleLogin() {
     document.getElementById("logoutButton").style.display = 'block';
     alert("Inloggning lyckades!");
     console.log("Inloggning lyckades!");
-    window.location.href = '/';
+    history.pushState("", "", '/realtor');
+
+    if (typeof router === 'function') {
+      router();
+    }
   } else {
     alert("Fel användarnamn eller lösenord. Försök igen.");
   }
