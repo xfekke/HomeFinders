@@ -140,6 +140,18 @@ h2.searchTitle {
   perspective: 10px;
 }
 
+/* styles.css */
+
+.residence-image {
+  height: 100%;
+  max-height: 1200px;
+  min-height: 1200px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
 #hero {
   position: relative;
   display: block;
