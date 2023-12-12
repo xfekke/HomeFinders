@@ -333,3 +333,11 @@ form {
  .right-arrow {
    right: 10px;
  }
+
+ .residence-preview-image {
+   width: 100px;
+   /* or any other size */
+   height: auto;
+   margin-right: 10px;
+   border-radius: 4px;
+ }

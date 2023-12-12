@@ -65,8 +65,11 @@ export default async function renderResidencesList() {
     const residencesData = await getAllResidences();
     lastFilteredResidences = residencesData;
 
-    const residencesList = residencesData.map(residence =>
-      `<li onclick="showResidenceDetails(${residence.id})">${residence.address}</li>`
+   const residencesList = residencesData.map(residence => 
+      `<li onclick="showResidenceDetails(${residence.id})">
+        <img src="${residence.imageURL[0]}" alt="Preview of ${residence.address}" class="residence-preview-image">
+        ${residence.address}
+      </li>`
     ).join('');
 
     return `
@@ -121,7 +124,10 @@ async function getResidenceById(id) {
 window.backToFilteredResidences = async () => {
   if (lastFilteredResidences) {
     const residencesList = lastFilteredResidences.map(residence =>
-      `<li onclick="showResidenceDetails(${residence.id})">${residence.address}</li>`
+      `<li onclick="showResidenceDetails(${residence.id})">
+        <img src="${residence.imageURL[0]}" alt="Preview of ${residence.address}" class="residence-preview-image">
+        ${residence.address}
+      </li>`
     ).join('');
 
     document.getElementById("app").innerHTML = `
@@ -216,7 +222,11 @@ window.filterResidences = async function () {
     lastFilteredResidences = residencesData;
 
     const residencesList = residencesData.map(residence =>
-      `<li onclick="showResidenceDetails(${residence.id})">${residence.address}</li>`
+      `<li onclick="showResidenceDetails(${residence.id})">
+        <img src="${residence.imageURL[0]}" alt="Preview of ${residence.address}" class="residence-preview-image">
+        ${residence.address}
+      </li>`
+
     ).join('');
 
     const residencesContainer = document.querySelector('.residencesList');
