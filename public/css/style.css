@@ -98,6 +98,38 @@ main {
   margin: 10em 0 0 0;
 }
 
+/* --------- Söka bostad -------- */
+.residencesList li {
+  border: 1px solid #045008;
+  padding: 10px;
+  margin-bottom: 1vh;
+  list-style: none;
+  border-radius: 5px;
+  max-width: 32vh;
+  width: 100%;
+}
+
+
+.searchTitle,
+.residencesList {
+  text-align: left;
+}
+
+
+.container {
+  margin: 20px;
+}
+
+h2.searchTitle {
+  margin-left: 2vh;
+}
+
+.filterResidence {
+  margin-left: 2vh;
+
+  font-size: large;
+}
+
 /* ------- Home -------*/
 /* Paralax */
 .wrapper {
@@ -176,38 +208,6 @@ main {
   max-width: 600px;
   margin: auto;
 }
-
-/* --------- Söka bostad -------- */
-.residenceItem {
-  list-style: none;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #045008;
-  border-radius: 5px;
-  max-width: 32vh;
-  width: 100%;
-}
-
-
-.residencesList .searchTitle,
-.residencesList {
-  text-align: left;
-}
-
-.container {
-  margin: 20px;
-}
-
-h2.searchTitle {
-  margin-left: 2vh;
-}
-
-.filterResidence {
-  margin-left: 2vh;
-
-  font-size: large;
-}
-
 
 /* --------- Sälja bostad -------- */
 .sell-container h2 {

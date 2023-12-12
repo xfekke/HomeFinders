@@ -43,18 +43,10 @@ export default () => /*html*/`
 </section>
 
   <section class="form-section">
-       <p class="ingress">Du kan också skicka e-post till oss via formuläret</p>
-
-    <form action="" class="contact-form">
-
-      <input type="email" id="email" placeholder="Ange e-postadress" name="email" required=true;>
-
-      <input type="text" id="notation" placeholder="Ärende" name="notation" required=true;>
-
-      <input type="text" id="message" placeholder="Skriv in ditt meddelande" name="message" required=true;>
-
-      <button id="form-contact-btn">Skicka meddelandet</button>
-
-    </form>
+       <p class="ingress">
+Kontor: 08-778 20 80 / 08-530 20 180 </br>
+E-post: info@homefinders.se </br>
+Telefontid 8:00-23:00, alla dagar i veckan </br>
+       </p>
   </section>
 `;
