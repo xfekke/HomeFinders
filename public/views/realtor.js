@@ -34,10 +34,12 @@ export default async () => {
     }).join('');
 
     return `
+      <div id="realtorPage">
       <h2>Mäklarsidan</h2>
       <p>Välkommen mäklare!</p>
       <p><strong>Här är aktiva intresseanmälningar:</strong></p>
       ${residencesHtml}
+      </div>
     `;
   } catch (error) {
     console.error('Fel vid hämtning av data:', error);

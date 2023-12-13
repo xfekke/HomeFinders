@@ -419,6 +419,11 @@ a:visited {
   margin-left: 1vh;
 }
 
+#realtorPage {
+  text-align: center;
+  justify-content: center;
+}
+
 
 /* ------- Logga in -> (logIn) ------- */
 #login-form {
