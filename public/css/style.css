@@ -166,11 +166,6 @@ ul.residencesList {
   flex-direction: column;
 }
 
-.residence-preview-image {
-  max-width: 100%;
-  height: auto;
-}
-
 .residence-info {
   display: flex;
   flex-direction: column;
@@ -213,9 +208,9 @@ h2.searchTitle {
 }
 
 .residence-preview-image {
+  max-width: 100%;
   width: 123px;
   height: 93px;
-  margin-right: 10px;
   border-radius: 4px;
 }
 

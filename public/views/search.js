@@ -62,7 +62,7 @@ export default async function renderResidencesList() {
 
     const residencesList = residencesData.map(residence =>
       `<li class="residence-item" onclick="showResidenceDetails(${residence.id})">
-    <img src="${residence.imageURL[0]}" alt="Preview of ${residence.address}" class="residence-preview-image">
+     <img src="${residence.imageURL.length > 0 ? residence.imageURL[0] : 'https://i.ibb.co/WsrBLMf/hf-logo.png'}" alt="Preview of ${residence.address}" class="residence-preview-image">
     <div class="residence-details">
     <h3>${residence.address}</h3>
     <p>Pris: ${residence.price} kr</p>
@@ -81,7 +81,7 @@ export default async function renderResidencesList() {
           <option value="sizeAsc">Storlek (Minst överst)</option>
           <option value="sizeDesc">Storlek (Störst överst)</option>
         </select>
-
+        </br>
         <label for="residenceType">Bostadstyp:</label>
         <select id="residenceType">
           <option value="all">Alla</option>
@@ -124,7 +124,7 @@ window.backToFilteredResidences = async () => {
   if (lastFilteredResidences) {
     const residencesList = lastFilteredResidences.map(residence =>
       `<li class="residence-item" onclick="showResidenceDetails(${residence.id})">
-    <img src="${residence.imageURL[0]}" alt="Preview of ${residence.address}" class="residence-preview-image">
+     <img src="${residence.imageURL.length > 0 ? residence.imageURL[0] : 'https://i.ibb.co/WsrBLMf/hf-logo.png'}" alt="Preview of ${residence.address}" class="residence-preview-image">
     <div class="residence-details">
     <h3>${residence.address}</h3>
     <p>Pris: ${residence.price} kr</p>
