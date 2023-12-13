@@ -100,6 +100,15 @@ main {
   margin: 10em 0 0 0;
 }
 
+button {
+  width: fit-content;
+  background-color: #208137;
+  color: white;
+  border-radius: 5px;
+  border-color: white;
+  font-size: 25px;
+}
+
 /* --------- Söka bostad -------- */
 .residencesList li {
   border: 1px solid #045008;
@@ -198,7 +207,6 @@ h2.searchTitle {
   min-height: 500px;
   width: auto;
   object-fit: contain;
-  display: block;
   margin: 0 auto;
 }
 
@@ -466,12 +474,15 @@ a:visited {
   font-size: 18px;
   padding: 10px;
   margin: 5px;
-
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 0;
   width: 150px;
+  background-color: #208137;
+  color: white;
+  border-radius: 5px;
+  border-color: white;
 }
 
 .username {
