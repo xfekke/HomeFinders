@@ -223,14 +223,17 @@ window.filterResidences = async function () {
     lastFilteredResidences = residencesData;
 
     const residencesList = residencesData.map(residence =>
-      `<li class="residence-item" onclick="showResidenceDetails(${residence.id})">
+      `<div class="residences-container">
+      <li class="residence-item" onclick="showResidenceDetails(${residence.id})">
     <img src="${residence.imageURL[0]}" alt="Preview of ${residence.address}" class="residence-preview-image">
     <div class="residence-details">
     <h3>${residence.address}</h3>
     <p>Pris: ${residence.price} kr</p>
     <p>Storlek: ${residence.size} kvm</p>
     </div>
-  </li>`
+  </li>
+  </div>
+  `
 
     ).join('');
 

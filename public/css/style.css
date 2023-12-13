@@ -109,13 +109,28 @@ main {
   border-radius: 5px;
   max-width: 32vh;
   width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.residences-container {
+  display: flex;
+  justify-content: center;
+}
+
+ul.residencesList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  align-items: center;
+
 }
 
 .residence-item {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  /* Adjust as needed */
+  width: 100%;
 }
 
 .residence-details {
@@ -123,9 +138,14 @@ main {
   flex-direction: column;
 }
 
+.residence-preview-image {
+  max-width: 100%;
+  height: auto;
+}
+
 .searchTitle,
 .residencesList {
-  text-align: left;
+  text-align: center;
 }
 
 .container {
@@ -139,6 +159,7 @@ h2.searchTitle {
 .filterResidence {
   margin-left: 2vh;
   font-size: large;
+  text-align: center;
 }
 
 .interest-form input {
