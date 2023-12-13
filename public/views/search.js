@@ -23,7 +23,7 @@ function renderResidenceDetails(residence) {
       </div>
     `;
   } else {
-    imagesHtml = residence.imageURL ? `<img src="${residence.imageURL}" alt="Bild på bostaden" class="residence-image">` : '';
+    imagesHtml = residence.imageURL ? `<img src="${residence.imageURL}" alt="Bild på bostaden" class="residence-image">` : 'Bilder laddas upp senare!';
   }
 
   return `
@@ -227,7 +227,7 @@ window.filterResidences = async function () {
     const residencesList = residencesData.map(residence =>
       `<div class="residences-container">
       <li class="residence-item" onclick="showResidenceDetails(${residence.id})">
-    <img src="${residence.imageURL[0]}" alt="Preview of ${residence.address}" class="residence-preview-image">
+     <img src="${residence.imageURL.length > 0 ? residence.imageURL[0] : 'https://i.ibb.co/WsrBLMf/hf-logo.png'}" alt="Preview of ${residence.address}" class="residence-preview-image">
     <div class="residence-details">
     <h3>${residence.address}</h3>
     <p>Pris: ${residence.price} kr</p>

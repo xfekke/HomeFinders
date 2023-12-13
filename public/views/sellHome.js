@@ -40,7 +40,7 @@ export async function submitResidence() {
     parking: parking,
     courtyard: courtyard,
     patio: patio,
-    imageURL: imageURL,
+    imageURL: [imageURL],
     additionalInfo: additionalInfo
   };
 
