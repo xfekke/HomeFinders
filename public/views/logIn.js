@@ -43,9 +43,10 @@ export default () => `
   <form id="login-form">
     <label for="username">Användarnamn:</label>
     <input type="text" id="username" name="username" required>
+    </br>
     <label for="password">Lösenord:</label>
     <input type="password" id="password" name="password" required>
-    <button type="button" onclick="handleLogin()">Logga in</button>
+    <button type="button" id="loginButton" onclick="handleLogin()">Logga in</button>
   </form>
   <button id="logoutButton" style="display: none;" onclick="handleLogout()">Logga ut</button>
 `;
