@@ -41,20 +41,13 @@ export default () => /*html*/`
     </div>
 
 </section>
-
   <section class="form-section">
-       <p class="ingress">Du kan också skicka e-post till oss via formuläret</p>
-
-    <form action="" class="contact-form">
-
+      <p class="ingress">Du kan också skicka e-post till oss via formuläret</p>
+      <form action="" class="contact-form">
       <input type="email" id="email" placeholder="Ange e-postadress" name="email" required=true;>
-
       <input type="text" id="notation" placeholder="Ärende" name="notation" required=true;>
-
       <input type="text" id="message" placeholder="Skriv in ditt meddelande" name="message" required=true;>
-
       <button id="form-contact-btn">Skicka meddelandet</button>
-
     </form>
   </section>
 `;
