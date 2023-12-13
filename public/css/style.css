@@ -520,3 +520,120 @@ footer {
     }
 }
 
+
+
+.residenceItem {
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #045008;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.interestButton {
+  background-color: #208137;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.interestButton:hover {
+  background-color: #165a2c;
+}
+
+.interestForm {
+  display: none;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.interestForm input[type=text],
+.interestForm input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.interestForm input[type=submit] {
+  width: 100%;
+  background-color: #208137;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.interestForm input[type=submit]:hover {
+  background-color: #165a2c;
+}
+
+.thumbnail {
+  max-width: 100px;
+  height: auto;
+  margin: 5px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.thumbnail:hover {
+  opacity: 1;
+}
+
+#thumbnails {
+  text-align: center;
+  padding: 10px;
+}
+
+.carousel {
+  position: relative;
+}
+
+.residence-image {
+  width: 100%;
+  height: auto;
+}
+
+.left-arrow,
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 44px;
+  background-color: transparent;
+  border: none;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.residence-preview-image {
+  width: 100px;
+  /* or any other size */
+  height: auto;
+  margin-right: 10px;
+  border-radius: 4px;
+}

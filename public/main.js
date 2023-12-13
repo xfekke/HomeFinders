@@ -1,4 +1,4 @@
-import { getAllResidences } from "./views/server-request.js";
+import { getAllResidences, getInterests } from "./views/server-request.js";
 import sellHome from "./views/sellHome.js";
 import home from "./views/home.js";
 import search from "./views/search.js";
@@ -19,7 +19,7 @@ const routes = {
   "/search": { title: "Search", render: search },
   "/contact": { title: "Contact", render: contact },
   "/about": { title: "About", render: about },
-  "/realtor": { title: "Realtor", render: realtor },
+  "/realtor": { title: "Realtor", render: realtor, authenticated: true },
   "/sellHome": { title: "SellHome", render: sellHome },
   "/logIn": { title: "LogIn", render: logIn }
 };
@@ -28,24 +28,18 @@ const routes = {
 async function router() {
   let view = routes[location.pathname];
 
-  if (view && view.title === "Realtor") {
-    if (!isAuthenticated()) {
-      app.innerHTML = realtor();
+  if (view) {
+    if (view.authenticated && !isAuthenticated()) {
+      app.innerHTML = `<p>Du måste vara inloggad för att se denna sida.</p>`;
       return;
     }
-  }
 
-  if (view) {
     document.title = view.title;
-    if (view.render instanceof Function) {
-      try {
-        app.innerHTML = await view.render();
-      } catch (error) {
-        console.error("Error rendering view:", error);
-        app.innerHTML = "Ett fel uppstod vid rendering av sidan.";
-      }
-    } else {
-      app.innerHTML = view.render;
+    try {
+      app.innerHTML = await view.render();
+    } catch (error) {
+      console.error("Error rendering view:", error);
+      app.innerHTML = "Ett fel uppstod vid rendering av sidan.";
     }
   } else {
     history.replaceState("", "", "/");
@@ -76,3 +70,26 @@ window.addEventListener("DOMContentLoaded", () => {
   window.handleLogin = handleLogin;
 });
 
+
+
+// eventlistener för knapparna
+window.addEventListener('click', (event) => {
+  if (event.target.classList.contains('interestButton')) {
+    const residenceId = event.target.dataset.residenceId;
+    showInterestForm(residenceId);
+  }
+});
+
+// funktion för intresseanmälnings formuläret
+function showInterestForm(residenceId) {
+  const interestForm = document.querySelector(`#interestForm-${residenceId}`);
+  if (interestForm) {
+    interestForm.style.display = 'block';
+  }
+}
+
+// inskick av formuläret
+window.submitInterest = submitInterest;
+
+window.router = router;
+window.addEventListener("DOMContentLoaded", router);
