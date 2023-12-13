@@ -1,13 +1,5 @@
 import "../components/counter.js";
 
-// export function sendUsAMessage() {
-//   const emailAddress = document.getElementById("email").value;
-//   const notation = document.getElementById("notation").value;
-//   const message = document.getElementById("message").value;
-
-//   console.log(`${emailAddress}\n${notation}\n${message}`);
-// }
-
 export default () => /*html*/`
 <section id="brokers">
     <p class="ingress">Vill du komma i kontakt med våra vassa mäklare?</p>

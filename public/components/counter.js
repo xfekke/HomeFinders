@@ -15,6 +15,6 @@ class Counter extends HTMLElement {
   }
 }
 
-var count = 0;
+let count = 0;
 
 customElements.define("click-counter", Counter);

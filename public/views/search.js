@@ -274,7 +274,7 @@ window.submitInterest = async function (residenceId) {
   }
 
   try {
-    const response = await fetch('http://localhost:3000/interests', {
+    const response = await fetch('/interests', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
