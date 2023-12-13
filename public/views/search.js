@@ -142,7 +142,24 @@ window.backToFilteredResidences = async () => {
     document.getElementById("app").innerHTML = `
       <h2 class="searchTitle">Filtrerade Bostäder:</h2>
       <div class="filterResidence">
-        <!-- Filter options here (same as before) -->
+      <label for="sortOrder">Sortera efter:</label>
+      <select id="sortOrder" value="${lastSortOrder}">
+        <option value="priceAsc">Pris (Lägst överst)</option>
+        <option value="priceDesc">Pris (Högst överst)</option>
+        <option value="sizeAsc">Storlek (Minst överst)</option>
+        <option value="sizeDesc">Storlek (Störst överst)</option>
+      </select>
+      </br>
+      <label for="residenceType">Bostadstyp:</label>
+      <select id="residenceType" value="${lastResidenceType}">
+        <option value="all">Alla</option>
+        <option value="Villa">Villa</option>
+        <option value="Fritidshus">Fritidshus</option>
+        <option value="Lägenhet">Lägenhet</option>
+        <option value="Radhus">Radhus</option>
+      </select>
+
+      <button onclick="filterResidences()">Filtrera</button>
       </div>
       <ul class="residencesList">${residencesList}</ul>
     `;
