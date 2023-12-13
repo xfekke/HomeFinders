@@ -67,11 +67,15 @@ header {
 
 .nav-meny>a {
   color: #ffffffa6;
-  /* z-index: 3000; */
   transition: 700ms;
+  /* color: #ffffff90; */
+  padding: 0.4em;
+  font-weight: 300;
+  text-decoration: none;
 }
 
 .nav-meny>a:hover {
+  color: #fff;
   border-bottom: #fff solid 2px;
   border-radius: 10px;
   padding-bottom: 3px;
@@ -198,7 +202,6 @@ main {
   width: 100%;
 }
 
-
 .residencesList .searchTitle,
 .residencesList {
   text-align: left;
@@ -214,7 +217,6 @@ h2.searchTitle {
 
 .filterResidence {
   margin-left: 2vh;
-
   font-size: large;
 }
 
@@ -305,19 +307,16 @@ p.role {
   font-size: 0.9em;
 }
 
-a:link {
-  color: #ffffff90;
-  padding: 0.4em;
-  font-weight: 300;
+.mail-us>a,
+.call-us>a {
   text-decoration: none;
-}
-
-a:hover {
-  color: #fff;
-}
-
-a:visited {
-  color: #333;
+  color:var(--text-clr);
+} 
+.mail-us>a:hover,
+.call-us>a:hover {
+  text-decoration: none;
+  font-weight: 400;
+  color:var(--text-clr);
 }
 
 /* Send-formulär -> Om oss */
