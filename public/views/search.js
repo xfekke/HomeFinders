@@ -27,29 +27,31 @@ function renderResidenceDetails(residence) {
   }
 
   return `
-    <button onclick="backToFilteredResidences()">Tillbaka till Filtrerade</button>
-    <button onclick="backToAllResidences()">Tillbaka till Alla Bostäder</button>
-    <h3>${residence.address}</h3>
-    <p>Typ: ${residence.type}</p>
-    <p>Antal rum: ${residence.rooms}</p>
-    <p>Storlek: ${residence.size} kvm</p>
-    <p>Pris: ${residence.price} kr</p>
-    <p>Byggår: ${residence.yearBuilt}</p>
-    <p>Balkong: ${residence.balcony}</p>
-    <p>Förråd: ${residence.storage}</p>
-    <p>Parkering: ${residence.parking}</p>
-    <p>Innergård: ${residence.courtyard}</p>
-    <p>Uteplats: ${residence.patio}</p>
-    <p>Bilder:${imagesHtml}</p>
-    ${thumbnailsHtml}
-    <p>${residence.additionalInfo}</p>
-    <button onclick="toggleInterestForm(${residence.id})">Intresseanmälan</button>
-    <div id="interestForm-${residence.id}" class="interest-form" style="display:none;">
-        <input type="text" id="nameInterest-${residence.id}" placeholder="Ditt namn">
-        <input type="tel" id="phoneInterest-${residence.id}" placeholder="Ditt telefonnummer" pattern="[0-9]+" title="Endast siffror är tillåtna">
-        <input type="email" id="emailInterest-${residence.id}" placeholder="Din e-postadress">
-        <button onclick="submitInterest(${residence.id})">Skicka</button>
-    </div>
+    <div class="residence-info">
+      <button onclick="backToFilteredResidences()">Tillbaka till Filtrerade</button>
+      <button onclick="backToAllResidences()">Tillbaka till Alla Bostäder</button>
+      <h3>${residence.address}</h3>
+      <p>Typ: ${residence.type}</p>
+      <p>Antal rum: ${residence.rooms}</p>
+      <p>Storlek: ${residence.size} kvm</p>
+      <p>Pris: ${residence.price} kr</p>
+      <p>Byggår: ${residence.yearBuilt}</p>
+      <p>Balkong: ${residence.balcony}</p>
+      <p>Förråd: ${residence.storage}</p>
+      <p>Parkering: ${residence.parking}</p>
+      <p>Innergård: ${residence.courtyard}</p>
+      <p>Uteplats: ${residence.patio}</p>
+      <p>Bilder:${imagesHtml}</p>
+      ${thumbnailsHtml}
+      <p>${residence.additionalInfo}</p>
+      <button onclick="toggleInterestForm(${residence.id})">Intresseanmälan</button>
+      <div id="interestForm-${residence.id}" class="interest-form" style="display:none;">
+          <input type="text" id="nameInterest-${residence.id}" placeholder="Namn">
+          <input type="tel" id="phoneInterest-${residence.id}" placeholder="Telefonnummer" pattern="[0-9]+" title="Endast siffror är tillåtna">
+          <input type="email" id="emailInterest-${residence.id}" placeholder="E-postadress">
+          <button onclick="submitInterest(${residence.id})">Skicka</button>
+      </div>
+    </div>  
   `;
 }
 
