@@ -251,6 +251,10 @@ h2.searchTitle {
 }
 
 /* --------- Sälja bostad -------- */
+.sell-container {
+  margin-left: 40%;
+}
+
 .sell-container h2 {
   text-align: left;
   margin-left: 1%;
