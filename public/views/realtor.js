@@ -40,7 +40,6 @@ export default async () => {
       <p><strong>Här är aktiva intresseanmälningar:</strong></p>
       ${residencesHtml}
       </div>
-      <footer></footer>
     `;
   } catch (error) {
     console.error('Fel vid hämtning av data:', error);

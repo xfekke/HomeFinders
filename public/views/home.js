@@ -16,7 +16,6 @@ export default () => /*html*/`
             <p>Är du istället på jakt ett nytt hem så bistår vi med köprådgivning och matchar dina önskemål med pågående och kommande försäljningar. Hos oss hittar du extraordinära lägenheter, sjönära fritidshus, paradvillor utöver det vanliga, radhus med det lilla extra och gårdar till försäljning. Kanske hittar du ditt drömboende via oss! </p>
         </div>
     </section>
-    <footer></footer>
 
  </div>
 

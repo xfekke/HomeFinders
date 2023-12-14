@@ -41,5 +41,4 @@ export default () => /*html*/`
         Telefontid 8:00-23:00, alla dagar i veckan </br>
     </p>
 </section>
-<footer></footer>
 `;

@@ -62,7 +62,6 @@ function renderResidenceDetails(residence) {
           <button onclick="submitInterest(${residence.id})">Skicka</button>
       </div>
     </div>  
-    <footer></footer>
   `;
 }
 
