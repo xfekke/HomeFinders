@@ -587,6 +587,7 @@
       "nameInterest": "Emil Johansson",
       "phoneInterest": "0701234567",
       "emailInterest": "emil.johansson@gmail.com",
+      "contacted": false,
       "id": 1
     },
     {
@@ -594,6 +595,7 @@
       "nameInterest": "Sofia Karlsson",
       "phoneInterest": "0722345678",
       "emailInterest": "sofia.karlsson@hotmail.com",
+      "contacted": false,
       "id": 2
     },
     {
@@ -601,6 +603,7 @@
       "nameInterest": "Axel Lindberg",
       "phoneInterest": "0733456789",
       "emailInterest": "axel.lindberg@yahoo.com",
+      "contacted": false,
       "id": 3
     },
     {
@@ -608,6 +611,7 @@
       "nameInterest": "Clara Gustafsson",
       "phoneInterest": "0744567890",
       "emailInterest": "clara.gustafsson@outlook.com",
+      "contacted": false,
       "id": 4
     },
     {
@@ -615,6 +619,7 @@
       "nameInterest": "Lucas Pettersson",
       "phoneInterest": "0755678901",
       "emailInterest": "lucas.pettersson@gmail.com",
+      "contacted": false,
       "id": 5
     },
     {
@@ -622,6 +627,7 @@
       "nameInterest": "Emma Jansson",
       "phoneInterest": "0766789012",
       "emailInterest": "emma.jansson@hotmail.com",
+      "contacted": false,
       "id": 6
     },
     {
@@ -629,6 +635,7 @@
       "nameInterest": "Noah Andersson",
       "phoneInterest": "0777890123",
       "emailInterest": "noah.andersson@yahoo.com",
+      "contacted": false,
       "id": 7
     },
     {
@@ -636,6 +643,7 @@
       "nameInterest": "Elsa Svensson",
       "phoneInterest": "0788901234",
       "emailInterest": "elsa.svensson@outlook.com",
+      "contacted": false,
       "id": 8
     },
     {
@@ -643,6 +651,7 @@
       "nameInterest": "Elias Lundgren",
       "phoneInterest": "0799012345",
       "emailInterest": "elias.lundgren@gmail.com",
+      "contacted": false,
       "id": 9
     },
     {
@@ -650,6 +659,7 @@
       "nameInterest": "Alice Bergström",
       "phoneInterest": "0710123456",
       "emailInterest": "alice.bergstrom@hotmail.com",
+      "contacted": false,
       "id": 10
     }
   ]

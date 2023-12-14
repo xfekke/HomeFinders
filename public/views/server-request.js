@@ -1,4 +1,3 @@
-// funktion för att hämta alla bostäder ur residences i db.json
 export async function getAllResidences() {
   try {
     let response = await fetch('/residences');
@@ -10,7 +9,6 @@ export async function getAllResidences() {
   }
 };
 
-// funktion för att skicka en ny bostad till servern
 export async function postResidence(formData) {
   try {
     let response = await fetch('/residences', {
@@ -24,9 +22,8 @@ export async function postResidence(formData) {
   } catch (error) {
     console.error('Fel vid skickande av ny bostad:', error);
   }
-}
+};
 
-// funktion för att skicka intresseanmälan till servern
 export async function postInterest(interestData) {
   try {
     let response = await fetch('/submit-interest', {
@@ -40,9 +37,8 @@ export async function postInterest(interestData) {
   } catch (error) {
     console.error('Fel vid skickande av intresseanmälan', error);
   }
-}
+};
 
-// funktion för att hämta användarinformation
 export async function getUser() {
   try {
     let response = await fetch('/user');
@@ -64,4 +60,19 @@ export async function getInterests() {
     console.error('Fel vid hämtning av intresseanmälningar:', error);
     return [];
   }
-}
+};
+
+export async function updateInterestStatus(interestId, contacted) {
+  try {
+    let response = await fetch(`/interests/${interestId}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ contacted }),
+    });
+    return await response.json();
+  } catch (error) {
+    console.error('Fel vid uppdatering av intresseanmälan:', error);
+  }
+};
