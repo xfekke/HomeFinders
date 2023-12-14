@@ -252,7 +252,6 @@ ul.residencesList {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  text-align: center;
   width: 100%;
   max-width: 600px;
   margin: auto;
@@ -397,12 +396,13 @@ h2.searchTitle {
 
 /* --------- Sälja bostad -------- */
 .sell-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
   text-align: left;
-  margin: 0 auto; /* Centrerar containern */
-  max-width: 90%; /* Anpassar bredden */
-  padding: 20px; /* Lägger till lite utrymme runt innehållet */
 }
-
 
 .sell-container h2 {
   text-align: left;
@@ -410,7 +410,8 @@ h2.searchTitle {
 }
 
 .sell-container form {
-  margin-left: 1%;
+  width: 100%;
+  max-width: 500px;
 }
 
 .sell-container p {
