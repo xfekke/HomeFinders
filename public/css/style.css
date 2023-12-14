@@ -450,6 +450,7 @@ p.role {
   margin-bottom: 50vh;
   display: flex;
   flex-flow: column;
+  align-items: center;
 }
 
 #login-form>input {
@@ -483,10 +484,12 @@ p.role {
 
 label[for="username"] {
   font-size: 22px;
+  max-width: 60%;
 }
 
 label[for="password"] {
   font-size: 22px;
+  max-width: 60%;
 }
 
 /* ------- Sidfot ------- */
