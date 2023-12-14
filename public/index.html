@@ -14,13 +14,15 @@
     <header><a href="/" data-link><img src="image/hfLogoVit.svg" alt="Homefinders" id="logo"></a></header>
 
     <div id="nav-pos">
-      <nav>
-        <a href="/" data-link>Home</a>
-        <a href="/search" data-link>Söka Bostad</a>
-        <a href="/sellHome" data-link>Sälja Bostad</a>
-        <a href="/contact" data-link>Kontakt</a>
-        <a href="/realtor" data-link>Mäklarsidan</a>
-        <a href="/logIn" data-link>Logga In</a>
+      <input type="checkbox" class="toggle-meny">
+      <div class="hamburger"></div>
+      <nav class="nav-meny">
+        <a href="/" data-link class="nav-link">Hem</a>
+        <a href="/search" data-link class="nav-link">Sök bostad</a>
+        <a href="/sellHome" data-link class="nav-link">Sälja bostad</a>
+        <a href="/contact" data-link class="nav-link">Kontakt</a>
+        <a href="/realtor" data-link class="nav-link">Mäklarsidan</a>
+        <a href="/logIn" data-link class="nav-link">Logga in</a>
         <button id="logoutButton" style="display: none;" onclick="handleLogout()">Logga ut</button>
       </nav>
     </div>

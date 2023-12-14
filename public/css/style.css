@@ -21,12 +21,16 @@ html {
   line-height: 1.6;
 }
 
+ul {
+  list-style-type: none;
+}
+
 p {
   margin: 1px;
 }
 
 /* ------- header info -------*/
-#header-section {
+/* #header-section {
   top: 0;
   position: fixed;
   background-color: var(--primary-clr);
@@ -94,19 +98,97 @@ nav>a:visited {
   rotate: 45deg;
   border-radius: 5px;
   background-color: var(--primary-clr);
+} */
+
+#header-section {
+  top: 0;
+  position: fixed;
+  background-color: var(--primary-clr);
+  text-align: center;
+  height: 8.2em;
+  width: 100%;
+  z-index: 2000;
+}
+
+header {
+  padding-top: 1rem;
+  margin-bottom: 0;
+}
+
+#logo {
+  width: 230px;
+  transition-duration: 300ms;
+}
+
+#logo:hover {
+  width: 240px;
+}
+
+#nav-pos {
+  position: fixed;
+  top: 6.2em;
+  width: 100%;
+  z-index: 3000;
+}
+
+.nav-meny {
+  padding-bottom: 5px;
+  text-align: center;
+  align-items: center;
+}
+
+.nav-meny>a {
+  color: #ffffffa6;
+  transition: 700ms;
+  padding: 0.4em;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.nav-meny>a:hover {
+  color: #fff;
+  border-bottom: #fff solid 2px;
+  border-radius: 10px;
+  padding-bottom: 3px;
+}
+
+.nav-meny>a:visited {
+  color: #fff;
+}
+
+.pointer {
+  position: fixed;
+  top: 6.6em;
+  width: 100%;
+  z-index: 500;
+}
+
+#top-arrow {
+  position: relative;
+  margin: 0 auto;
+  width: 2em;
+  height: 2em;
+  rotate: 45deg;
+  border-radius: 5px;
+  background-color: var(--primary-clr);
+}
+
+.hamburger,
+.toggle-meny {
+  display: none;
 }
 
 main {
   margin: 10em 0 0 0;
 }
 
-button {
+/* button {
   width: fit-content;
   background-color: #208137;
   color: white;
   border-radius: 5px;
   border-color: white;
-}
+} */
 
 /* --------- Söka bostad -------- */
 .residencesList li {
@@ -253,6 +335,13 @@ h2.searchTitle {
 
 .p-hero {
   transform: translateZ(-5px) scale(1.5);
+    margin: 0 auto;
+      font-size: 1.3rem;
+      color: #fff;
+      letter-spacing: -0.01rem;
+      text-align: center;
+      max-width: 400px;
+      text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.7), 0px 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .hero-image,
@@ -275,7 +364,7 @@ h2.searchTitle {
   text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.7), 0px 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-.p-hero {
+/* .p-hero {
   margin: 0 auto;
   font-size: 1.3rem;
   color: #fff;
@@ -283,7 +372,7 @@ h2.searchTitle {
   text-align: center;
   max-width: 600px;
   text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.7), 0px 10px 30px rgba(0, 0, 0, 0.5);
-}
+} */
 
 #First-sec {
   position: relative;
@@ -295,6 +384,10 @@ h2.searchTitle {
   background-color: var(--background-clr);
   color: #333;
   box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.7), 0px -15px 20px rgba(0, 0, 0, 0.4);
+}
+
+#First-sec p {
+  margin-bottom: 1em;
 }
 
 .content {
@@ -342,7 +435,7 @@ h2.searchTitle {
 }
 
 /* ------- Kontakt ------- */
-#brokers {
+/* #brokers {
   position: relative;
   max-width: 600px;
   margin: 3em auto 1em;
@@ -415,10 +508,85 @@ a:visited {
 #additional-info {
   width: 300px;
   height: 100px;
+} */
+
+#brokers {
+  position: relative;
+  max-width: 600px;
+  margin: 3em auto 1em;
+}
+
+#dealers {
+  width: 100%;
+  font-size: 62.5%;
+}
+
+.dealer {
+  display: inline-block;
+  position: relative;
+  width: 168px;
+  padding: 1em;
+  margin: 0 0.5em 1em 0.5em;
+  border-radius: 1em;
+  background-color: #6c8e5753;
+}
+
+.dealer-img {
+  width: 100%;
+}
+
+.dealer-name {
+  font-size: 1.4em;
+  margin: 5px 0 2px 0;
+}
+
+.connect {
+  color: #444;
+}
+
+p.ingress {
+  font-weight: 300;
+  font-size: 1.3em;
+  text-align: center;
+  margin: 0.5em;
+  color: #444;
+}
+
+.dealer>p {
+  font-size: 1.3em;
+  line-height: 130%;
+  margin: 0;
+}
+
+p.role {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+}
+
+.mail-us>a,
+.call-us>a {
+  text-decoration: none;
+  color: var(--text-clr);
+}
+
+.mail-us>a:hover,
+.call-us>a:hover {
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--text-clr);
+}
+
+.form-section {
+  display: block;
+  background-color: #6c8e5753;
+  height: 184px;
+  padding-top: 1em;
 }
 
 /* Send-formulär */
-.form-section {
+/* .form-section {
   display: block;
   background-color: #6c8e5753;
   height: 184px;
@@ -468,7 +636,7 @@ a:visited {
   background-color: #208137;
   color: #fff;
   border-radius: 5px;
-}
+} */
 
 /* ------- Mäklarsidan -> (realtor) ------ */
 #app {
@@ -484,7 +652,7 @@ a:visited {
 /* ------- Logga in -> (logIn) ------- */
 #login-form {
   margin: 0 auto;
-  max-width: 60%;
+  max-width: 600px;
   margin-bottom: 50vh;
   display: flex;
   flex-flow: column;
@@ -665,14 +833,16 @@ footer {
   position: fixed;
   top: 0;
   right: 0;
-  margin: 10px;
+  margin: -1px -1px 0 0;
   background: #208137;
   color: #edf6f9;
-  border: none;
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
-  margin: 0.5rem 0;
-  font-size: 16px;
+  border-bottom: var(--background-clr) solid 0.3px;
+  border-left: var(--background-clr) solid 0.3px;
+  border-radius: 0 0 0 10px;
+  opacity: 75%;
+  padding: 0.3rem 1rem;
+  font-size: 12px;
+  font-weight: 300;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -685,4 +855,145 @@ footer {
   top: 0;
   right: 0;
   margin: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .hamburger {
+    position: absolute;
+    margin-top: 3em;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 3000;
+    transition: 0.3s;
+  }
+
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+
+  .hamburger::before {
+    top: -8px;
+    width: 20px;
+  }
+
+  .hamburger::after {
+    top: 8px;
+    width: 20px;
+  }
+
+  .toggle-meny {
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    z-index: 4000;
+    cursor: pointer;
+    opacity: 0%;
+  }
+
+  #nav-pos input:checked~.hamburger {
+    background: transparent;
+  }
+
+  #nav-pos input:checked~.hamburger:before {
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+  }
+
+  #nav-pos input:checked~.hamburger:after {
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+  }
+
+  #nav-pos input:checked~.nav-meny {
+    right: 0;
+  }
+
+  .hamburger,
+  .toggle-meny {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    position: fixed;
+    top: 18px;
+    right: 15px;
+  }
+
+  .nav-meny {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 130px;
+    right: -100%;
+    background: var(--text-clr);
+    opacity: 90%;
+    width: 100%;
+    height: 450px;
+    padding-top: 8px;
+  }
+
+  .nav-meny a,
+  .nav-meny a:hover {
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 0;
+    border-top: none;
+    border-bottom: #ffffff42 solid 0.5px;
+  }
+
+  .pointer {
+    z-index: 4000;
+  }
+
+
+  /* Home -> paralax */
+  .titel {
+    font-size: 3em;
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+
+  .p-hero {
+    padding: 2em 5px 0;
+  }
+
+  /* formulär */
+  .form-section {
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 0;
+  }
+
+  #email,
+  #notation,
+  #message {
+    width: 90%;
+  }
+
+  #form-contact-btn {
+    margin: 0 auto;
+    display: block;
+  }
+
+  #brokers {
+    text-align: center;
+  }
 }
