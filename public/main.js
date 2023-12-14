@@ -13,6 +13,7 @@ function isAuthenticated() {
   return localStorage.getItem("loggedIn") === "true";
 }
 
+//definierar routes + data för spa
 const routes = {
   "/": { title: "Home", render: home },
   "/search": { title: "Search", render: search },
@@ -27,11 +28,13 @@ async function router() {
   let view = routes[location.pathname];
 
   if (view) {
+    //kontroll för inloggning (Mäklarsidan/"realtor")
     if (view.authenticated && !isAuthenticated()) {
       app.innerHTML = `<p>Du måste vara inloggad för att se denna sida.</p>`;
       return;
     }
 
+    //renderar nya sidans vy
     document.title = view.title;
     try {
       app.innerHTML = await view.render();
@@ -40,12 +43,13 @@ async function router() {
       app.innerHTML = "Ett fel uppstod vid rendering av sidan.";
     }
   } else {
+    //if else går tillbaka till startsida
     history.replaceState("", "", "/");
     router();
   }
 };
 
-// navigation
+// navigation vid klick på länkar
 window.addEventListener("click", e => {
   if (e.target.matches("[data-link]")) {
     e.preventDefault();
@@ -54,7 +58,8 @@ window.addEventListener("click", e => {
   }
 });
 
-// uppdatera routern
+// --- globala eventListeners för funktioner på knappar
+// uppdatera routern vid events
 window.addEventListener("popstate", router);
 window.addEventListener("DOMContentLoaded", router);
 
@@ -87,5 +92,8 @@ function showInterestForm(residenceId) {
 // inskick av formuläret
 window.submitInterest = submitInterest;
 
+//router global funktion
 window.router = router;
+
+//uppdaterar router när spa sida laddas
 window.addEventListener("DOMContentLoaded", router);

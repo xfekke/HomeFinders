@@ -1,24 +1,30 @@
 import "../components/counter.js";
 import { getAllResidences } from "./server-request.js";
 
+//globala variabler, för filtrerade bostäder
 let lastFilteredResidences = null;
 let lastSortOrder = 'priceAsc';
 let lastResidenceType = 'all';
 
+//funktion: om bild ej finns, visar standardbild
 function getDefaultImageUrl() {
   return 'https://i.ibb.co/WsrBLMf/hf-logo.png';
 }
 
+//funktion: hittar första valid bild på bildURL listan
 function getFirstValidImageUrl(imageUrls) {
   return imageUrls.find(url => url.trim() !== '') || getDefaultImageUrl();
 }
 
+//funktion: rendera in all info om bostad
 function renderResidenceDetails(residence) {
   let imagesHtml = '';
   let thumbnailsHtml = '';
 
+  //tar bort ogiltiga bilder
   const validImages = residence.imageURL.filter(url => url.trim() !== '');
 
+  //vid flera bilder, skapar karusell
   if (validImages.length > 1) {
     imagesHtml = `
       <div class="carousel">
@@ -33,9 +39,11 @@ function renderResidenceDetails(residence) {
       </div>
     `;
   } else {
+    //kollar på funktion ifall de ej finns giltig bild
     imagesHtml = `<img src="${getFirstValidImageUrl(residence.imageURL)}" alt="Bild på bostaden" class="residence-image">`;
   }
 
+  //return av html-string för bostadsdetaljer
   return `
     <div class="residence-info">
       <button id="#buttonSearch" onclick="backToFilteredResidences()">Tillbaka till Filtrerade</button>
@@ -65,11 +73,14 @@ function renderResidenceDetails(residence) {
   `;
 }
 
+//renderar in lista av bostäder i SPA
 export default async function renderResidencesList() {
   try {
+    //hämtar bostad från json
     const residencesData = await getAllResidences();
     lastFilteredResidences = residencesData;
 
+    //skapar objekt av data
     const residencesList = residencesData.map(residence => `
       <li class="residence-item" onclick="showResidenceDetails(${residence.id})">
         <img src="${getFirstValidImageUrl(residence.imageURL)}" alt="Preview of ${residence.address}" class="residence-preview-image">
@@ -81,6 +92,7 @@ export default async function renderResidencesList() {
       </li>
     `).join('');
 
+    //return av html-string för hela listan
     return `
       <h2 class="searchTitle">Alla Bostäder:</h2>
       <div class="filterResidence">
@@ -110,12 +122,14 @@ export default async function renderResidencesList() {
   }
 }
 
+//funktion: visa detaljer om boende
 window.showResidenceDetails = async (residenceId) => {
   const residence = await getResidenceById(residenceId);
   document.getElementById("app").innerHTML = renderResidenceDetails(residence);
   initCarousel();
 };
 
+//funktion: hämtar bostad beroende på ID (från db.json)
 async function getResidenceById(id) {
   try {
     const response = await fetch(`/residences/${id}`);
@@ -126,6 +140,7 @@ async function getResidenceById(id) {
   }
 }
 
+//funktion: gå tillbaka till listan av filtrerade bostäder
 window.backToFilteredResidences = async () => {
   if (lastFilteredResidences) {
     const residencesList = lastFilteredResidences.map(residence => `
@@ -138,6 +153,7 @@ window.backToFilteredResidences = async () => {
         </div>
       </li>
     `).join('');
+    //lastFilteredResidence avgör om det fanns filter innan man valt bostad, så vi kan återgå
 
     document.getElementById("app").innerHTML = `
       <h2 class="searchTitle">Filtrerade Bostäder:</h2>
@@ -168,22 +184,27 @@ window.backToFilteredResidences = async () => {
   }
 };
 
+//funktion: gå tillbaka till listan med bostäder
 window.backToAllResidences = async () => {
   document.getElementById("app").innerHTML = await renderResidencesList();
 };
 
+//funktion: navigering av bilder i karusell
 window.moveSlide = function (direction) {
   const slides = document.querySelectorAll('.residence-image');
   showSlide(currentSlide + direction, slides);
 };
 
+//vald bild i karusell
 let currentSlide = 0;
 
+//ändrar bilden i karusellen
 window.changeSlide = function (index) {
   const slides = document.querySelectorAll('.residence-image');
   showSlide(index, slides);
 };
 
+//funktion: visa vald bild
 function showSlide(index, slides) {
   if (index >= slides.length) {
     currentSlide = 0;
@@ -197,6 +218,7 @@ function showSlide(index, slides) {
   slides[currentSlide].style.display = "block";
 }
 
+//startar bild-karusell
 function initCarousel() {
   const slides = document.querySelectorAll('.residence-image');
   if (slides.length > 0) {
@@ -204,16 +226,20 @@ function initCarousel() {
   }
 }
 
+//funktion: filter för bostäder
 window.filterResidences = async function () {
   try {
+    //variabler för sortering och filtrering
     const sortOrder = document.getElementById('sortOrder').value;
     const residenceType = document.getElementById('residenceType').value;
     let residencesData = await getAllResidences();
 
+    //filtrering för "type"
     if (residenceType !== 'all') {
       residencesData = residencesData.filter(residence => residence.type === residenceType);
     }
 
+    //switch för sortering, lägg till mer sortering här:
     switch (sortOrder) {
       case 'priceAsc':
         residencesData.sort((a, b) => a.price - b.price);
@@ -229,8 +255,10 @@ window.filterResidences = async function () {
         break;
     }
 
+    //
     lastFilteredResidences = residencesData;
 
+    //visar den filtrerade listan
     const residencesList = residencesData.map(residence => `
       <li class="residence-item" onclick="showResidenceDetails(${residence.id})">
         <img src="${getFirstValidImageUrl(residence.imageURL)}" alt="Preview of ${residence.address}" class="residence-preview-image">
@@ -251,11 +279,13 @@ window.filterResidences = async function () {
   }
 }
 
+//toggle för att visa intresseanmälan
 window.toggleInterestForm = function (residenceId) {
   const form = document.getElementById(`interestForm-${residenceId}`);
   form.style.display = form.style.display === 'none' ? 'block' : 'none';
 };
 
+//felhantering
 function validatePhone(phone) {
   const re = /^[0-9]+$/;
   return re.test(phone);
@@ -266,6 +296,7 @@ function validateEmail(email) {
   return re.test(email);
 }
 
+//skickar värden från anmälan till db.json i "/interests + felhantering"
 window.submitInterest = async function (residenceId) {
   const nameInterest = document.getElementById(`nameInterest-${residenceId}`).value;
   const phoneInterest = document.getElementById(`phoneInterest-${residenceId}`).value;
@@ -294,11 +325,12 @@ window.submitInterest = async function (residenceId) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
-    const data = await response.json();
+    //kod för att skicka till db.json
+    const data = await response.json(); 
     console.log('Intresseanmälan skickad', data);
     alert("Din intresseanmälan har skickats!");
   } catch (error) {
-    console.error('Ett fel uppstod vid skickning av intresseanmälan:', error);
-    alert("Ett fel uppstod vid skickning av din intresseanmälan.");
+    console.error('Ett fel uppstod vid sändning av intresseanmälan:', error);
+    alert("Ett fel uppstod vid sändning av din intresseanmälan.");
   }
 };

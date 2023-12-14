@@ -1,14 +1,19 @@
 import "../components/counter.js";
 import { getInterests, getAllResidences } from "./server-request.js";
 
+//funktion för att se om användare är inloggad eller inte
 export default async () => {
   const isAuthenticated = localStorage.getItem("loggedIn") === "true";
 
+  //visas om man ej är inloggad
   if (!isAuthenticated) {
     return `<p>Du måste vara inloggad som mäklare för att se denna sida.</p>`;
   }
 
+  //inloggad + felhantering
   try {
+
+    //hämtar json data
     const interests = await getInterests();
     const residences = await getAllResidences();
 
@@ -17,14 +22,16 @@ export default async () => {
       return acc;
     }, {});
 
+    //renderar in intresseanmälning i mäklarsidan (inloggad)
+    //filterlista och lista är separata objekt (residenceList/residenceLastFilter)
     const residencesWithInterests = residences.filter(residence => interestsByResidence[residence.id]);
-
     const residencesHtml = residencesWithInterests.map(residence => {
       const residenceInterests = interestsByResidence[residence.id];
       const interestsHtml = residenceInterests.map(interest => `
       <li><strong>Namn:</strong> ${interest.nameInterest} <strong>Telefon:</strong> ${interest.phoneInterest} <strong>Epost:</strong> ${interest.emailInterest}</li>
       `).join('');
 
+      //avslutar funktion, visar adress som titel
       return `
         <div>
           <h3>${residence.address}</h3>
@@ -33,6 +40,7 @@ export default async () => {
       `;
     }).join('');
 
+    //visar intresseanmälningar
     return `
       <div id="realtorPage">
       <h2>Mäklarsidan</h2>

@@ -1,6 +1,7 @@
 import "../components/counter.js";
 import { postResidence } from "./server-request.js";
 
+//funktion: skicka bostads-data till db.json "/residences"
 export async function submitResidence() {
   let address = document.getElementById('address').value;
   let type = document.getElementById('type').value;
@@ -17,6 +18,7 @@ export async function submitResidence() {
   let imageURL = document.getElementById('image-url').value;
   let additionalInfo = document.getElementById('additional-info').value;
 
+  //felhantering
   if (
     address === '' ||
     rooms === '' ||
@@ -27,6 +29,7 @@ export async function submitResidence() {
     return;
   }
 
+  //gör objekt
   let formData = {
     address: address,
     type: type,
@@ -44,13 +47,15 @@ export async function submitResidence() {
     additionalInfo: additionalInfo
   };
 
+  //skickar koden till json
   await postResidence(formData);
   console.log('Bostad inskickad!');
   alert("Din bostad har skickats in!");
   return;
 }
 
-export default () => /*html*/`
+//html med inputs för att spara användardata
+export default () => `
   <div class="sell-container">
     <h2>Sälja Bostad</h2>
     <p>Fyll i formuläret för att börja processen att sälja din bostad.</p>

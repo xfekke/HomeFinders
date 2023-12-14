@@ -1,4 +1,4 @@
-// funktion för att hämta alla bostäder
+// funktion för att hämta alla bostäder ur residences i db.json
 export async function getAllResidences() {
   try {
     let response = await fetch('/residences');

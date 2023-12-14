@@ -29,77 +29,6 @@ p {
   margin: 1px;
 }
 
-/* ------- header info -------*/
-/* #header-section {
-  top: 0;
-  position: fixed;
-  background-color: var(--primary-clr);
-  text-align: center;
-  height: 6.5em;
-  width: 100%;
-  z-index: 2000;
-}
-
-header {
-  padding-top: 1rem;
-}
-
-#logo {
-  width: 230px;
-  transition-duration: 300ms;
-}
-
-#logo:hover {
-  width: 240px;
-}
-
-#nav-pos {
-  position: absolute;
-  top: 6.2em;
-  width: 100%;
-}
-
-nav {
-  padding-bottom: 5px;
-  text-align: center;
-  background-color: var(--primary-clr);
-  align-items: center;
-  z-index: 2000;
-}
-
-nav>a {
-  color: #ffffffa6;
-  z-index: 2000;
-  transition: 700ms;
-}
-
-nav>a:hover {
-  border-bottom: #fff solid 2px;
-  border-radius: 10px;
-  padding-bottom: 3px;
-}
-
-nav>a:visited {
-  color: #fff;
-}
-
-.pointer {
-  position: fixed;
-  top: 6.6em;
-  width: 100%;
-  z-index: 500;
-}
-
-#top-arrow {
-  position: relative;
-  margin: 0 auto;
-  width: 2em;
-  height: 2em;
-  rotate: 45deg;
-  border-radius: 5px;
-  background-color: var(--primary-clr);
-} */
-
 #header-section {
   top: 0;
   position: fixed;
@@ -181,14 +110,6 @@ header {
 main {
   margin: 10em 0 0 0;
 }
-
-/* button {
-  width: fit-content;
-  background-color: #208137;
-  color: white;
-  border-radius: 5px;
-  border-color: white;
-} */
 
 /* --------- Söka bostad -------- */
 .residencesList li {
@@ -371,16 +292,6 @@ button {
   text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.7), 0px 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* .p-hero {
-  margin: 0 auto;
-  font-size: 1.3rem;
-  color: #fff;
-  letter-spacing: -0.01rem;
-  text-align: center;
-  max-width: 600px;
-  text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.7), 0px 10px 30px rgba(0, 0, 0, 0.5);
-} */
-
 #First-sec {
   position: relative;
   z-index: 5;
@@ -444,80 +355,6 @@ button {
 }
 
 /* ------- Kontakt ------- */
-/* #brokers {
-  position: relative;
-  max-width: 600px;
-  margin: 3em auto 1em;
-}
-
-#dealers {
-  width: 100%;
-  font-size: 62.5%;
-}
-
-.dealer {
-  display: inline-block;
-  position: relative;
-  width: 168px;
-  padding: 1em;
-  margin: 0 0.5em 1em 0.5em;
-  border-radius: 1em;
-  background-color: #6c8e5753;
-}
-
-.dealer-img {
-  width: 100%;
-}
-
-.dealer-name {
-  font-size: 1.4em;
-  margin: 5px 0 2px 0;
-}
-
-.connect {
-  color: #444;
-}
-
-p.ingress {
-  font-weight: 300;
-  font-size: 1.3em;
-  text-align: center;
-  margin: 0.5em;
-  color: #444;
-}
-
-.dealer>p {
-  font-size: 1.3em;
-  line-height: 130%;
-  margin: 0;
-}
-
-p.role {
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 1em;
-  font-size: 0.9em;
-}
-
-a:link {
-  color: #ffffff90;
-  padding: 0.4em;
-  font-weight: 300;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #fff;
-}
-
-a:visited {
-  color: #333;
-}
-
-#additional-info {
-  width: 300px;
-  height: 100px;
-} */
 
 #brokers {
   position: relative;
@@ -595,57 +432,6 @@ p.role {
 }
 
 /* Send-formulär */
-/* .form-section {
-  display: block;
-  background-color: #6c8e5753;
-  height: 184px;
-  padding-top: 1em;
-}
-
-.contact-form {
-  position: relative;
-  margin: 0 auto;
-  padding-right: 1%;
-  max-width: 570px;
-}
-
-#email,
-#notation,
-#message {
-  display: block;
-  margin: 0.3em auto;
-  padding: 0.5em;
-  width: 570px;
-  border: #208137 solid 1px;
-  font-family: "Ubuntu";
-  color: #444;
-}
-
-#message {
-  padding-bottom: 7em;
-  border-bottom: #208137 solid 4px;
-}
-
-#form-contact-btn {
-  position: absolute;
-  margin-left: 190px;
-  background-color: #fff;
-  color: #444;
-  border: #208137 2px solid;
-  border-radius: 5px;
-  padding: 0.6em 1em;
-  font-family: "Ubuntu";
-  font-weight: 400;
-  font-size: 1em;
-  transition-duration: 300ms;
-  cursor: pointer;
-}
-
-#form-contact-btn:hover {
-  background-color: #208137;
-  color: #fff;
-  border-radius: 5px;
-} */
 
 /* ------- Mäklarsidan -> (realtor) ------ */
 #app {
@@ -657,7 +443,6 @@ p.role {
   justify-content: center;
 }
 
-
 /* ------- Logga in -> (logIn) ------- */
 #login-form {
   margin: 0 auto;
@@ -665,7 +450,6 @@ p.role {
   margin-bottom: 50vh;
   display: flex;
   flex-flow: column;
-
 }
 
 #login-form>input {
@@ -867,9 +651,7 @@ footer {
   margin: 10px;
 }
 
-
 @media screen and (max-width: 600px) {
-
   .hamburger {
     position: absolute;
     margin-top: 3em;
@@ -969,7 +751,6 @@ footer {
   .pointer {
     z-index: 4000;
   }
-
 
   /* Home -> paralax */
   .titel {

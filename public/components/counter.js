@@ -18,3 +18,4 @@ class Counter extends HTMLElement {
 let count = 0;
 
 customElements.define("click-counter", Counter);
+// representerar antalet klick i en knapp + uppdaterar dynamiskt
