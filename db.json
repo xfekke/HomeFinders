@@ -583,18 +583,74 @@
   ],
   "interests": [
     {
-      "residenceId": 6,
-      "nameInterest": "55",
-      "phoneInterest": "6655",
-      "emailInterest": "55@gmai..com",
+      "residenceId": 1,
+      "nameInterest": "Emil Johansson",
+      "phoneInterest": "0701234567",
+      "emailInterest": "emil.johansson@gmail.com",
       "id": 1
     },
     {
       "residenceId": 2,
-      "nameInterest": "Charles",
-      "phoneInterest": "0702233441",
-      "emailInterest": "charlesperson54@gmail.com",
+      "nameInterest": "Sofia Karlsson",
+      "phoneInterest": "0722345678",
+      "emailInterest": "sofia.karlsson@hotmail.com",
       "id": 2
+    },
+    {
+      "residenceId": 3,
+      "nameInterest": "Axel Lindberg",
+      "phoneInterest": "0733456789",
+      "emailInterest": "axel.lindberg@yahoo.com",
+      "id": 3
+    },
+    {
+      "residenceId": 2,
+      "nameInterest": "Clara Gustafsson",
+      "phoneInterest": "0744567890",
+      "emailInterest": "clara.gustafsson@outlook.com",
+      "id": 4
+    },
+    {
+      "residenceId": 5,
+      "nameInterest": "Lucas Pettersson",
+      "phoneInterest": "0755678901",
+      "emailInterest": "lucas.pettersson@gmail.com",
+      "id": 5
+    },
+    {
+      "residenceId": 6,
+      "nameInterest": "Emma Jansson",
+      "phoneInterest": "0766789012",
+      "emailInterest": "emma.jansson@hotmail.com",
+      "id": 6
+    },
+    {
+      "residenceId": 7,
+      "nameInterest": "Noah Andersson",
+      "phoneInterest": "0777890123",
+      "emailInterest": "noah.andersson@yahoo.com",
+      "id": 7
+    },
+    {
+      "residenceId": 8,
+      "nameInterest": "Elsa Svensson",
+      "phoneInterest": "0788901234",
+      "emailInterest": "elsa.svensson@outlook.com",
+      "id": 8
+    },
+    {
+      "residenceId": 9,
+      "nameInterest": "Elias Lundgren",
+      "phoneInterest": "0799012345",
+      "emailInterest": "elias.lundgren@gmail.com",
+      "id": 9
+    },
+    {
+      "residenceId": 5,
+      "nameInterest": "Alice Bergström",
+      "phoneInterest": "0710123456",
+      "emailInterest": "alice.bergstrom@hotmail.com",
+      "id": 10
     }
   ]
 }
