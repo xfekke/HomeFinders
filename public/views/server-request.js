@@ -1,3 +1,4 @@
+//hämta data från db.json - bostäder (/residences)
 export async function getAllResidences() {
   try {
     let response = await fetch('/residences');
@@ -9,6 +10,7 @@ export async function getAllResidences() {
   }
 };
 
+//sparar data i db.json - bostäder (/residences)
 export async function postResidence(formData) {
   try {
     let response = await fetch('/residences', {
@@ -24,6 +26,7 @@ export async function postResidence(formData) {
   }
 };
 
+//sparar data i db.json - intresseanmälningar (/interests)
 export async function postInterest(interestData) {
   try {
     let response = await fetch('/submit-interest', {
@@ -39,6 +42,7 @@ export async function postInterest(interestData) {
   }
 };
 
+//hämta data från db.json vid inloggning för mäklare - namn och password i db
 export async function getUser() {
   try {
     let response = await fetch('/user');
@@ -49,9 +53,11 @@ export async function getUser() {
   }
 };
 
+//hämtar data från db.json - intresseanmälningar (/interests)
 export async function getInterests() {
   try {
     let response = await fetch('/interests');
+    //felhantering om data ej kan hämtas från json
     if (!response.ok) {
       throw new Error('Nätverksrespons var inte ok');
     }
@@ -62,6 +68,7 @@ export async function getInterests() {
   }
 };
 
+//uppdaterar intresseanmälningar från (/interests)
 export async function updateInterestStatus(interestId, contacted) {
   try {
     let response = await fetch(`/interests/${interestId}`, {

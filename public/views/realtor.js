@@ -1,13 +1,16 @@
 import "../components/counter.js";
 import { getInterests, getAllResidences, updateInterestStatus } from "./server-request.js";
 
+//funktion: markera intresseanmälning som kontaktad av mäklare
 window.markAsContacted = async (interestId, residenceAddress) => {
   try {
+    //uppdatera intresseanmälan till "kontaktad"
     await updateInterestStatus(interestId, true);
     const interestElement = document.getElementById(`interest-${interestId}`);
     const contactedInterestsList = document.getElementById('contactedInterestsList');
     let residenceListItem = contactedInterestsList.querySelector(`li[data-residence='${residenceAddress}']`);
 
+    //om lista ej finns så skapas bostadslista
     if (!residenceListItem) {
       residenceListItem = document.createElement('li');
       residenceListItem.setAttribute('data-residence', residenceAddress);
@@ -15,13 +18,16 @@ window.markAsContacted = async (interestId, residenceAddress) => {
       contactedInterestsList.appendChild(residenceListItem);
     }
 
+    //flytta itnresseanmälan till kontaktad och tar bort kontaktad knapp/avmarkerar
     residenceListItem.querySelector('ul').appendChild(interestElement);
 
+    //funktion för att ta bort knapp när intresseanmälning ej är aktiv/är kontaktad
     const contactButton = interestElement.querySelector('button');
     if (contactButton) {
       contactButton.remove();
     }
 
+    //kontroll att de inte finns fler intresseanmälningar för bostad
     const activeInterestsList = document.getElementById('activeInterestsList');
     const activeResidenceListItem = activeInterestsList.querySelector(`li[data-residence='${residenceAddress}']`);
     if (activeResidenceListItem && activeResidenceListItem.querySelectorAll('.interest').length === 0) {
@@ -32,17 +38,22 @@ window.markAsContacted = async (interestId, residenceAddress) => {
   }
 };
 
+//exportera funktion till html SPA
 export default async () => {
   const isAuthenticated = localStorage.getItem("loggedIn") === "true";
 
+  //visa meddelande om användare ej är inloggad
   if (!isAuthenticated) {
     return `<p>Du måste vara inloggad som mäklare för att se denna sida.</p>`;
   }
 
   try {
+
+    //hämtar data från db.json
     const interests = await getInterests();
     const residences = await getAllResidences();
 
+    //gör html-string för aktiva och kontaktade intresseanmälningar
     let activeInterestsHtml = '';
     let contactedInterestsHtml = '';
 
@@ -51,6 +62,7 @@ export default async () => {
       let activeInterests = residenceInterests.filter(interest => !interest.contacted);
       let contactedInterests = residenceInterests.filter(interest => interest.contacted);
 
+      //gör html-string för aktiva intressen som kan avmarkeras
       if (activeInterests.length > 0) {
         let interestsHtml = activeInterests.map(interest => `
           <li id="interest-${interest.id}" class="interest">
@@ -61,6 +73,7 @@ export default async () => {
           </li>
         `).join('');
 
+        //aktiva intressen som syns i html
         activeInterestsHtml += `
           <li data-residence="${residence.address}">
             <h3><u>${residence.address}</u></h3>
@@ -69,6 +82,7 @@ export default async () => {
         `;
       }
 
+      //html-string för kontaktade
       if (contactedInterests.length > 0) {
         let interestsHtml = contactedInterests.map(interest => `
           <li>
@@ -78,6 +92,7 @@ export default async () => {
           </li>
         `).join('');
 
+        //kontaktade/ej aktiva intressen som syns i html
         contactedInterestsHtml += `
           <li data-residence="${residence.address}">
             <h3><u>${residence.address}</u></h3>
@@ -87,6 +102,7 @@ export default async () => {
       }
     });
 
+    //html view
     return `
       <div id="realtorPage">
         <h2>Mäklarsidan</h2>
