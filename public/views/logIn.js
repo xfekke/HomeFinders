@@ -49,4 +49,5 @@ export default () => `
     <button type="button" id="loginButton" onclick="handleLogin()">Logga in</button>
   </form>
   <button id="logoutButton" style="display: none;" onclick="handleLogout()">Logga ut</button>
+  <footer></footer>
 `;

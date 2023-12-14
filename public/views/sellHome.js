@@ -135,4 +135,5 @@ export default () => /*html*/`
       <button type="button" onclick="submitResidence()">Skicka in</button>
     </form>
   </div>
+  <footer></footer>
 `;
