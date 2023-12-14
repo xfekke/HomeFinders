@@ -132,7 +132,7 @@ export default () => /*html*/`
         </br>
         <textarea id="additional-info" name="additional-info"></textarea>
       </div>
-      <button type="button" onclick="submitResidence()">Skicka in</button>
+      <button type="button" id="#buttonCSS" onclick="submitResidence()">Skicka in</button>
     </form>
   </div>
 `;

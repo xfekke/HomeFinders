@@ -295,6 +295,14 @@ h2.searchTitle {
   border-radius: 4px;
 }
 
+button {
+  width: fit-content;
+  background-color: #208137;
+  color: white;
+  border-radius: 5px;
+  border-color: white;
+}
+
 /* ------- Home -------*/
 /* Paralax */
 .wrapper {
@@ -701,7 +709,7 @@ label[for="password"] {
 footer {
   margin-top: auto;
   width: 100vw;
-  min-height: 130px;
+  min-height: 150px;
   background-image: url(../image/footer.png);
   background-size: cover;
   background-position: center;

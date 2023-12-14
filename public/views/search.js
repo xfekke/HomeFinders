@@ -38,8 +38,8 @@ function renderResidenceDetails(residence) {
 
   return `
     <div class="residence-info">
-      <button onclick="backToFilteredResidences()">Tillbaka till Filtrerade</button>
-      <button onclick="backToAllResidences()">Tillbaka till Alla Bostäder</button>
+      <button id="#buttonSearch" onclick="backToFilteredResidences()">Tillbaka till Filtrerade</button>
+      <button id="#buttonSearch" onclick="backToAllResidences()">Tillbaka till Alla Bostäder</button>
       <h3>${residence.address}</h3>
       <p>Typ: ${residence.type}</p>
       <p>Antal rum: ${residence.rooms}</p>
@@ -100,7 +100,7 @@ export default async function renderResidencesList() {
           <option value="Lägenhet">Lägenhet</option>
           <option value="Radhus">Radhus</option>
         </select>
-        <button onclick="filterResidences()">Filtrera</button>
+        <button id="#buttonCSS" onclick="filterResidences()">Filtrera</button>
       </div>
       <ul class="residencesList">${residencesList}</ul>
     `;
