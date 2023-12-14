@@ -299,7 +299,7 @@ h2.searchTitle {
 #First-sec {
   position: relative;
   z-index: 5;
-  height: 60vh;
+  height: 70vh;
   font-size: 1.1rem;
   line-height: 140%;
   padding: 2rem;
@@ -434,9 +434,9 @@ p.role {
 }
 
 /* ------- Mäklarsidan -> (realtor) ------ */
-#app {
+/* #app {
   margin-left: 1vh;
-}
+} */
 
 #realtorPage {
   text-align: center;
