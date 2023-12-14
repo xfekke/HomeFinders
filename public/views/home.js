@@ -5,8 +5,9 @@ export default () => /*html*/`
 <div class="wrapper">
     <div id="hero">
         <img src="../image/hero1.jpg" class="hero-image">
-            <h1 class="titel">Välkommen till Homefinders!</h1>
-            <P class="p-hero">Din partner för att hitta drömboendet eller sälja din nuvarande bostad.</p>
+        <div class="hold">
+        <h1 class="titel">Välkommen till Homefinders!</h1>
+        <p class="p-hero">Din partner för att hitta drömboendet eller sälja din nuvarande bostad.</p></div>
     </div>
 
     <section id="First-sec">
@@ -15,7 +16,8 @@ export default () => /*html*/`
             <p>Är du istället på jakt ett nytt hem så bistår vi med köprådgivning och matchar dina önskemål med pågående och kommande försäljningar. Hos oss hittar du extraordinära lägenheter, sjönära fritidshus, paradvillor utöver det vanliga, radhus med det lilla extra och gårdar till försäljning. Kanske hittar du ditt drömboende via oss! </p>
         </div>
     </section>
-    
+    <footer></footer>
+
  </div>
 
 `;
