@@ -1,3 +1,4 @@
+//funktion: skicka intresseanmälan till json m felhantering
 window.submitInterest = async function (residenceId) {
   const name = document.getElementById(`nameInterest-${residenceId}`).value;
   const phone = document.getElementById(`phoneInterest-${residenceId}`).value;
